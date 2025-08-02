@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import camper from '../../static/images/off-grid/camper.png';
 import dune from '../../static/images/off-grid/dune.jpg';
 import hills from '../../static/images/off-grid/hills.svg';
@@ -13,9 +16,193 @@ import stars2 from '../../static/images/off-grid/stars2.png';
 
 import './BackGround.scss';
 
+gsap.registerPlugin(ScrollTrigger);
+
 class BackGround extends Component {
   static displayName = 'BackGround';
-  static defaultProps = {};
+
+  componentDidMount() {
+    // --- Morse code setup ---
+    const MORSE = {
+      'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
+      'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
+      'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
+      'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
+      'Y': '-.--', 'Z': '--..',
+      '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-',
+      '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.',
+      ' ': ' '
+    };
+
+    const ray2 = document.getElementById('ray2');
+    let previousWidth = window.innerWidth;
+
+    const createPulse = (container, delay, duration, type) => {
+      const pulse = document.createElement('div');
+      pulse.className = 'morse-pulse ' + type;
+      pulse.style.bottom = '0';
+      container.appendChild(pulse);
+      gsap.fromTo(pulse, { bottom: 0 }, {
+        bottom: '100%',
+        duration: duration * 10,
+        delay: delay,
+        ease: 'power1.in',
+        onComplete: () => pulse.remove(),
+      });
+    };
+
+    const sendMorse = (message) => {
+      ray2.innerHTML = '';
+      let time = 0;
+      const unit = 0.3; // seconds per dot
+      const morse = message.toUpperCase().split('').map(c => MORSE[c] || '').join(' ');
+      morse.split('').forEach(symbol => {
+        if (symbol === '.') {
+          createPulse(ray2, time, unit, 'dot');
+          time += unit * 2;
+        } else if (symbol === '-') {
+          createPulse(ray2, time, unit, 'dash');
+          time += unit * 2;
+        } else {
+          time += unit * 6;
+        }
+      });
+      return time;
+    };
+
+    const loopMorseMessages = (messages) => {
+      let idx = 0;
+      function next() {
+        const duration = sendMorse(messages[idx]);
+        idx = (idx + 1) % messages.length;
+        setTimeout(next, duration * 1000 + 500);
+      }
+      next();
+    };
+
+    loopMorseMessages(['2026', 'KERNELCON', 'HACK THE PLANET']);
+
+    // --- Helper functions ---
+    const getSceneScale = () => Math.min(window.innerWidth / 2160, window.innerHeight / 3840);
+
+    const updateScene = () => {
+      const vh = window.innerHeight;
+      const sceneScale = getSceneScale();
+      const offscreenY = vh + 1000;
+
+      // Animate sitter slide-up
+      gsap.set("#sitter", { y: 180 });
+      gsap.to("#sitter", {
+        y: 0,
+        scrollTrigger: {
+          trigger: "body",
+          start: "top top",
+          end: "1000 top",
+          scrub: true,
+        }
+      });
+
+      // Layers
+      gsap.set("#far-mountains", { y: vh * 0.7 });
+      gsap.to("#far-mountains", {
+        y: vh * 0.2 - 100 * sceneScale,
+        scrollTrigger: { trigger: "body", start: "top top", end: "400 top", scrub: true },
+      });
+
+      gsap.set("#mid-mountains", { y: vh * 0.9 });
+      gsap.to("#mid-mountains", {
+        y: vh * 0.3 - 100 * sceneScale,
+        scrollTrigger: { trigger: "body", start: "top top", end: "420 top", scrub: true },
+      });
+
+      gsap.set("#near-mountains", { y: offscreenY });
+      gsap.to("#near-mountains", {
+        y: vh * 0.4 - 100 * sceneScale,
+        scrollTrigger: { trigger: "body", start: "top top", end: "500 top", scrub: true },
+      });
+
+      gsap.set("#dune", { y: offscreenY });
+      gsap.to("#dune", {
+        y: vh * 0.45 - 80 * sceneScale,
+        scrollTrigger: { trigger: "body", start: "top top", end: "600 top", scrub: true },
+      });
+
+      gsap.set("#camper", { y: offscreenY });
+      gsap.to("#camper", {
+        y: vh * 0.35 - 60 * sceneScale,
+        scrollTrigger: { trigger: "body", start: "top top", end: "500 top", scrub: true },
+      });
+
+      // Rays animation
+      gsap.set(".glow-ray", { y: 3000, opacity: 0 });
+      gsap.to(".glow-ray", {
+        y: -200 * sceneScale - 600,
+        scrollTrigger: { trigger: "body", start: "top top", end: "1200 top", scrub: true },
+      });
+      gsap.to(".glow-ray", {
+        opacity: 0.8,
+        scrollTrigger: { trigger: "body", start: "500 top", end: "1000 top", scrub: true },
+      });
+
+      // Logo animation
+      gsap.set("#logo-container", { y: vh * 0.4, opacity: 0.6 });
+      gsap.to("#logo-container", {
+        y: vh * 0.05,
+        opacity: 1,
+        scrollTrigger: { trigger: "body", start: "top top", end: "500 top", scrub: true },
+      });
+
+      // Glow & Pulse
+      gsap.to(".glow", {
+        filter: "drop-shadow(0 0 30px rgba(100,170,255,0.8))",
+        repeat: -1,
+        yoyo: true,
+        duration: 1.8,
+        ease: "sine.inOut"
+      });
+
+      gsap.to(".pulse", {
+        scaleX: 0.9,
+        repeat: -1,
+        yoyo: true,
+        duration: 1.8,
+        ease: "sine.inOut"
+      });
+    };
+
+    const resizeReflow = () => {
+      if (window.innerWidth !== previousWidth) {
+        previousWidth = window.innerWidth;
+        gsap.killTweensOf(".scene-layer, .glow-ray, #logo, #logo-text, #ray-mask");
+        updateScene();
+        ScrollTrigger.refresh();
+
+        // Force a full reflow like original HTML
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        window.scrollTo(0, maxScroll);
+        ScrollTrigger.update();
+        window.scrollTo(0, 0);
+      }
+    };
+
+    // Listen for orientation change (iOS Safari fix)
+    window.addEventListener("orientationchange", () => {
+      setTimeout(() => {
+        ScrollTrigger.refresh(true);
+      }, 300);
+    });
+
+    // Initial run
+    updateScene();
+
+    // Debounced resize listener
+    let resizeTimeout;
+    const handleResize = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(resizeReflow, 200);
+    };
+    window.addEventListener('resize', handleResize);
+  }
 
   render() {
     return (
