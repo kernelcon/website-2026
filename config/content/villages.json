@@ -1,0 +1,148 @@
+[{
+    "title": "Hardware Hacking Village",
+    "author": "Hackspace.io",
+    "id": "hhv",
+    "hidden": false,
+    "logo": {
+      "dark_mode_support": false,
+      "image_name": "hhv.png",
+      "image_class": "logo-reverse",
+      "dark_mode_image_name": "",
+      "dark_mode_image_class": ""
+    },
+    "dates": [{
+        "day": "Thursday, April 3rd"
+      },
+      {
+        "day": "Friday, April 4th"
+      }
+    ],
+    "details": [{
+      "detail_name": "Smart Plug Sprint",
+      "detail_desc": "Take your mark and flash/hack ESP32 and ESP8266 smart plugs. Can you bypass security, inject your own code, and control your appliances from afar? The race is on to own the power grid!"
+    },{
+      "detail_name": "AP Open Road",
+      "detail_desc": "Leave the manufacturer’s restrictions in the dust! Flash Meraki Wireless APs with OpenWRT and unlock their hidden potential. Control the network, explore advanced features, and leave the default firmware in the rearview mirror."
+    },{
+      "detail_name": "LED Light Speed",
+      "detail_desc": "Build your own custom LED strip controllers using the versatile WLED firmware. Create dazzling light shows, synchronize with music, or just make your room look awesome. It’s a race against time to create the most impressive illumination!"
+    },{
+      "detail_name": "DeepSeek Decoder",
+      "detail_desc": "Need a break from the soldering iron? Explore the power of AI with a fully local instance of DeepSeek. Query the model, explore its capabilities, and discover how AI can be a tool in your hardware hacking arsenal."
+    },{
+      "detail_name": "Mesh Network Marathon",
+      "detail_desc": "Go off-grid and build your own resilient, peer-to-peer communication network using Meshtastic and LoRa. Explore the power of long-range radio, create a decentralized mesh, and communicate even when the internet is down. It’s a race to build the ultimate backup communication system!"
+    }],
+    "description": "<div><p>Buckle up, hackers! Kernelcon’s Hardware Hacking Village is hitting the ground running with our “Race Condition” theme. This year, we’re not just talking about software bugs – we’re pushing the limits of hardware and firmware, exploring the vulnerabilities that arise when timing is everything. Get ready to exploit race conditions in the physical world!</p><p>Dive headfirst into a world of embedded systems, RF wizardry, and decentralized communication. Our village is packed with challenges and opportunities to get your hands dirty:</p></div>",
+    "final_details": "<p><p>Beyond the projects, our village is a collaborative space for hackers of all skill levels. Share tips, tricks, and war stories with fellow racers. Mentors will be on hand to guide you through the challenges and help you push your hardware hacking skills to the next level.</p><p>And if you’re looking for a different kind of race, check out our neighboring <b>Cryptomining Village</b>. Learn about multi-algorithm crypto mining, explore different algorithms, and understand the metrics that drive profitability. It’s a different kind of race, but just as thrilling!</p><p>We’ll also be bringing back the Franklin T9 Hotspots….and of course they all have the “special” firmware loaded on them that lets you do interesting things with them. It’s been incredibly popular in previous years — work through the lab activities and see for yourself.</p><p>So, are you ready to race against the clock and exploit the vulnerabilities that lie beneath the surface? The Kernelcon Hardware Hacking Village is your starting line. Don’t get left in the dust!</p><p>Reminder – all activities in the HHV are free to do and free to try. If you want to take the project home with you when you’re done, there is a small fee to cover hardware costs and supplies.</p></p>"
+  },
+  {
+    "title": "Lockpicking Village",
+    "author": "TOOOL",
+    "id": "tooolvillage",
+    "hidden": false,
+    "logo": {
+      "dark_mode_support": false,
+      "image_name": "toool.png",
+      "image_class": "",
+      "dark_mode_image_name": "",
+      "dark_mode_image_class": ""
+    },
+    "dates": [{
+      "day": "Thursday, April 3rd"
+    },
+    {
+      "day": "Friday, April 4th"
+    }
+  ],
+    "description": "Tired of staring at a monitor trying to hack your way through a computer...come try your hand [literally] at hacking hardware! The Open Organisation Of Lockpickers [TOOOL] is set up and ready to give you a new kind of challenge. Gaining access has a different meaning here. TOOOL uses their knowledge to guide you through different types of locks, their vulnerabilities, and how to exploit them. Scrape pin tumblers instead of data!"
+  },
+  {
+    "title": "Radio Hacking Outpost",
+    "author": "Kernelcon",
+    "id": "rfvillage",
+    "hidden": false,
+    "logo": {
+      "image_name": "rfv.png",
+      "image_class": "logo-reverse"
+    },
+    "dates": [{
+      "day": "Thursday, April 3rd"
+    },
+    {
+      "day": "Friday, April 4th"
+    }
+  ],
+    "description": "Visit the Kernelcon Radio Hacking Village to learn more about software defined radio applications.  There will be various radio & wifi hardware if anyone wants to get hands on experience and/or see real-time examples of wireless hacking. Wifi adapters, expoitable routers, RTL-SDRs, signal decoding and cloning."
+  },
+  {
+    "title": "Wild West Hackin' Fest Labs",
+    "author": "Black Hills Information Security",
+    "id": "wildwesthackingfest",
+    "hidden": false,
+    "logo": {
+      "image_name": "wwhf.svg",
+      "image_class": ""
+    },
+    "dates": [{
+      "day": "Thursday, April 3rd"
+    },
+    {
+      "day": "Friday, April 4th"
+    }
+  ],
+    "details": [{
+      "detail_name": "Doorbell Replay Attack Lab",
+      "detail_desc": "This lab includes and introduction to Signal Defined Radio (SDR) recording and playback for static signal devices. Steps include identifying signal characteristics, waveform analysis, static signal analysis / regeneration, and signal replay. Attendees will be able to perform a relay attack against a wireless doorbell."
+    }, {
+      "detail_name": "Keystroke Injections Lab",
+      "detail_desc": "This lab includes concepts of hijacking a wireless mouse or keyboard and performing keystroke injection attacks. Several wireless input devices are found to still be vulnerable to this type of attack. Attendees will be able to understand and demonstrate how this attack is performed."
+    }, {
+      "detail_name": "Mini-Door Lab",
+      "detail_desc": "This lab is a travel version of the WWHF hall of doors lab. This lab introduces RFID access control and the different types of RFID cards. Attendees will be able to follow step-by-step directions on performing attacks against an RFID access system by replaying, cloning, and brute forcing low-frequency RFID card. High-frequency attack analysis is also included as well as demonstrations of wired communication attacks and a door controller attack."
+    }],
+    "description": "Howdy partners! Kernelcon is just plumb excited to have the good ol’ folks from Wild West Hackin’ Fest visit our little husking bee to share some labs from their ho down. Gallop on over and find out what makes Wild West Hackin’ Fest one of the best in the west!"
+  },
+  {
+    "title": "Mental Health and Wellness Village",
+    "author": "Mental Health Hackers",
+    "id": "mhhvillage",
+    "hidden": false,
+    "logo": {
+      "dark_mode_support": true,
+      "image_name": "MHH.png",
+      "image_class": "light-mode-logo",
+      "dark_mode_image_name": "MHH-white.png",
+      "dark_mode_image_class": "dark-mode-logo"
+    },
+    "dates": [{
+      "day": "Thursday, April 3rd"
+    },
+    {
+      "day": "Friday, April 4th"
+    }
+  ],
+    "description": "The Mental Health and Wellness Village offers a common place to allow like-minded individuals to share and grow as a community, to better our mental health and the health of those around us. Check out the village for fidget tables, crafts, adult coloring books, and more! Visit https://www.mentalhealthhackers.org/ for more information."
+  },
+  {
+    "title": "Badge Village",
+    "author": "Kernelcon",
+    "id": "badge",
+    "hidden": false,
+    "logo": {
+      "dark_mode_support": true,
+      "image_name": "social6.png",
+      "image_class": "light-mode-logo",
+      "dark_mode_image_name": "social3.png",
+      "dark_mode_image_class": "dark-mode-logo"
+    },
+    "dates": [{
+      "day": "Thursday, April 3rd"
+    },
+    {
+      "day": "Friday, April 4th"
+    }
+  ],
+    "description": "Do you have what it takes to claim the top step? Complete a race on your badge and head to the badge village to upload your top scores! If you think you can handle the pressure, jump on the starting line and throw down a LIVE time! Want to learn how to solder or get your hands on a new track? Ask about the 3 bonus tracks you can build!"
+  }
+]

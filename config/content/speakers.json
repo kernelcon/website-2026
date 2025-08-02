@@ -1,0 +1,584 @@
+[
+    {
+       "talks": [
+            {
+                "title": "RAGe against the machine",
+                "authors": [
+                {
+                    "name": "Brennan Lodge",
+                    "speaker_id": "BrennanLodge",
+                    "company": "New York University",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "https://linkedin.com/in/brennanlodge",
+                    "image": "BrennanLodge.jpeg",
+                    "bio": "Brennan Lodge is a cybersecurity expert with 15+ years of experience in data science, AI, and threat defense. As co-founder of Blodgic Inc. and a professor at NYU, he has led AI-driven cybersecurity solutions at top institutions like HSBC and Goldman Sachs. He's also an award-winning AI researcher and technical advisor, driving innovation across industries."
+                }
+                ],
+                "talk_id": "RAGeagainstthemachine",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "4",
+                "abstract": "In today’s threat landscape, security teams face an overwhelming volume of alerts, often struggling to prioritize the most critical threats. This talk introduces Retrieval Augmented Generation (RAG) models as a cutting-edge solution, leveraging MITRE ATT&CK to map and prioritize threats in a SIEM environment. By integrating RAG with your SIEM, security teams can automate the mapping of real-time alerts to adversary tactics, techniques, and procedures (TTPs), enabling faster, more accurate threat detection and prioritization.  In this session, we’ll explore the mechanics of RAG, demonstrate a live integration with SIEM, and showcase how RAG enhances operational efficiency by filtering out noise and highlighting critical incidents. Attendees will learn how to use RAG to shift from reactive to proactive defense strategies, improving detection accuracy and reducing response times.  Whether you're dealing with alert fatigue or struggling to manage the volume of threat data, this talk offers actionable insights on implementing RAG to revolutionize your security operations."
+            },
+            {
+                "title": "Is It Real or Not? An Interactive Presentation on AI-Generated (Dis)Information",
+                "authors": [
+                {
+                    "name": "Heather Lawrence",
+                    "speaker_id": "Heather Lawrence",
+                    "company": "Atropos Insights",
+                    "twitter": "infosecanon",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "HeatherLawrence.jpg",
+                    "bio": "Heather Lawrence is the principal consultant for Atropos Insights providing clients with custom machine learning solutions. She is a PhD candidate in Cybersecurity at UCCS with over a decade of experience at the intersection of engineering, computer security, and machine learning. Prior to consulting, she was a US Navy nuclear engineer, NCCDC winner, and darknet marketplace miner. Her research has been presented at the DEF CON AI Village and the Journal of Systems Architecture."
+                }
+                ],
+                "talk_id": "IsItRealorNot",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "1",
+                "abstract": "The high level of photorealism in state-of-the-art diffusion models, like Midjourney, Stable Diffusion, and Firefly, make it difficult for untrained humans to distinguish between real photographs and AI-generated images. Human-perceptible artifacts are not always present in AI-generated images, but this talk discusses five categories of artifacts and implausibilities: anatomical, stylistic, functional, violations of physics, and sociocultural. Likewise, authentic photographs sometimes contain elements that appear implausible or like a visual artifact. Join the fun! This talk is an interactive presentation leaning on audience participation to vote on whether a series of images are real or AI-generated. Discover your aptitude for detecting AI-generated images."
+            },
+            {
+                "title": "Everything I Learned About CTI I Learned From Playing Guitar in a Cover Band",
+                "authors": [
+                {
+                    "name": "Derrick Masters",
+                    "speaker_id": "DerrickMasters",
+                    "company": "Cybereason",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "https://www.linkedin.com/in/derrick-m-ba0b6954/",
+                    "image": "DerrickMasters.jpg",
+                    "bio": "Derrick Masters, Principal SOC Analyst at Cybereason in Lincoln, Nebraska, brings ten years of expertise in Security Operations, Incident Response, Threat Hunting, and Detection Engineering. Known for his hands-on approach and analytical skills, Derrick blends technical knowledge with 25+ years as a musician to offer a creative edge in cybersecurity."
+                }
+                ],
+                "talk_id": "CoverBand",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "1",
+                "abstract": "Understanding Cyber Threat Intelligence (CTI) can feel daunting for newcomers to cybersecurity. This presentation explores an unexpected yet practical framework for CTI, inspired by my experiences playing in a cover band. Just as a band decides on songs, adapts them to fit its style, and gauges audience reactions, CTI follows similar stages—planning, collecting information, analyzing, and disseminating findings. By breaking down these parallels, this talk aims to demystify CTI processes and emphasize that skills from seemingly unrelated fields, like music, can transfer effectively to threat hunting and detection engineering. If you’re a musician considering cybersecurity, you may already have the analytical foundation needed—just swap the riffs for Russian cybercrime!"
+            },
+            {
+                "title": "Noise-Based Biometrics: A New Approach to Cyber-Physical System Security",
+                "authors": [
+                {
+                    "name": "Christiana Chamon Garcia",
+                    "speaker_id": "ChristianaChamonGarcia",
+                    "company": "Virginia Tech",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "ChristianaGarcia.jpg",
+                    "bio": "Christiana Chamon Garcia is an Assistant Professor at Virginia Tech, specializing in cybersecurity and unconditionally secure electronics. She holds a Ph.D. in Electrical Engineering from Texas A&M University, where she focused on the Kirchhoff-Law-Johnson-Noise Secure Key Exchanger. Her research interests include cyber-physical systems and decentralized identity, with a focus on utilizing physical noise for enhanced security."
+                }
+                ],
+                "talk_id": "NoiseBasedBiometrics",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "5",
+                "abstract": "As biosensing technology progresses, securing data from wearable and implantable devices is essential. Traditional biometric methods, like fingerprint or facial recognition, rely on predictable patterns, making them vulnerable to spoofing and breaches. This method explores physiological noise, such as thermal fluctuations and cardiac variability, as a novel source of random data for secure authentication. By capturing unique noise from a user’s body, biosensors can produce cryptographic keys for one-time authentication, enhancing security in wearable devices. Unlike static biometrics, noise-based keys adapt to the user's physiological state, adding a layer of defense against attacks. This method also avoids the risks of static biometric storage, providing a seamless, privacy-preserving authentication solution. This research outlines a framework for using noise-based cryptography in biosensing, addressing practical applications and challenges in this emerging field."
+            },
+            {
+                "title": "Past, Present and Future of Automatic Code Remediation",
+                "authors": [
+                {
+                    "name": "Arshan Dabirsiaghi",
+                    "speaker_id": "ArshanDabirsiaghi",
+                    "company": "Pixee",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "https://www.linkedin.com/in/arshan-dabirsiaghi/",
+                    "image": "ArshanDabirsiaghi.png",
+                    "bio": "Arshan is a security researcher pretending to be a software executive, with many years of experience advising organizations on code security. He has spoken at conferences like Bluehat, Blackhat and OWASP, and definitely wrote his own bio. He is also a co-founder of Contrast Security, a cybersecurity unicorn focused on vulnerability discovery through runtime instrumentation. He now serves as CTO of Pixee where he's done finding and asking about security issues -- he's just fixing it for you."
+                }
+                ],
+                "talk_id": "PastPresentAndFutureOfAutomaticCodeRemediation",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "Academic projects, linters, and IDE helpers provided a foundation for simple automatic code refactoring, but lacked the depth to address complex code issues found by tools. Recently, the landscape of tools used to change code saw explosive growth. Several open source code mutation frameworks have emerged, allowing expressive and impactful code transformations. LLMs have also jumped into the picture, promising power and delivering “cool” – but also towing chaos. We’ll explore the capabilities of these tools, including synergistic strategies – all towards answering the question: “are we ready to automatically fix code issues?” Finally, we’ll look at the horizon and make the case that the era of self-healing software is approaching quickly, even if it looks a little different than what you might expect."
+            },
+            {
+                "title": "That Shouldn't Have Worked - Payload Development 101",
+                "authors": [
+                {
+                    "name": "Corey Overstreet",
+                    "speaker_id": "CoreyOverstreet",
+                    "company": "Red Sieger",
+                    "twitter": "https://x.com/retronaut7",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "CoreyOverstreet.jpg",
+                    "bio": "Corey has been engaged with Fortune 500 organizations across a variety of industries, including financial services, government services, and healthcare and is widely recognized for his in-depth OSINT talks and workshops. Additionally, he is a Black Hat trainer and has spoken at conferences such as Wild West Hackin' Fest and Texas Cyber Summit."
+                }
+                ],
+                "talk_id": "ThatShouldntHaveWorkedPayloadDevelopment101",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "The game of bypassing defenses and detection continues to be a cat and mouse game. Attackers often find clever ways to use common tools and techniques to execute their code and the defenders continue to create detections and mitigations for these methods. As a red teamer, it is becoming increasingly difficult to get around these defenses and emulate those attackers. In this talk, I will cover some of the methods we use during engagements to thread the needle and bypass those defenses."
+            },
+            {
+                "title": "Dumb Ways to Die: Cybersecurity Edition",
+                "authors": [
+                {
+                    "name": "Megan Benoit",
+                    "speaker_id": "MeganBenoit",
+                    "company": "",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "https://bsky.app/profile/cybertricoteuse.bsky.social",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "",
+                    "bio": "Megan Benoit has spent most of the last 20 years building vulnerability management and incident response programs, architecting and deploying security solutions, and telling management she's a security engineer, not a miracle worker, and currently works as a Principal Security Engineer for Fullsteam. In her spare time she teaches yoga and group exercise classes because when she tells people what to do, they don't argue back."
+                }
+                ],
+                "talk_id": "HowtoBreakProdandKeepYourJob",
+                "pdf": "",
+                "video": "",
+                "length": "20",
+                "technical": "1",
+                "abstract": "Forget about best practices - my job is dealing with the worst ones, from using default Microsoft tenant configurations to trusting your vulnerability scan findings.  Learn from the mistakes of others and don’t fall victim to any of these dumb ways to die (or get compromised and lose your data)."
+            },
+            {
+                "title": "Finding race conditions and other fun things using FRIDA",
+                "authors": [
+                {
+                    "name": "Dr. Matthew Miller",
+                    "speaker_id": "MatthewMiller",
+                    "company": "Famgenix",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "youtube": "https://www.youtube.com/@dr_milhous",
+                    "image": "MatthewMiller.jpg",
+                    "bio": "Dr. Milhous is a computer programmer with a Ph.D. in Computer Science who has taught computer science and cybersecurity courses. He has given talks at KernelCon, BSides Iowa and DerbyCon. He has worked as a consultant to review evidence provided by the FBI related to Tor de-anonymization. He has also worked on other cases, including email fraud, cell phone forensics and computer forensics. He has taught courses related to assembly and reverse engineering, including BlackHat, BSides."
+                }
+                ],
+                "talk_id": "FindingRaceConditionsAndOtherFunThingsUsingFrida",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "4",
+                "abstract": "FRIDA, a dynamic instrumentation toolkit, has emerged as a powerful framework for identifying and analyzing software bugs in various environments. Leveraging FRIDA's JavaScript API, developers and security professionals can attach to running processes, inject custom scripts, and intercept function calls to gain real-time insights into application behavior. This capability is particularly useful in reverse engineering, fuzz testing, and debugging tasks, as it allows precise monitoring and manipulation of program execution without requiring source code access. By utilizing FRIDA, testers can uncover vulnerabilities such as memory leaks, logic flaws, and improper API usage in both native and managed codebases across platforms like Android, iOS, Windows, and Linux. The framework's versatility and simplicity reduce debugging time and enhance the accuracy of bug detection. This talk discusses FRIDA's key features, common use cases, and its role in improving software reliability and security. We will provide real world examples of software use cases and learn how to start reversing real binary programs."
+            },
+            {
+                "title": "BadKeeb: When Keyboards Go Bad",
+                "authors": [
+                    {
+                        "name": "Andrew Quill",
+                        "speaker_id": "AndrewQuill",
+                        "company": "Independent Research",
+                        "twitter": "",
+                        "mastodon": "",
+                        "bluesky": "",
+                        "github": "",
+                        "linkedin": "",
+                        "image": "MutedMouse.png",
+                        "bio": "Andrew is an independent cybersecurity researcher with over 15 years of federal service. He is an active participant in the research community and eternal tinkerer."
+                    },
+                    {
+                        "name": "Jake Knowlton",
+                        "speaker_id": "JakeKnowlton",
+                        "company": "",
+                        "twitter": "",
+                        "mastodon": "",
+                        "bluesky": "j2k3k",
+                        "github": "",
+                        "linkedin": "",
+                        "image": "JakeKnowlton.png",
+                        "bio": "Jake Knowlton is a Principal Security Consultant for Mandiant (Google). He specializes in leading incident response and forensic investigations. Past experience includes private sector security analyst work, active duty flying operations out of Offutt Air Force Base, and working on the board of directors for a 501c3 non-profit called VetSec."
+                    }
+                ],
+                "talk_id": "BadKeebWhenKeyboardsGoBad",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "5",
+                "abstract": "In pursuit of one-upping another research, we discovered that man-in-the-middle capability was not only possible, but trivial using off the shelf hardware. In this presentation, we will demonstrate how this attack vector is designed and implemented, as well as never before presented detections to enable same day defense."
+            },
+            {
+                "title": "Operational Wireless",
+                "authors": [
+                {
+                    "name": "Alex Sanders",
+                    "speaker_id": "AlexSanders",
+                    "company": "STACKTITAN",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "https://www.linkedin.com/in/alex-sanders-x3/",
+                    "image": "AlexSanders.jpeg",
+                    "bio": "Alex Sanders is a security consultant with STACKTITAN, a Marine Corps veteran, and musician. Alex is a true technologist with an interest in hardware, wireless protocols and physical security techniques. He can often be found on the Arkansas hackers Discord discussing various security topics, and is constantly sharing his InfoSec experience at regional gatherings."
+                }
+                ],
+                "talk_id": "OperationalWireless",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "Discover the world of Wireless! From traditional Wi-Fi networks, wireless peripherals, and Bluetooth devices to the broader spectrum of sensors, IoT, and OT, we'll discuss understanding a full signal profile. Set your eyes and ears to RX, keep the TX down to the noise floor, and gain insights on crafting a signals intelligence profile to monitor, attack, or defend your invisible infrastructure."
+            },
+            {
+                "title": "Threat (Intelligence & Hunting & Attribution) 101",
+                "authors": [
+                {
+                    "name": "Brad Pittack",
+                    "speaker_id": "BradPittack",
+                    "company": "",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "",
+                    "bio": "Experienced Cybersecurity Threat Researcher who enjoys hunting for badness lurking in the tubes."
+                }
+                ],
+                "talk_id": "ThreatIntelligenceHuntingAttribution101",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "1",
+                "abstract": "You may have seen reports from cybersecurity vendors naming threat actor groups and attributing their activity to specific countries and/or organizations and thought, how does that all come together and where are all those IOCs and groups names coming from? In this talk we’ll discuss the various stages and activities undertaken to produce your typical cybersecurity blog post/report. We’ll discuss topics such as threat hunting and pivot techniques, analytic frameworks in which to make sense of the data for clustering/attribution, why having multiple vendor names for the same entity might actually be a good thing, and what do you do if your report gets it wrong?"
+            },
+            {
+                "title": "Formula One Forensics: Skills and Drills for your IR Pit crew",
+                "authors": [
+                {
+                    "name": "Gerard Johansen",
+                    "speaker_id": "GerardJohansen",
+                    "company": "Red Canary",
+                    "twitter": "https://x.com/irproactive",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "GerryJohansen.jpeg",
+                    "bio": "Gerard is a cyber security specialist for Red Canary, focusing on detection and response. Prior to his tenure at Red Canary, Gerard has had over a decade of experience in digital forensics, incident response and cyber security. Gerard has developed training solutions to aid security teams with responding to cyber attacks. Additionally, Gerard is also a frequent contributor to various conferences and webcasts. He is also author of the book Digital Forensics and Incident Response, 3rd edition."
+                }
+                ],
+                "talk_id": "FormulaOneForensics",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "Threat actors are moving faster and faster. From initial access to impact can take only hours now. Much like a Formula One pit crew, who have cut pitstop times to mere seconds, incident responders need to be able to quickly pivot to a suspect system, extract key artifacts, analyze them and pass them along to team members to begin the isolation and containment necessary to stop a threat actor cold. Crafting a well oiled crew requires a focus on the key skills and drills to maintain their precision and speed. This presentation will examine some of the key skills that responders should focus on, whether that is responding to a malware execution or Business Email Compromise. From there, attendees will be shown a construct for developing drills using open source tools such as Metasploit and Atomic Red Team. Attendees will walk away with a concrete process for drilling their responders so that when the incident comes, they can act quickly and decisively. Key aspects will be demonstrated for attendees along with additional resources that can be leveraged by their own pit crews."
+            },
+            {
+                "title": "Let me in! Hacking mailing lists to access internal services",
+                "authors": [
+                {
+                    "name": "Rojan Rijal",
+                    "speaker_id": "RojanRijal",
+                    "company": "Ophion Security",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "https://linkedin.com/in/rojanrijal",
+                    "image": "RojanRijal.jpg",
+                    "bio": "Rojan Rijal is a seasoned security researcher with 7+ years of experience uncovering vulnerabilities in open-source projects, SaaS platforms, and cloud environments. Recognized by top organizations like Netflix, Zoom, Google, and GitHub, as well as the U.S. Air Force and U.K. Ministry of Defense, he has presented at conferences such as BSides SF, fwd:cloudsec, and Recon Village."
+                }
+                ],
+                "talk_id": "LetMeIn",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "Google Groups is a widely used feature for internal and external mailing lists in organizations, handling tasks like receiving AWS alerts, security reports, and company-wide announcements. Despite its popularity, misconfigurations and vulnerabilities in its setup can lead to severe risks, including unauthorized access to sensitive mailing lists, SaaS escalations, and exfiltration of company and customer data.  In this talk, we analyze Google Groups' security controls, common misinterpretations, and real-world vulnerabilities we've identified. We'll demonstrate how unauthorized access can escalate across SaaS products, exploiting standard authentication settings to traverse enterprise environments. Additionally, we reveal a complex design flaw that grants unauthorized access to Google Groups in affected organizations.  Our presentation highlights the risks of weak security in Google Groups and provides actionable fixes for enterprises to secure their mailing lists. Attendees will gain insights into GSuite authentication, Google Group validation flaws, and the critical need to safeguard sensitive data from these vulnerabilities."
+            },
+            {
+                "title": "Hotel Lockdown: How to Protect Yourself While Traveling",
+                "authors": [
+                {
+                    "name": "Jay Lagorio",
+                    "speaker_id": "JayLagorio",
+                    "company": "Security Researcher",
+                    "twitter": "@jaylagorio",
+                    "mastodon": "",
+                    "bluesky": "@jay.lagor.io",
+                    "github": "jaylagorio",
+                    "linkedin": "",
+                    "image": "JayLagorio.jpg",
+                    "bio": "Jay Lagorio, a software engineer and independent security researcher, has been building computers and networks and finding ways to break them nearly his entire life. Being a nerd that likes to dig too far into things spilled over into the real world and he accidentally became a licensed private investigator. Releaser of the occasional tool or writeup on Github, he wishes he had enough time to do all the hacker things. He went to UMBC in Maryland and the Naval Postgraduate School in California."
+                }
+                ],
+                "talk_id": "HotelLockdown",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "After extensive searching I’ve never seen a talk that incorporates all of these aspects and the last good hotel security talk I’ve seen was given in 2019 at KernelCon. Things have changed in the last 5 years and last year the DEF CON-sponsored hotel upped the ante by explicitly looking for more than just weapons. This talk shows a much more holistic approach than the previous that also includes physical threat modeling, multiple types of sensor arrays, and discusses the difference between tamper-evident and tamper-proof. This information is also worth sharing publicly in the wake of adversarial behavior that’s increased over the last few years and fits nicely in the intersections between the Security Education, Practical Security, and Risk Management topics. The talk will focus especially on practical actions audience members can take. While it’ll be fun for traditional hackers to see how to wire up and reasonably secure a hotel room, it’ll be information that can be put into practice by people, including the non-technical, who need reasonable assurance that they can tell if their room is accessed. It’s put together from the perspective that engaging these defenses would be very likely to stop a very technical red teamer like me from accessing their room undetected but can be extrapolated to almost any semi-private space. Finally, Omaha is home to government officials that work sensitive missions and often travel but are looking for information to do so more safely which isn’t necessarily provided by their security office. I’m not a professional speaker but I’m experienced on a stage so I will be engaging, I will be well-rehearsed, and I will nail my time."
+            },
+            {
+                "title": "Kerberos: Then, Now, ... and Forever?",
+                "authors": [
+                {
+                    "name": "Tim Medin",
+                    "speaker_id": "TimMedin",
+                    "company": "Red Siege",
+                    "twitter": "timmedin",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "https://www.linkedin.com/in/timmedin",
+                    "image": "TimMedin.png",
+                    "bio": "Tim is the founder and CEO of Red Siege Information Security and a seasoned cybersecurity expert with over 12 years as Senior Instructor and course author of SEC560: Enterprise Penetration Testing at The SANS Institute, teaching thousands worldwide. Creator of the Kerberoasting technique, he has tested diverse industries, presented internationally, and holds an MBA from UT and an eMBA from Harvard. Tim's expertise spans control systems, financial services, manufacturing, and education."
+                }
+                ],
+                "talk_id": "KerberosTheNowForever",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "2",
+                "abstract": "Kerberos has been a cornerstone of network authentication for decades, but its role as a secure foundation for modern IT environments is increasingly under scrutiny. In this talk, we'll explore the evolution of Kerberos attacks, from the early days of 'Kerberoasting' to more advanced exploitation techniques targeting misconfigurations and weaknesses in today’s Active Directory environments. We’ll examine how attackers have adapted to the protocol, the tools they've created, and the ongoing cat-and-mouse game between defenders and attackers."
+            },
+            {
+                "title": "Detection and Analysis of Memory-Only Linux Rootkits with gdb and Volatility 3",
+                "authors": [
+                {
+                    "name": "Andrew Case",
+                    "speaker_id": "AndrewCase",
+                    "company": "Volexity",
+                    "twitter": "attrc",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "",
+                    "bio": "Andrew Case is the Director of Research at Volexity and has significant experience in incident response handling and malware analysis. He has conducted numerous large-scale investigations that span enterprises and industries. Case is a core developer of Volatility, the most widely used memory forensics framework, and a co-author of the highly popular and technical forensics analysis book 'The Art of Memory Forensics: Detecting Malware and Threats in Windows, Linux, and Mac Memory.'"
+                }
+                ],
+                "talk_id": "MemoryOnlyRootkits",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "4",
+                "abstract": "In late 2024, analysts from Stroz Friedberg published a short report on a Linux malware sample they discovered in the wild and named sedexp. Given the relative rarity of novel Linux malware being discovered in the wild, our team obtained a copy of sedexp and began a full analysis. This analysis led us to discover several significant components of the malware not covered in any public report to date, including the loading of a memory-only rootkit, hooking of the network stack, the ability of the kernel-level code to execute in process memory, and several interesting anti-forensics techniques. In this presentation, our team will detail how we analyzed this malware, including debugging the malicious application to extracting the memory-only rootkit to analyzing its components using Volatility 3. Attendees will learn a detailed methodology for analyzing Linux malware, see a showcase of Volatility 3 and its new plugins, and learn how sophisticated Linux rootkits operate. The presentation will be given at a technical level suitable to practitioners with previous Linux analysis experience, and a blog post released in parallel with the talk will contain a complete technical breakdown."
+            },
+            {
+                "title": "This Little Phish of Mime: Shining a light on the MIME structure",
+                "authors": [
+                {
+                    "name": "Jon Armer",
+                    "speaker_id": "JonArmer",
+                    "company": "Microsoft",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "",
+                    "bio": "Jon Armer works at Microsoft. He spent several years detecting and blocking phishing emails while currently works on building graphs for detections across Azure."
+                },
+                {
+                    "name": "Nick Beede",
+                    "speaker_id": "NickBeede",
+                    "company": "Microsoft",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "",
+                    "bio": "Nick Beede is a detection engineer at Microsoft in the email security space where he spends his time making life miserable for adversaries."
+                }
+                ],
+                "talk_id": "ThisLittlePhishOfMime",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "Phishing continues to be one of the largest threats an organization can face. A successful phish can lead to the loss of money, reputation, and is often the initial access point into an organization. Current detection capabilities heavily focus on IP/domain reputation and application content, such as the text, sender domain name, embedded URLs, and attachments. However, we have found value in examining an email's MIME structure.  This presentation will discuss how applying forensic and investigative techniques to the MIME structure of an email can surface distinct artifacts and insights into how an email was generated and sent. Being able to identify commonly used, abused, and unknown tools is a unique way to analyze email data. These findings have increased our depth of detection capabilities by extending the coverage of emerging threats, such as QR Codes. We will demonstrate how these insights can be used to monitor for anomalies, discover abused infrastructure, and collect additional threat actor tools, and tactics, techniques, and procedures (TTPs). We will explain the methodology, observed tools, and detection insights gleaned from this research."
+            },
+            {
+                "title": "The Human Vulnerability: Social Engineering in a Hyper Connected World",
+                "authors": [
+                {
+                    "name": "David Boyd",
+                    "speaker_id": "DavidBoyd",
+                    "company": "TrustedSec",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "DavidBoyd.jpg",
+                    "bio": "David has spent nearly 2 decades in cybersecurity, transitioning from systems and network administration to offensive security. He has successfully breached banks, law firms, government facilities, and more, all over the globe. David speaks at conferences nationwide, sharing knowledge and humorous stories. Prior to his career in cybersecurity, he served in the U.S. Army, including a tour in Iraq."
+                }
+                ],
+                "talk_id": "TheHumanVulnerability",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "In today’s hyperconnected world, there is one vulnerability that will always be reliable...the human element. Social engineering, the manipulation of individuals to breach systems and steal sensitive information, is one of the most effective and dangerous tactics in a hacker's arsenal. This talk will explore the different faces of social engineering, from email-based phishing to phone-based vishing and even physical intrusion, and offer insight into how these attacks exploit human vulnerabilities, and can be used to bypass protections. We’ll examine real-world examples of various attacks and discuss how attackers can manipulate emotions such as pity, urgency, personal charm and use fabricated stories, all in an effort to achieve access, or steal information, often without triggering a single alert."
+            },
+            {
+                "title": "Cyber vendors are lying to you: Why you should have Zero Trust",
+                "authors": [
+                {
+                    "name": "Dr. Louis DeWeaver III",
+                    "speaker_id": "LouisDeWeaver",
+                    "company": "Marsh McLennan Agency",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "LouisDeWeaver.jpeg",
+                    "bio": "Louis graduated with an Associate of Applied Science degree in Information Technology and Computer Network Systems. He went on to complete a Bachelor of Science degree in Information Systems Security in 2011. In 2016, Louis furthered his expertise by obtaining a Master of Science degree in Information Assurance with a specialization in Cybersecurity. In 2021, he achieved a Doctor of Computer Science degree, specializing in Cybersecurity."
+                }
+                ],
+                "talk_id": "CyberVendorsAreLying",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "3",
+                "abstract": "Cybersecurity vendors sometimes overstate the effectiveness of their products and services, leading to potentially misleading claims that lack substantial evidence. This results in customers feeling falsely secure and inadequately protected against cyber threats. In this talk the focus will be on the limitations of many cyber vendors' products, often likened to snake oil, and the potential of Zero Trust to revolutionize cybersecurity and replace many traditional cybersecurity products. Zero Trust shifts the security focus from perimeter protection to verifying every access request, essentially eliminating the need for separate solutions like traditional firewalls, VPNs, and some endpoint protection tools by applying granular security controls across the entire network and to every user and device, regardless of location; however, it's not a single product and requires a comprehensive approach to implement effectively."
+            },
+            {
+                "title": "Tales From the Crypt-omine",
+                "authors": [
+                {
+                    "name": "Matt Virus",
+                    "speaker_id": "MattVirus",
+                    "company": "",
+                    "twitter": "@themattvirus",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "mattvirus.jpg",
+                    "bio": "Matt Virus (real name) is an IoT engineer @ Cisco (17+ years), an above-average husband and father of 2, a farmer, a fan of loud angry rock music, and a hardware junkie with tons of experience with build/hack projects. No fear of burned fingers, desks set on fire, or escape of the magic smoke here. Former DoD forensic and malware analyst. Crypto enthusiast, highly caffeinated, founder of hackspace.io and leader of the Kernelcon Hardware Hacking Village."
+                }
+                ],
+                "talk_id": "TaleFromTheCrypt",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "4",
+                "abstract": "Welcome, foolish mortals, to Tales from the Crypt-omine!  Today's ghastly tale: a personal account of CPU and GPU mining through the years. Unique hardware, shady software, reverse engineering abandoned code, and finding ways to maximize profitability. Not to leave any souls behind, we’ll have a brief overview of what mining is and why the blockchain needs miners, why mining leads to heightened privacy, and why you should keep any cryptocurrency, especially mined cryptocurrency OFF of an exchange. We’ll speak of chilling tragedies, terrible code, fortunes made and lost…. For your own good, don’t miss it.  (insert evil laugh here)"
+            },
+            {
+                "title": "Leveraging Cognitive Biases to Accelerate Security Program Maturity",
+                "authors": [
+                {
+                    "name": "Robert LaMagna-Reiter",
+                    "speaker_id": "RobertLaMagnaReiter",
+                    "company": "WoodmenLife",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "https://www.linkedin.com/in/robertlamagnareiter/",
+                    "image": "RobertLaMagaReiter.jpg",
+                    "bio": "Robert leads security strategies; risk management; architecture and engineering; and operations. Robert helps others deliver value through proper security strategy aligned to zero-trust principles. Robert’s experience includes roles in transportation, gov’t comms, retail, e-commerce, managed services, SaaS & insurance industries. Robert is a Team8 Villager, Advisory Board President for SOFTwarfare, Zero Trust Leader for CyberTheory, and Zero Trust Expert Committee Member for the CSA."
+                }
+                ],
+                "talk_id": "LeveragingCognitiveBiases",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "2",
+                "abstract": "Cognitive biases, like anchoring and availability heuristics, shape how organizations approach security, often leading to reliance on outdated or ineffective practices. In the context of program maturity and evolving from a reactive to a proactive posture, anchoring bias causes decision-makers to cling to the first, often inaccurate, information they encounter, while mental shortcuts under uncertainty contribute to poor judgment. This session will explore how to reset these cognitive anchors and replace them with data-driven, evidence-based approaches that align with your program’s objectives. We’ll also dive into how biases like the availability and representativeness heuristics skew perceptions of risk and security threats. Attendees will leave with practical strategies to recalibrate security baselines and foster a more proactive, trust-focused decision-making environment."
+            },
+            {
+                "title": "CH341a - The $20 Hacking Tool You Need in Your Toolbox",
+                "authors": [
+                {
+                    "name": "Aaron Grothe",
+                    "speaker_id": "AaronGrothe",
+                    "company": "AlphaWall LLC",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "AaronGrothe.jpg",
+                    "bio": "Aaron Grothe is a cybersecurity researcher/developer. Aaron is a Linux kernel contributor and a two-time winner of the International Obfuscated C Code Contest. Aaron has been published in 2600 magazine several times. Aaron has a drawer full of weird devices: Zune HD, multiple Linux PDAs, VirtualBoy, Tiger Game.com and others showing his ability to pick out devices destined for success. Having to open some of these devices to keep them working, gives him a chance to play with hardware."
+                }
+                ],
+                "talk_id": "HackingToolYouNeed",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "4",
+                "abstract": "This presentation will be an introduction to the CH341A programmer tool. The CH341a has many uses from dumping the data from eeproms for data recovery and forensic purposes, to pushing modified roms to compatible devices.  The CH341A can be bought from many online sites for less than twenty dollars. At this price it is one of the best values that a hacker can add to their toolbox.  This talk will have a demo and we will dump an eeprom from an inexpensive router and then do some basic analysis, make some simple changes to the dumped rom and attempt to push the modified code back onto the router.  The talk will include the following sections: Differences between the versions of the CH341a How to more safely use a CH341a What the CH341a CAN do What the CH341a CAN’T do Demo on router The goal for this talk is to get the users interested in this device and get them to be excited about the possibilities of this CH341a programmer.  Disclaimer: Given the nature of the CH341a programmer there is some risk of damaging devices you are using the programmer with. While we will try and help the user learn how to more safely use the programmer, there is some risk with this device."
+            },
+            {
+                "title": "Automobile RF Exploit Database",
+                "authors": [
+                {
+                    "name": "Gus Gorman",
+                    "speaker_id": "GusGorman",
+                    "company": "Freelance",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "",
+                    "bio": "Local embedded and wireless cybersec hobbyist"
+                }
+                ],
+                "talk_id": "AutoRFExploitDatabase",
+                "pdf": "",
+                "video": "",
+                "length": "20",
+                "technical": "3",
+                "abstract": "A database and interactive bot for researching RF signals emitted from cars & keyfobs, and their potential exploits. Users can search based on make/model of a car, or even the license plate number. Talk highlights how the database was created from scraping websites, FCC records, and OSINT car data. Common keyfob exploits will be covered, such as rollback & replays. Proximity scanning & tracking cars from their RF signals will also be discussed"
+            },
+            {
+                "title": "Tropical Spy: Tricks and tales of a Brazilian social engineer",
+                "authors": [
+                {
+                    "name": "Marina Ciavatta",
+                    "speaker_id": "MarinaCiavatta",
+                    "company": "Hekate, Inc.",
+                    "twitter": "",
+                    "mastodon": "",
+                    "bluesky": "",
+                    "github": "",
+                    "linkedin": "",
+                    "image": "MarinaCiavatta.JPG",
+                    "bio": "Marina Ciavatta is a Social Engineer from Brazil. She may be an innocent-looking woman but she specializes in breaking and entering into some of the biggest companies in her country. She is an international speaker and Security Awareness instructor, and also CEO and Co-Founder of Hekate, Inc."
+                }
+                ],
+                "talk_id": "TropicalSpy",
+                "pdf": "",
+                "video": "",
+                "length": "60",
+                "technical": "2",
+                "abstract": "Once upon a time, in a Physical Pentest... Actually, in a lot of Physical Pentests. Marina Ciavatta is an innocent-looking and friendly woman who's specialized in breaking and entering and social engineering her way into huge companies. Her goal is to steal anything she can put her hands in. Equipment, documents, blueprints, chemical formulas locked in secret labs, the server room - or just chill for a bit on the President's chair. This talk is about her tricks and stories about Human Hacking and how to better protect yourself against someone like her (if you can)."
+            }
+       ]
+    }
+ ]
+ 

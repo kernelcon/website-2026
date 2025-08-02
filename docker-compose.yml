@@ -1,0 +1,15 @@
+services:
+  node:
+    image: "node:8"
+    container_name: "kernelcon"
+    user: "node"
+    working_dir: /home/app/
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/home/app/
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    command: bash -c "npm install && npm run start"

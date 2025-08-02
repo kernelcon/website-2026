@@ -1,0 +1,162 @@
+@import '../../static/styles/base/colors';
+@import '../../static/styles/base/variables';
+
+.layer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.scene-layer {
+  will-change: transform;
+}
+
+section.content {
+  background: rgba(255,255,255,0.13);
+  border-radius: 24px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.22);
+  margin-bottom: 4vh;
+  padding: 4rem 2rem;
+  color: white;
+  transition: background 0.3s;
+}
+
+.scene-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#sitter {
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  width: calc(100vw * (144 / 2160));
+  height: auto;
+}
+
+#camper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100vw * (1327 / 2160));
+  height: auto;
+}
+
+#ray1 {
+  position: absolute;
+  width: calc(100vw * (145 / 2160));
+  height: 3860px;
+  position: absolute;
+  top: 0;
+  left: 45.25%;
+  transform: translateX(-50%);
+  opacity: 0;
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+}
+
+#ray2 {
+  position: absolute;
+  width: calc(100vw * (20 / 2160));
+  height: 3860px;
+  background: rgba(255, 255, 255, .2);
+  position: sticky;
+  top: 0;
+  left: 45.25%;
+  transform: translateX(-50%);
+  filter: blur(3px);
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* Morse code pulses for ray2 */
+.morse-pulse {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 1);
+  pointer-events: none;
+  box-shadow: 0 0 16px 8px rgba(0, 170, 255, 0.15);
+  z-index: 2;
+}
+
+.morse-pulse.dot {
+  height: 30px;
+}
+
+.morse-pulse.dash {
+  height: 110px;
+}
+
+#ray-mask {
+  width: 100%;
+  height: calc(100vw * (870 / 2160));
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+
+#logo-container {
+  position: absolute;
+  left: 50%;
+  top: 1vh;
+  transform: translateX(-50%);
+  display: block;
+  width: calc(100vw * (1200 / 2160));
+  aspect-ratio: 1200 / 277;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+#logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 30px rgba(0, 170, 255, 1));
+}
+
+#logo-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: rgb(205, 255, 255);
+  font-family: courier;
+  font-weight: bolder;
+  mix-blend-mode: hard-light;
+  font-size: 1.5vw;
+  padding: 0.2em 0.5em;
+  pointer-events: none;
+  text-align: right;
+  line-height: 1.1;
+  width: auto;
+  max-width: 90%;
+  max-height: 50%;
+}
+
+.screen {
+  mix-blend-mode: screen;
+}
+
+.demo-content {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,154 @@
+[{
+  "heading": "Organizing Committee",
+  "people": [{
+      "id": 1,
+      "name": "Wacey Lanier",
+      "title": "Communications Director",
+      "image": "wacey.gif",
+      "twitter": "_wacey",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 2,
+      "name": "Tyler Rosonke",
+      "title": "Electronics Tech",
+      "image": "tyler.png",
+      "twitter": "zonksec",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 3,
+      "name": "Dan Browder",
+      "title": "Vinyl and Graphic Tech",
+      "image": "popcorn.png",
+      "twitter": "popcornhax",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 4,
+      "name": "Henry Karpf",
+      "title": "Ticketing Operations",
+      "image": "henry.png",
+      "twitter": "hk6045",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 5,
+      "name": "Adam Schaal",
+      "title": "Chief Pit Marshal & Systems Tech",
+      "image": "adam.png",
+      "twitter": "clevernyyyy",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 6,
+      "name": "Jason Lehr",
+      "title": "Performance Engineering & Race Security",
+      "image": "jason.png",
+      "twitter": "__JCL__",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 7,
+      "name": "Tim Vidas",
+      "title": "Team Principal",
+      "image": "tim.png",
+      "twitter": "tvidas",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 8,
+      "name": "Aaron Gunning",
+      "title": "Sponsorship",
+      "image": "aaron.png",
+      "twitter": "scotchsec",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 9,
+      "name": "Kate Knowlton",
+      "title": "Merchandising Specialist",
+      "image": "kate.png",
+      "twitter": "vulnKat",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 10,
+      "name": "Nate Wood",
+      "title": "Paddock Marshal",
+      "image": "nate.png",
+      "twitter": "woodnsec",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 11,
+      "name": "Jeris Rue",
+      "title": "Electronics Tech",
+      "image": "jeris.png",
+      "twitter": "elaboraterues",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 13,
+      "name": "Will Gentle",
+      "title": "Entertainment Coordinator",
+      "image": "will.png",
+      "twitter": "",
+      "mastodon": "negahyphen@tech.lgbt",
+      "mastodon_url": "https://tech.lgbt/@negahyphen",
+      "oc": true
+    },
+    {
+      "id": 14,
+      "name": "Skip Cruse",
+      "title": "Driver",
+      "image": "skip.png",
+      "twitter": "securityshrimp",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 15,
+      "name": "James Dietle",
+      "title": "Trackside Director",
+      "image": "james.png",
+      "twitter": "jamesdietle",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    },
+    {
+      "id": 16,
+      "name": "Matt Virus",
+      "title": "Driver Comms",
+      "image": "mattv.webp",
+      "twitter": "themattvirus",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
+    }
+  ]
+}]

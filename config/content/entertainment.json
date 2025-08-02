@@ -1,0 +1,82 @@
+[{
+  "title": "YTCracker",
+  "author": "",
+  "id": "yt",
+  "hidden": false,
+  "order": 1,
+  "logo": {
+    "dark_mode_support": false,
+    "image_name": "ytcracker.png",
+    "image_class": "callout-comic",
+    "dark_mode_image_name": "",
+    "dark_mode_image_class": ""
+  },
+  "socials" : {
+    "instagram": "y7cracker",
+    "twitter": "realytcracker",
+    "music": "https://soundcloud.com/ytcracker",
+    "website": "https://ytcracker.com/v2020/"
+  },
+  "music": {
+    "iframe": "https://bandcamp.com/EmbeddedPlayer/album=3382247562/size=small/bgcol=ffffff/linkcol=0687f5/track=4261428816/",
+    "href": "https://music.gravitasrecordings.com/album/def-con-21-the-official-soundtrack",
+    "desc": "DEF CON 21: The Official Soundtrack by ytcracker",
+    "img": "url('https://f4.bcbits.com/img/a1652230982_42.jpg')"
+  },
+  "dates": [{
+    "day": "Thursday, April 4th"
+  }],
+  "description": "YTCracker (pronounced 'whitey cracker') is a formerly notorious computer hacker who stopped hacking everyone's gibson and started rapping about it instead. Recognized as a forefather of the 'nerdcore' genre, he has travelled all around the universe amassing billions of fans, the majority of which do not live on planet earth. YTCracker raps about all of the important things in life, like high frame rate and low latency pings. He has served as a corporate shill for the likes of G4TV (rip), Facebook, and Yahoo, appearing on every major television network and countless publications talking about nerdy things like Bitcoin or DDoS attacks - all while trying to push his terrible music on casuals and NPCs everywhere. Along with making substandard hiphop, YTCracker also subsists his musical existence through mediocre production and DJing to gigantic crowds, primarily on the anime and internet nerd convention circuit."
+},{
+  "title": "int eighty from Dual Core",
+  "author": "",
+  "id": "dc",
+  "hidden": false,
+  "order": 2,
+  "logo": {
+    "dark_mode_support": false,
+    "image_name": "int_eighty_solo_DFW-wafflesweekly.jpg",
+    "image_class": "callout-comic",
+    "dark_mode_image_name": "",
+    "dark_mode_image_class": ""
+  },
+  "socials" : {
+    "instagram": "dualcoremusic",
+    "twitter": "int0x80",
+    "music": "https://inteighty.bandcamp.com"
+  },
+  "music": {
+    "iframe": "https://bandcamp.com/EmbeddedPlayer/album=71849643/size=small/bgcol=ffffff/linkcol=0687f5/",
+    "href": "https://dualcoremusic.com/album/all-the-things",
+    "desc": "All The Things by Dual Core",
+    "img": "url('https://f4.bcbits.com/img/a0703992493_42.jpg')"
+  },
+  "dates": [{
+    "day": "Thursday, April 4th"
+  }],
+  "description": "Dual Core is an international hip hop duo. Hack all the things!"
+},{
+  "title": "Kernelcon Carnage",
+  "author": "PWP Live",
+  "id": "kcc",
+  "hidden": false,
+  "order": 3,
+  "logo": {
+    "dark_mode_support": false,
+    "image_name": "kcc.png",
+    "image_class": "callout-comic",
+    "dark_mode_image_name": "",
+    "dark_mode_image_class": ""
+  },
+  "socials" : {
+    "patreon": "https://www.patreon.com/pwplive/about",
+    "tiktok": "https://www.tiktok.com/@pwplive",
+    "youtube": "https://www.youtube.com/@PWPLive",
+    "facebook": "https://www.facebook.com/PWPlive/"
+  },
+  "dates": [{
+    "day": "Thursday, April 4th"
+  }],
+  "description": "New for Kernelcon 2025, PWP Live has been Omaha's premiere wrestling league since 2005! Join us for the first-ever Kernelcon Carnage Championship title bout, and multiple undercard performances from crowd and community favorite wrestlers who regularly perform at The Waiting Room in Benson.  Wrestlers are also available for photos and signatures."
+}
+]

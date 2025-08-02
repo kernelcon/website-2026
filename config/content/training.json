@@ -1,0 +1,168 @@
+[{
+  "id": "AI",
+  "hide": false,
+  "instructors": [{
+    "name": "Joff Thyer",
+    "title": "",
+    "twitter_handle": "@joff_thyer",
+    "github_handle": "",
+    "linkedin_handle": "joffthyer",
+    "workplace": "",
+    "image_name": "",
+    "bio": "Joff Thyer has been a Security Analyst with Black Hills Information Security (BHIS) since 2013. He has an associate in Computer Science, a B.S. in Mathematics, and an M.S. in Computer Science, as well as several certifications. The best part of a penetration test for Joff is developing sophisticated malware that tackles defensive solutions, ultimately delivering exciting wins for company engagements. He has extensive experience covering intrusion prevention/detection systems, infrastructure defense, vulnerability analysis, defense bypass, source code analysis, and exploit research. When Joff isn’t working he enjoys making music and woodworking. Certifications include GIAC GXPN, GWAPT, GPEN, GCIA, GCIA Gold, and Coursera Deep Learning AI Tensorflow Developer Professional."
+  }, {
+    "name": "Derek Banks",
+    "title": "",
+    "twitter_handle": "@0xderuke",
+    "github_handle": "",
+    "linkedin_handle": "derek-banks-117b0012",
+    "workplace": "",
+    "image_name": "",
+    "bio": "Derek Banks has been with Black Hills Information Security (BHIS) since 2014 as a Security Analyst, Penetration Tester, and Red Teamer, and now fulfills a leadership role in the BHIS Security Operations Center (SOC). He has a B.S. in Information Systems and an M.S. in Data Science, as well as several industry certifications. Derek has experience in computer forensics and incident response, creating custom host and network-based logging and monitoring solutions, penetration testing and red teaming, vulnerability analysis, and threat modeling. Derek’s favorite aspects of working at BHIS include learning from his coworkers and helping customers better their security posture. When not working, Derek enjoys spending time with his family, staying physically fit, and playing the bass guitar. Certifications include GIAC GSEC, GCFA, GCIH, GPEN, GNFA, GMOB, GCIA, and CISSP."
+  }],
+  "course": {
+    "title": "AI for Cyber Security Professionals",
+    "days": 2,
+    "scheduled": {
+      "day_one": true,
+      "day_two": true
+    },
+    "time": "8:00 AM - 5:00 PM, with one hour lunch break",
+    "description": {
+      "long_form": "<p>This course provides an introduction to the application of artificial intelligence (AI) in the field of cyber security. Designed for cyber security defenders, the course covers foundational AI history, concepts, and data science underpinnings.  Participants will learn how AI enhances threat detection, malware analysis, incident response, and can be used as a daily task accelerator.  The course includes hands-on sessions where participants will learn how to setup an AI development environment, program and leverage some pre-trained models for predictive analysis in Python and Jupyter Notebook, and utilize some existing frameworks for AI-LLM prompt engineering. Ethical considerations, privacy concerns, and future trends in AI for cybersecurity are also discussed. By the end of the course, participants will have a solid understanding of AI fundamentals, development and building block technologies, some of the potential challenges, and how AI might be applied in their everyday professional careers.</p>",
+      "short_form": "<p>This course provides an introduction to the application of artificial intelligence (AI) in the field of cyber security. Designed for cyber security defenders, the course covers foundational AI history, concepts, and data science underpinnings.  Participants will learn how AI enhances threat detection, malware analysis, incident response, and can be used as a daily task accelerator.  The course includes hands-on sessions where participants will learn how to setup an AI development environment, program and leverage some pre-trained models for predictive analysis in Python and Jupyter Notebook, and utilize some existing frameworks for AI-LLM prompt engineering. Ethical considerations, privacy concerns, and future trends in AI for cybersecurity are also discussed. By the end of the course, participants will have a solid understanding of AI fundamentals, development and building block technologies, some of the potential challenges, and how AI might be applied in their everyday professional careers.</p>"
+    },
+    "prerequisites": "A working knowledge of Python scripting. Internet connectivity and compliant browser. Familiarity/comfort in a command line environment.",
+    "equipment": "One of the following: Latest Windows 10/11 laptop with administrative access, or MacOS. MacBook Pro M1/M2/M3 or later. Intel/AMD hardware laptop 2023 or later. Intel/AMD minimum specs: multiple core CPU, 16GB Ram, 1TB disk. Latest Windows 10/11 O/S software with WSL2 support.",
+    "whoshouldattend": ""
+  }
+},
+{
+  "id": "offensefordefense",
+  "hide": false,
+  "instructors": [{
+    "name": "Mike Saunders",
+    "title": "",
+    "twitter_handle": "@hardwaterhacker",
+    "github_handle": "",
+    "linkedin_handle": "",
+    "workplace": "",
+    "image_name": "",
+    "bio": "Mike Saunders is Red Siege Information Security’s Principal Consultant. Mike has over 25 years of IT and security expertise, having worked in the ISP, banking, insurance, and agriculture businesses. Mike gained knowledge in a range of roles throughout his career, including system and network administration, development, and security architecture. Mike is a highly regarded and experienced international speaker with notable cybersecurity talks at conferences such as DerbyCon, Circle City Con, SANS Enterprise Summit, and NorthSec, in addition to having more than a decade of experience as a penetration tester as well as being a Black Hat Instructor. You can find Mike’s in-depth technical blogs and tool releases online and learn from his several offensive and defensive-focused SiegeCasts. He has been a member of the NCCCDC Red Team on several occasions and is the Lead Red Team Operator for Red Siege Information Security."
+  }, {
+    "name": "Tim Medin",
+    "title": "",
+    "twitter_handle": "@timmedin",
+    "github_handle": "",
+    "linkedin_handle": "timmedin",
+    "workplace": "",
+    "image_name": "",
+    "bio": "Tim spent more than a dozen years teaching thousands of students as Senior Instructor and course author of SEC560: Enterprise Penetration Testing at The SANS Institute. Throughout the course of his career, Tim has performed penetration tests on a wide range of organizations and technologies. Tim has gained information security experience in a variety of industries including previous positions in control systems, higher education, financial services, and manufacturing. Tim is an experienced international speaker, having presented to organizations around the world. Tim is the creator of the Kerberoasting, a widely utilized Red Team penetration test technique to extract kerberos tickets in order to offline attack the password of enterprise service accounts. Tim earned his MBA through the University of Texas and recently completed an eMBA equivalent through Harvard Business School."
+  }],
+  "course": {
+    "title": "Offense For Defense",
+    "days": 2,
+    "scheduled": {
+      "day_one": true,
+      "day_two": true
+    },
+    "time": "8:00 AM - 5:00 PM, with one hour lunch break",
+    "description": {
+      "long_form": "<p>Offense for Defense, a Red Siege Information Security specialized course tailored for information security blue teamers, or defenders, aiming to fortify their skills in offensive security strategies. Throughout this program, participants will delve into the fundamentals of offensive security, gaining insight into the tactics, techniques, and procedures employed by adversaries. By understanding the attacker's mindset and methodologies, defenders will be better equipped to anticipate and defend against common cyber threats effectively. Through practical exercises and real-world scenarios, participants will learn to proactively identify vulnerabilities, assess risks, and implement robust defensive measures to safeguard against potential attacks. Join us as we empower defenders with the knowledge and tools needed to strengthen their cybersecurity posture and protect critical assets from evolving threats.</p>",
+      "short_form": "<p>Offense for Defense, a Red Siege Information Security specialized course tailored for information security blue teamers, or defenders, aiming to fortify their skills in offensive security strategies. Throughout this program, participants will delve into the fundamentals of offensive security, gaining insight into the tactics, techniques, and procedures employed by adversaries. By understanding the attacker's mindset and methodologies, defenders will be better equipped to anticipate and defend against common cyber threats effectively. Through practical exercises and real-world scenarios, participants will learn to proactively identify vulnerabilities, assess risks, and implement robust defensive measures to safeguard against potential attacks. Join us as we empower defenders with the knowledge and tools needed to strengthen their cybersecurity posture and protect critical assets from evolving threats.</p>"
+    },
+    "prerequisites": "",
+    "equipment": "",
+    "whoshouldattend": "Information Security blue teamers aiming to fortify their skills in offensive security strategies by learning directly from the experience and knowledge of the attackers."
+  }
+},
+{
+  "id": "redteam",
+  "hide": false,
+  "instructors": [{
+    "name": "Michael Allen",
+    "title": "",
+    "twitter_handle": "@Wh1t3Rh1n0",
+    "github_handle": "https://github.com/Wh1t3Rh1n0",
+    "linkedin_handle": "wh1t3rh1n0",
+    "workplace": "",
+    "image_name": "",
+    "bio": "Michael Allen is a Senior Security Analyst and Red Team Practice Lead at Black Hills Information Security and has been a professional red teamer and penetration tester since 2014. Having started hacking and picking locks at an early age, Michael has since turned “doing things he’s not supposed to do and going places where he’s not supposed to be,” into an impactful career. He has a multitude of infosec certifications, including the OSCE, MLSE, and CISSP; and his “think like a criminal” mindset brings incredible value to the clients he serves. Michael enjoys sharing his knowledge to empower others and has created and taught classes at in-person events including Black Hat USA and Wild West Hackin’ Fest, as well as online through AntisyphonTraining.com. Hacking isn’t just a job for Michael; it’s a way of life, in which he brings fun, creativity, and passion to every hack, breach, and bypass he attempts."
+  }],
+  "course": {
+    "title": "Red Team Initial Access",
+    "days": 2,
+    "scheduled": {
+      "day_one": true,
+      "day_two": true
+    },
+    "time": "8:00 AM - 5:00 PM, with one hour lunch break",
+    "description": {
+      "long_form": "<p>This new course has been completely rebuilt from the ground up to reflect modern initial access methods that work in 2025! Getting a foothold is the first step in a successful breach—and due to modern defenses, it is often the most difficult. In this class, students will learn to execute the most effective and up-to-date methods for breaching a modern enterprise environment and obtaining initial access.</p>",
+      "short_form": "<p>This new course has been completely rebuilt from the ground up to reflect modern initial access methods that work in 2025! Getting a foothold is the first step in a successful breach—and due to modern defenses, it is often the most difficult. In this class, students will learn to execute the most effective and up-to-date methods for breaching a modern enterprise environment and obtaining initial access.</p>"
+    },
+    "prerequisites": "Basic familiarity with information security concepts is all that is required to follow along with the presentation and course material. To successfully participate in and complete the lab exercises, students should be able to install and run a VMware virtual machine on the computer they use for class. Students will also need to sign up for free trials of Microsoft and Amazon cloud service accounts before the first day of class to participate in some of the lab exercises. More information and step-by-step instructions on how to setup the cloud services and virtual machine are provided at the link below, so you will know in advance what to expect. https://adversarydev.com/rtia-before-class/index.html The download link for the student virtual machine will be provided a few days before class begins, and I recommend waiting until that time to setup the cloud service accounts as well. That way your free trials of those services will last the full length of the class. ",
+    "equipment": "Students will need to have the following resources to participate in the lab exercises in class: A modern x64 computer with VMware Workstation or Fusion virtualization software installed. Please Note that due to the x64 processor requirement, computers with Apple M1/M2 processors may not be able to run the student virtual machine. User permissions to install and run a Windows 11 x64 virtual machine in their virtualization platform. The following minimum hardware resources are required to run the virtual machine: 70 GB of available hard disk space and 8 GB of RAM. A credit card - Students need to sign up for cloud service accounts such as Microsoft 365, Azure, and Amazon AWS. These services offer free trials, which can be used for the lab exercises, but a credit card is required for signing up. A mobile phone – Students may need to receive SMS messages to complete signups for cloud service accounts. Students may also require a mobile phone for multi-factor authentication during the labs. If you are not sure if your computer meets the hardware or virtualization requirements noted above, you can test your computer before purchasing the class by downloading and installing Microsoft's official VMware Windows 11 image at the following URL. If you can run this VMware virtual machine on your computer, you will also be able to run the virtual machine provided for class. Note that the virtual machine available at this link is not the same one you will be using in class. It is provided here only for testing your computer before purchasing the class. Download link: https://aka.ms/windev_VM_vmware. Additional information: https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/",
+    "whoshouldattend": "Red teamers who are frustrated with traditional initial access attacks or who want to add more techniques to their toolbox. Aspiring penetration testers and red teamers who want to quickly learn the latest and greatest attacks that we use on the job every day. Blue teams and other defenders who want to understand how to defend modern cyber-attacks and how to easily test their own prevention and monitoring capabilities. Managers of either offensive or defensive security teams, seeking to keep their technical knowledge up to date. Anyone with an interest in cyber security."
+  }
+}, {
+  "id": "cloud",
+  "hide": false,
+  "instructors": [{
+    "name": "Andrew Krug",
+    "title": "",
+    "twitter_handle": "@andrewkrug",
+    "github_handle": "",
+    "linkedin_handle": "andrewkrug",
+    "workplace": "",
+    "image_name": "",
+    "bio": "Andrew Krug is a Security Geek specializing in Cloud and Identity and Access Management. Krug brings 15 years experience at the intersection of security, education, and systems administration. As a fierce advocate for Open Source and founder of ThreatResponse tool suite, Andrew has helped inspire the landscape around forensics and incident response in the Cloud. Krug has been a presenter at a variety of conferences, publishing papers with BlackHat USA, DerbyCon, and many more."
+  }],
+  "course": {
+    "title": "Securing the Cloud: Foundations",
+    "days": 2,
+    "scheduled": {
+      "day_one": true,
+      "day_two": true
+    },
+    "time": "8:00 AM - 5:00 PM, with one hour lunch break",
+    "description": {
+      "long_form": "<p>In this course, we’ll explore Amazon Web Services (AWS) as a platform. We will take the perspective of a new startup company spinning up infrastructure in AWS for the very first time. We’ll use a scenario-based approach, where you’ll don the persona of a security engineer on your first day at a new startup. This course will demonstrate ideas like secure-by-default and will examine services and patterns for locking down defaults using a combination of open source and platform-native tooling. Finally, attendees will walk away with a practical understanding of various controls, detections, and guardrails.</p>",
+      "short_form": "<p>In this course, we’ll explore Amazon Web Services (AWS) as a platform. We will take the perspective of a new startup company spinning up infrastructure in AWS for the very first time. We’ll use a scenario-based approach, where you’ll don the persona of a security engineer on your first day at a new startup. This course will demonstrate ideas like secure-by-default and will examine services and patterns for locking down defaults using a combination of open source and platform-native tooling. Finally, attendees will walk away with a practical understanding of various controls, detections, and guardrails.</p>"
+    },
+    "prerequisites": "Some command line experience. General ability to use Git workflows.",
+    "equipment": "A laptop capable of running virtual machines.",
+    "whoshouldattend":"This course is designed for entry level to cloud curious practitioners."
+  }
+}, {
+  "id": "offensivetooling",
+  "hide": false,
+  "instructors": [{
+    "name": "Chris Traynor",
+    "title": "",
+    "twitter_handle": "@cstraynor",
+    "github_handle": "",
+    "linkedin_handle": "chris-traynor",
+    "workplace": "",
+    "image_name": "",
+    "bio": "Chris is a Penetration Tester for Black Hills Information Security (BHIS), where he is responsible for Pen Testing web apps, mobile app, APIs, and networks. Chris has over 15 years of experience in Web/Mobile App development, QA Automation, and Penetration Testing. Chris is an active member of the GIAC Advisory Board, InfraGard, and The Open Organization Of Lockpickers (TOOOL). He also authors and teaches two Antisyphon classes. Intro to Offensive Tooling and Advanced Offensive Tooling."
+  }],
+  "course": {
+    "title": "Offensive Tooling for Operators",
+    "days": 2,
+    "scheduled": {
+      "day_one": true,
+      "day_two": true
+    },
+    "time": "8:00 AM - 5:00 PM, with one hour lunch break",
+    "description": {
+      "long_form": "<p>This course focuses on the practical application of offensive security tools and techniques. Students will explore the methodologies and processes used by professional operators to attack their targets. Through hands-on labs and live demos, you’ll engage with real-world scenarios designed to deepen your understanding of offensive tools. Gain insights into tool functionality, customization, scripting, and practical usage. The course provides an in-depth, experiential approach to mastering your offensive toolkit.</p>",
+      "short_form": "<p>This course focuses on the practical application of offensive security tools and techniques. Students will explore the methodologies and processes used by professional operators to attack their targets. Through hands-on labs and live demos, you’ll engage with real-world scenarios designed to deepen your understanding of offensive tools. Gain insights into tool functionality, customization, scripting, and practical usage. The course provides an in-depth, experiential approach to mastering your offensive toolkit.</p>"
+    },
+    "prerequisites": "Basic knowledge of networking. Basic knowledge of web applications. Basic knowledge of general offensive security tools and offensive goals.",
+    "equipment": "System Hardware Requirements: Stable Internet access, x86 architecture CPU clocked at 2 GHz or higher that is capable of nested virtualization, (Apple Silicon is currently not supported), A computer with at least 8 GB of RAM. 16 GB is recommended. Host Configuration and Software Requirements: VMWare Workstation or VMWare Fusion, (VirtualBox and other VM software is not supported), Windows 10/11, MacOSX+, or a currently supported Linux Distribution, Full Administrator/root access to your computer or laptop",
+    "whoshouldattend": "General security practitioners, Network Admins, Penetration Testers, Red Teamers, Blue Teamers looking to broaden their knowledge."
+  }
+}]
+
+

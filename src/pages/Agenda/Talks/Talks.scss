@@ -1,0 +1,26 @@
+@import '../../../static/styles/base/base';
+
+.talk-section{ 
+  margin-bottom: 20px;
+
+    h3 {
+        font-size: 1.25em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .author-section {
+        .author {
+            color: $dm-highlight;;
+            text-decoration: none;
+            &:not(:first-child) {
+            &:before {
+                content: "\2022";
+                color: $text-highlight;
+                margin: 0px 8px;
+                }
+            }
+        }
+    }
+
+}

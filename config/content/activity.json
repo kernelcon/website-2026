@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Kernel Panic",
+    "author": "",
+    "id": "panic",
+    "hidden": false,
+    "logo": {
+      "dark_mode_support": false,
+      "image_name": "kernel-panic.png",
+      "image_class": "callout-comic",
+      "dark_mode_image_name": "",
+      "dark_mode_image_class": ""
+    },
+    "dates": [{
+      "day": "Thursday, April 4th"
+    }],
+    "description": "<div><p>Where tech culture meets the fast lane. Join us for a night where the beats are as tight as your code and the connections flow like clean runtime. Featuring live performances by nerdcore legends YTcracker and Dual Core - because nothing hits quite like sudo rhymes through a proper sound system.</p><p>The Setup:</p><ul class='activity-bullets'><li>Open bar & proper food (no pizza this time, we promise)</li><li>Actually fun networking that won't make you want to ctrl+alt+del</li><li>Live music that speaks to both your inner dev and party protocol</li></ul><p>Look, we know most tech events are about as exciting as watching your code compile. This isn't that. This is where the real threads connect.</p><p>Quick heads up: Word in the repo is there's a surprise belt event happening. That's all we can say for now.</p></div>"
+  }
+]
+
+
+
+
