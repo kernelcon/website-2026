@@ -89,9 +89,42 @@ class BackGround extends Component {
       const vh = window.innerHeight;
       const sceneScale = getSceneScale();
       const offscreenY = vh + 1000;
-
-      // Animate sitter slide-up
-      gsap.set("#sitter", { y: 180 });
+    
+      const camperEl = document.getElementById("camper");
+      const sitterEl = document.getElementById("sitter");
+      const rayMaskEl = document.getElementById("ray-mask");
+      const layerContainer = document.querySelector(".layer-container");
+    
+      // --- Dynamic sitter positioning ---
+      function positionSitter() {
+        const camperRect = camperEl.getBoundingClientRect();
+        const containerRect = layerContainer.getBoundingClientRect();
+        const camperTop = camperRect.top - containerRect.top;
+        const camperHeight = camperRect.height;
+    
+        // Sitter sits just above camper
+        const sitterOffset = camperHeight * 0.035; // tweak as needed
+        sitterEl.style.top = camperTop + sitterOffset + "px";
+      }
+    
+      // --- Dynamic ray mask height (keeps rays attached to dish) ---
+      function updateRayMaskHeight() {
+        const camperRect = camperEl.getBoundingClientRect();
+        const containerRect = layerContainer.getBoundingClientRect();
+        const camperHeight = camperRect.height;
+        const camperTop = camperRect.top - containerRect.top;
+    
+        // Make the mask end slightly above the camper top
+        const rayMaskBottom = camperTop + camperHeight * 0.08;
+        rayMaskEl.style.height = rayMaskBottom + "px";
+      }
+    
+      // Initial position updates
+      positionSitter();
+      updateRayMaskHeight();
+    
+      // Animate sitter slide-up from below its natural position
+      gsap.set("#sitter", { y: 200 }); // start below
       gsap.to("#sitter", {
         y: 0,
         scrollTrigger: {
@@ -99,41 +132,41 @@ class BackGround extends Component {
           start: "top top",
           end: "1000 top",
           scrub: true,
-        }
+        },
       });
-
-      // Layers
+    
+      // --- Mountains and foreground layers ---
       gsap.set("#far-mountains", { y: vh * 0.7 });
       gsap.to("#far-mountains", {
         y: vh * 0.2 - 100 * sceneScale,
         scrollTrigger: { trigger: "body", start: "top top", end: "400 top", scrub: true },
       });
-
+    
       gsap.set("#mid-mountains", { y: vh * 0.9 });
       gsap.to("#mid-mountains", {
         y: vh * 0.3 - 100 * sceneScale,
         scrollTrigger: { trigger: "body", start: "top top", end: "420 top", scrub: true },
       });
-
+    
       gsap.set("#near-mountains", { y: offscreenY });
       gsap.to("#near-mountains", {
         y: vh * 0.4 - 100 * sceneScale,
         scrollTrigger: { trigger: "body", start: "top top", end: "500 top", scrub: true },
       });
-
+    
       gsap.set("#dune", { y: offscreenY });
       gsap.to("#dune", {
         y: vh * 0.45 - 80 * sceneScale,
         scrollTrigger: { trigger: "body", start: "top top", end: "600 top", scrub: true },
       });
-
+    
       gsap.set("#camper", { y: offscreenY });
       gsap.to("#camper", {
         y: vh * 0.35 - 60 * sceneScale,
         scrollTrigger: { trigger: "body", start: "top top", end: "500 top", scrub: true },
       });
-
-      // Rays animation
+    
+      // --- Rays animation ---
       gsap.set(".glow-ray", { y: 3000, opacity: 0 });
       gsap.to(".glow-ray", {
         y: -200 * sceneScale - 600,
@@ -143,31 +176,34 @@ class BackGround extends Component {
         opacity: 0.8,
         scrollTrigger: { trigger: "body", start: "500 top", end: "1000 top", scrub: true },
       });
-
-      // Logo animation
+    
+      // --- Logo animation (stops 150px from top) ---
       gsap.set("#logo-container", { y: vh * 0.4, opacity: 0.6 });
       gsap.to("#logo-container", {
-        y: vh * 0.05,
+        y: 150,
         opacity: 1,
         scrollTrigger: { trigger: "body", start: "top top", end: "500 top", scrub: true },
       });
-
-      // Glow & Pulse
+    
+      // --- Glow & Pulse effects ---
       gsap.to(".glow", {
         filter: "drop-shadow(0 0 30px rgba(100,170,255,0.8))",
         repeat: -1,
         yoyo: true,
         duration: 1.8,
-        ease: "sine.inOut"
+        ease: "sine.inOut",
       });
-
       gsap.to(".pulse", {
         scaleX: 0.9,
         repeat: -1,
         yoyo: true,
         duration: 1.8,
-        ease: "sine.inOut"
+        ease: "sine.inOut",
       });
+    
+      // --- Continuous updates while scrolling ---
+      gsap.ticker.add(positionSitter);
+      gsap.ticker.add(updateRayMaskHeight);
     };
 
     const resizeReflow = () => {

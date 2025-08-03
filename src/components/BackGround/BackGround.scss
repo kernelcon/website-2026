@@ -107,7 +107,11 @@ section.content {
 
 #ray-mask {
   width: 100%;
-  height: calc(100vw * (870 / 2160));
+  height: calc(
+    50vh - (
+      (252px + (50 * ((100vw - 400px) / 1500))) - 5vw
+    )
+  );
   top: 0;
   left: 0;
   position: absolute;
