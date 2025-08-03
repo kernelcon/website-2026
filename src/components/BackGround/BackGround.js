@@ -273,39 +273,29 @@ class BackGround extends Component {
             {/* Empty hero section */}
           </section>
 
-          <section
-            className="content"
-            style={{
-              minHeight: "120vh",
-              margin: "10vh",
-              padding: "4rem 2rem",
-              color: "white",
-              background: "rgba(255,255,255,0.2)",
-            }}
-          >
-            <h2>Vivamus sagittis</h2>
-            <p>
-              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo
-              luctus, nisi erat porttitor ligula.
+          <section className="content">
+            <h2 className="content-title">Welcome to Kernelcon</h2>
+            <h4 className="content-subtitle">Unplug. Connect. Hack.</h4>
+            <p className="content-paragraph">Out here, under the endless Midwest sky, technology feels different. It's raw. It's hands-on. 
+              And its free from the digital noise of daily life. <strong>Kernelcon 2026</strong> invites you 
+              to step off the grid and immerse yourself in a weekend where curiosity meets community.
+            </p>
+
+            <p className="content-paragraph">
+              From sunrise keynotes to late-night hardware hacks, every moment is designed 
+              to push your skills further and recharge your inspiration.  
+              Whether you're exploring our villages, cracking challenges in the CTF, 
+              or sharing stories around the afterparty,  
+              you'll find yourself surrounded by people who live and breathe infosec.
+            </p>
+
+            <p className="content-paragraph">
+              So leave the VR headset behind, feel the real breeze,  
+              and come join one of the Midwest's premier security experiences.  
+              Out here, it's not just about technology, it's about the people who shape it.
             </p>
           </section>
 
-          <section
-            className="content"
-            style={{
-              minHeight: "120vh",
-              margin: "10vh",
-              padding: "4rem 2rem",
-              color: "white",
-              background: "rgba(255,255,255,0.2)",
-            }}
-          >
-            <h2>Morbi leo risus</h2>
-            <p>
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis
-              euismod.
-            </p>
-          </section>
         </main>
       </div>
 
