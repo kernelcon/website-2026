@@ -231,6 +231,21 @@ class BackGround extends Component {
     // Initial run
     updateScene();
 
+    // Animate content section sliding up and pinning
+    gsap.to(".content", {
+      y: "-25vh", // slide up into view
+      opacity: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".content",
+        start: "top bottom",  // start when it's below viewport
+        end: "top 30%",       // end when top reaches 30% from top
+        scrub: true,          // smooth scroll
+        pin: true,            // hold it in place
+        pinSpacing: true      // keeps layout natural after pin
+      }
+    });
+
     // Debounced resize listener
     let resizeTimeout;
     const handleResize = () => {
@@ -270,7 +285,6 @@ class BackGround extends Component {
 
         <main className="demo-content">
           <section style={{ minHeight: "120vh", margin: "0vh", padding: "4rem 2rem", color: "white" }}>
-            {/* Empty hero section */}
           </section>
 
           <section className="content">

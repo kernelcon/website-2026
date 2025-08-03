@@ -31,14 +31,28 @@ section.content {
   // color: white;
   // transition: background 0.3s;
 
-  background: rgba(0, 0, 0, 0.3); /* subtle tint */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  // background: rgba(0, 0, 0, 0.3); /* subtle tint */
+  // backdrop-filter: blur(12px);
+  // -webkit-backdrop-filter: blur(12px);
+  // border-radius: 16px;
+  // padding: 2rem;
+  // color: white;
+  // max-width: 600px;
+  // margin: 2rem auto;
+
+  position: relative;
+  z-index: 20;
+  max-width: 900px;
+  margin: 0 auto;        // no large default margin
+  padding: 3rem 2rem;
+  color: #fff;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
   border-radius: 16px;
-  padding: 2rem;
-  color: white;
-  max-width: 600px;
-  margin: 2rem auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  opacity: 0;            // start invisible for animation
+  transform: translateY(50vh); // start lower on page
 
   h1 {
     font-family: "Jura", "Montserrat", sans-serif;
