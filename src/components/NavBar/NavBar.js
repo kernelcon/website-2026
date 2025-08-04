@@ -16,8 +16,8 @@ export default class NavBar extends Component {
 							alt="kernelcon logo"
 						/>
 						
-						<p className="nav-dates">Training: Apr 1-2</p>
-						<p className="second-nav-dates">Conference: Apr 3-4</p>
+						<p className="nav-dates">Training: Apr 7-8</p>
+						<p className="second-nav-dates">Conference: Apr 9-10</p>
 					</a>
 				</div>
 			</div>
