@@ -279,7 +279,7 @@ class BackGround extends Component {
 
           <div id="logo-container">
             <img id="logo" className="glow" src={logo} alt="Logo" />
-            <div id="logo-text">kernelcon 2026 / X.X.26 - Y.Y.26</div>
+            <div id="logo-text">kernelcon 2026 / 04.07.26 - 04.10.26</div>
           </div>
         </div>
 
