@@ -80,7 +80,7 @@ class BackGround extends Component {
       next();
     };
 
-    loopMorseMessages(['2026', 'KERNELCON', 'HACK THE PLANET']);
+    loopMorseMessages(['2026', 'KERNELCON', 'HACK THE PLANET', 'CTF']);
 
     // --- Helper functions ---
     const getSceneScale = () => Math.min(window.innerWidth / 2160, window.innerHeight / 3840);
