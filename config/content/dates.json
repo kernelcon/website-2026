@@ -1,43 +1,43 @@
 [{
     "title": "Registration Open",
     "description": "Sign up for the Con!",
-    "date": "AUG 02, 2024",
+    "date": "AUG 11, 2025",
     "hidden": "false"
   },
   {
     "title": "Call for Papers Announced",
     "description": "",
-    "date": "AUG 12, 2024",
+    "date": "AUG 11, 2025",
     "hidden": "false"
   },
   {
     "title": "Training Announced",
     "description": "",
-    "date": "AUG 12, 2024",
+    "date": "SEP 15, 2025",
     "hidden": "false"
   },
   {
     "title": "Keynotes Announced",
     "description": "",
-    "date": "Early 2025",
+    "date": "Early 2026",
     "hidden": "false"
   },
   {
     "title": "Call for Papers Close",
     "description": "",
-    "date": "JAN 17, 2025",
+    "date": "JAN 16, 2026",
     "hidden": "false"
   },
   {
-    "title": "Student Nominations Close",
+    "title": "Students Scholarship Closes",
     "description": "",
-    "date": "FEB 14, 2025",
+    "date": "FEB 6, 2026",
     "hidden": "false"
   },
   {
     "title": "CFP Acceptance Notifications Sent",
     "description": "We love our speakers!",
-    "date": "FEB 14, 2025",
+    "date": "FEB 14, 2026",
     "hidden": "false"
   },
   {
@@ -47,27 +47,21 @@
     "hidden": "false"
   },
   {
-    "title": "Students Scholarship Closes",
-    "description": "",
-    "date": "MAR 1, 2025",
-    "hidden": "false"
-  },
-  {
     "title": "Hotel Block Reservation Cutoff",
     "description": "",
-    "date": "March 7, 2025",
+    "date": "About a month before the con",
     "hidden": "false"
   },
   {
     "title": "Pre-conference Training",
     "description": "On-site training days (additional cost)",
-    "date": "APR 1-2, 2025",
+    "date": "APR 7-8, 2026",
     "hidden": "false"
   },
   {
     "title": "Conference Days",
-    "description": "Kernelcon 2025",
-    "date": "APR 3-4, 2025",
+    "description": "Kernelcon 2026",
+    "date": "APR 9-10, 2026",
     "hidden": "false"
   }
 ]

@@ -86,15 +86,15 @@ export default class Venue extends Component {
 						<div className="tab-title">Room Block</div>
 						<div className="venue-hotel">
 							<div className="venue-text">
-								We have a room block reserved at the conference hotel at a rate of $200/night. Book directly with the hotel {" "}
+								We have a room block reserved at the conference hotel starting at a rate of $205/night. Book directly with the hotel {" "}
 								<a
 									className="text-highlight"
-									href="#"
+									href="https://book.passkey.com/event/51054175/owner/22518/landing"
 									rel="noopener noreferrer"
 									target="_blank">
-									coming soon
+									here
 								</a>
-								{" "}.
+								{" "}. Be sure to choose "Attendee" to see the rate!
 							</div>
 							<div className="venue-text">
 								{/* Please book by March <s>11</s> 18th (extended!) for our group rate. */}

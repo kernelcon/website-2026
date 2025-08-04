@@ -25,8 +25,9 @@ return (
         <a href="https://2020.kernelcon.org/agenda#schedule" className="text-highlight" target="_blank" rel="noopener noreferrer">2020</a>,{" "}
         <a href="http://2022.kernelcon.org/agenda" className="text-highlight" target="_blank" rel="noopener noreferrer">2022</a>,{" "}
         <a href="http://2023.kernelcon.org/agenda" className="text-highlight" target="_blank" rel="noopener noreferrer">2023</a>,{" "}
+        <a href="http://2024.kernelcon.org/agenda" className="text-highlight" target="_blank" rel="noopener noreferrer">2024</a>,{" "}
         or{" "}
-        <a href="http://2024.kernelcon.org/agenda" className="text-highlight" target="_blank" rel="noopener noreferrer">2024</a>{" "}
+        <a href="http://2025.kernelcon.org/agenda" className="text-highlight" target="_blank" rel="noopener noreferrer">2025</a>{" "}
         programs for inspiration.
       </p>
 
