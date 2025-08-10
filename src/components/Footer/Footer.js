@@ -14,7 +14,8 @@ class Footer extends Component {
               <img src={logo}
                 className='light-mode-logo'
                 height="50"
-                alt="logo"/>
+                alt="logo"
+                style={{display: 'none'}}/>
                 <img src={logoDark}
                   className='dark-mode-logo'
                   height="30"

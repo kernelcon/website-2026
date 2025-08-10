@@ -22,7 +22,7 @@ body.dark-mode {
   .navbar,
   .nav-small {
     //background-color: rgba(27, 42, 59, .8)
-    background-color: transparent;
+    background-color: rgb(16, 23, 29);
     // background-color: $dm-punk-darklight;
   }
   .dark-mode-toggle>button {
@@ -37,7 +37,7 @@ body.dark-mode {
   div.secondary-nav {
     //background-color: rgba(12, 20, 26, .8)
     // background-color: rgb(16, 23, 29);
-    background-color: #09041a;
+    background-color: rgb(16, 23, 29);
   }
   div.nav-menu {
     //        background-color: rgb(16, 23, 29);
@@ -45,7 +45,7 @@ body.dark-mode {
       background-color: rgb(16, 23, 29);
     }
     .nav-small div svg {
-      filter: invert(100%);
+      filter: none;
     }
   }
   div.highlight-boxes {
@@ -55,7 +55,7 @@ body.dark-mode {
     background-color: rgb(16, 23, 29) !important;
   }
   div.footer-bar>div {
-    filter: invert(100%);
+    filter: none;
   }
   // div.home-page>div.right>img {
   //   filter: invert(100%);
@@ -63,7 +63,7 @@ body.dark-mode {
   img.navbar-logo,
   img.con-logo-flip,
   img.logo-reverse {
-    filter: invert(100%);
+    filter: none;
   }
   span.focus {
     filter: invert(100%);

@@ -33,6 +33,7 @@
   padding: 5px 0px;
   font-weight: 400;
   font-family: "Jura", "Montserrat", sans-serif;
+  color: #dfdfdf;
 }
 
 .second-nav-dates {
@@ -41,6 +42,7 @@
   margin: -10px 0px 0px -5px;
   font-weight: 400;
   font-family: "Jura", "Montserrat", sans-serif;
+  color: #dfdfdf;
 }
 
 .secondary-nav {
@@ -50,7 +52,7 @@
   width: 100%;
   //background-color: rgba(235, 235, 235, .8);
   // background-color: $lm-bkg-highlight;
-  background-color: transparent;
+  background-color: rgb(16, 23, 29);
   margin-top: 85px;
   z-index: 6;
 }
@@ -63,6 +65,15 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   z-index: 6;
+  
+  a {
+    color: #dfdfdf;
+    text-decoration: none;
+    
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
 .nav-menu {
@@ -89,7 +100,7 @@
     margin-left: -12px;
     margin-top: 40px;
     text-align: center;
-    background-color: #e3e3e3;
+    background-color: rgb(16, 23, 29);
   }
   .nav-small a {
     display: block;
@@ -97,6 +108,11 @@
     box-sizing: content-box;
     zoom: 1.5;
     margin: 5px;
+    color: #dfdfdf;
+    
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -111,7 +127,7 @@
     height: 65px;
     margin-left: 50px;
     width: 90%;
-    background-color: transparent !important;
+    background-color: rgb(16, 23, 29) !important;
     .container {
       padding: 0px;
       margin: 0px;
