@@ -9,7 +9,6 @@
   height: 85px;
   //background-color: rgba(215, 215, 215, .8);
   // background-color: $lm-bkg-light;
-  background-color: transparent;
   z-index: 7;
   .toggle-group {
     position: absolute;
@@ -17,6 +16,24 @@
     right: 0;
     //fix for using goggles svg
     margin-top: -25px;
+  }
+}
+
+.navbar-transparent {
+  background-color: transparent;
+  
+  .nav-dates,
+  .second-nav-dates {
+    color: #dfdfdf;
+  }
+}
+
+.navbar-dark {
+  background-color: rgb(16, 23, 29);
+  
+  .nav-dates,
+  .second-nav-dates {
+    color: #dfdfdf;
   }
 }
 
@@ -33,7 +50,7 @@
   padding: 5px 0px;
   font-weight: 400;
   font-family: "Jura", "Montserrat", sans-serif;
-  color: #dfdfdf;
+  color: #dfdfdf; /* Default light color for dark navbar */
 }
 
 .second-nav-dates {
@@ -42,7 +59,7 @@
   margin: -10px 0px 0px -5px;
   font-weight: 400;
   font-family: "Jura", "Montserrat", sans-serif;
-  color: #dfdfdf;
+  color: #dfdfdf; /* Default light color for dark navbar */
 }
 
 .secondary-nav {
@@ -127,7 +144,6 @@
     height: 65px;
     margin-left: 50px;
     width: 90%;
-    background-color: rgb(16, 23, 29) !important;
     .container {
       padding: 0px;
       margin: 0px;
@@ -141,6 +157,14 @@
       //fix for using goggles svg
       margin-top: 5px;
     }
+  }
+  
+  .navbar-transparent {
+    background-color: transparent !important;
+  }
+  
+  .navbar-dark {
+    background-color: rgb(16, 23, 29) !important;
   }
 
   .nav-dates {
