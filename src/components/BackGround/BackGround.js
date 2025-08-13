@@ -232,17 +232,20 @@ class BackGround extends Component {
     updateScene();
 
     // Animate content section sliding up and pinning
+    const isMobile = window.innerWidth <= 768;
+    const mobileOffset = isMobile ? 30 : 0; // 20vh offset on mobile
+    
     gsap.to(".content", {
-      y: "-25vh", // slide up into view
+      y: `-${40 + mobileOffset}vh`, // adjust for mobile offset
       opacity: 1,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".content",
         start: "top bottom",  // start when it's below viewport
-        end: "top 30%",       // end when top reaches 30% from top
-        scrub: true,          // smooth scroll
-        pin: true,            // hold it in place
-        pinSpacing: true      // keeps layout natural after pin
+        end: `top ${30 + mobileOffset}%`, // adjust end point for mobile
+        scrub: 0.5,           // smooth scroll with small delay
+        pin: false,           // no pinning to prevent jumping
+        pinSpacing: false     // prevent layout jumps
       }
     });
 
