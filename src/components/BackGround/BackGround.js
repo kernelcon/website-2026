@@ -233,16 +233,16 @@ class BackGround extends Component {
 
     // Animate content section sliding up and pinning
     const isMobile = window.innerWidth <= 768;
-    const mobileOffset = isMobile ? 10 : 0; // reduced from 30 to 10 for less mobile scrolling
+    const mobileOffset = isMobile ? 13 : 0; // restore original 30vh offset on mobile
     
     gsap.to(".content", {
-      y: `-${25 + mobileOffset}vh`, // changed to 25 for better balance
+      y: `-${40 + mobileOffset}vh`, // restore original 40vh for desktop
       opacity: 1,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".content",
         start: "top bottom",  // start when it's below viewport
-        end: `top ${30 + mobileOffset}%`, // adjust end point for mobile
+        end: `top ${60 + mobileOffset}%`, // adjust end point for mobile
         scrub: 0.5,           // smooth scroll with small delay
         pin: false,           // no pinning to prevent jumping
         pinSpacing: false     // prevent layout jumps
@@ -311,19 +311,6 @@ class BackGround extends Component {
               and come join one of the Midwest's premier security experiences.  
               Out here, it's not just about technology, it's about the people who shape it.
             </p>
-
-            <div className='order-button'>
-              <a
-                className="cybr-btn btn-bottom"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://reg.kernelcon.org/e/2138684337">
-                Register Now
-                <span aria-hidden className="cybr-btn__glitch">
-                  Register Now
-                </span>
-              </a>
-            </div>
           </section>
 
         </main>

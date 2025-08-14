@@ -56,6 +56,11 @@ body.dark-mode {
   div.footer-bar>div {
     filter: none;
   }
+
+  div.footer-bar .footer-brand .footer-logo img {
+    filter: brightness(0) invert(1) !important; // make logo always white/bright in dark mode
+  }
+
   // div.home-page>div.right>img {
   //   filter: invert(100%);
   // }
