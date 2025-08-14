@@ -145,3 +145,36 @@
 .gp-logo {
   margin-bottom: 0px !important;
 }
+
+.past-sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  
+  .sponsors-label {
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  
+  .sponsor-year {
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      
+      &:hover {
+        text-decoration: underline;
+        color: $text-highlight;
+      }
+    }
+  }
+  
+  .sponsor-separator {
+    color: #666;
+    font-weight: 300;
+    margin: 0 5px;
+  }
+}

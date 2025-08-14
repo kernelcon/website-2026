@@ -24,7 +24,7 @@ section.content {
   z-index: 20;
   max-width: 900px;
   margin: 0 auto;        // center horizontally
-  padding: 3rem 2rem;
+  padding: 1.5rem 2rem 1rem;
   color: #fff;
   text-align: left;      // revert to left alignment
   
@@ -84,6 +84,21 @@ section.content {
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8); // dark shadow for paragraphs
     line-height: 1.6; // better line spacing for readability
     font-weight: 400; // ensure good weight
+  }
+
+  .order-button {
+    text-align: left;
+    margin: 10px 0 0 0;
+    
+    .cybr-btn {
+      display: inline-block;
+      text-decoration: none;
+      
+      &:hover {
+        transform: translateY(-2px);
+        transition: transform 0.2s ease;
+      }
+    }
   }
 }
 

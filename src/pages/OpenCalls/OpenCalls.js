@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import MediaQuery from 'react-responsive';
-import Villages from './Villages';
+// import Villages from './Villages';
 import './OpenCalls.scss';
 // import Stickers from '../../static/images/sticker-sheet-proof.png';
 
@@ -48,14 +48,14 @@ export default class OpenCalls extends Component {
             </TabPanel>
             <TabPanel tabId="training">
             <div className='tab-title'>Call for Training Courses</div>
-            <p className='tab-paragraph'>The Kernelcon Trainings offer attendees technical courses on topics from the information security field. These will be hands-on courses that help expand attendees' skill sets and knowledge.</p>
+            <p className='tab-paragraph'>The Kernelcon Trainings offer attendees in-person technical courses on topics from the information security field. These will be hands-on courses that help expand attendees' skill sets and knowledge.</p>
             
             <p className='tab-heading'>Length and Cost</p>
             <p className='tab-paragraph'>The Kernelcon Crew is looking for training proposals that can fit into a full one-day or two-day format. Classes should typically follow a standard daily schedule, with short morning and afternoon breaks, and a one hour break for lunch.</p>
             <p className='tab-paragraph'>All one-day training courses will be offered to attendees at $500 all two-day courses will be offered at $1000.</p>
           
             <p className='tab-heading'>Proposal Due Date</p>
-            <p className='tab-paragraph'>Training proposals are due no later than December 1st, 2019. Instructors will be notified of Acceptance/Rejections by the end of the day, December 31st, 2019. See important dates at <a href='/dates' className='text-highlight' rel='noopener noreferrer' target='_blank'>kernelcon.org/dates</a> for official and updated dates.</p>
+            <p className='tab-paragraph'>Training proposals are due no later than September 19, 2025. Instructors will be notified of Acceptance/Rejections by the end of the day, October 1st, 2025. See important dates at <a href='/dates' className='text-highlight' rel='noopener noreferrer' target='_blank'>kernelcon.org/dates</a> for official and updated dates.</p>
           
 
             <p className='tab-heading'>What are we looking for?</p>
@@ -94,11 +94,6 @@ export default class OpenCalls extends Component {
                 <li>Provide a completed W-9 form to Kernelcon.</li>
                 <li>Notify Kernelcon ASAP if you cannot attend or anything significant changes from the accepted proposal.</li>
                 <li>Promote the course as able.</li>
-                <li>Provide course materials to Kernelcon no later than March 1st, 2020, for the digital distribution of course workbooks and/or materials.
-                  <ul>
-                    <li>The instructor will assume full responsibility for the costs associated with printed material.</li>
-                  </ul>
-                </li>
                 <li>Work with Kernelcon crew to ensure classroom attendance is accurate.</li>
                 <li>Sign and distribute certificates of completion (a.k.a. "Kernels of Completion"). Physical certificates will be provided to you by the Kernelcon crew and must be signed by the instructor.</li>
                 <li>Feedback and/or suggestions regarding course outcome, venue, and hosts.</li>
@@ -115,7 +110,6 @@ export default class OpenCalls extends Component {
                 <li>Class advertisement and promotion via website, social media, and other means.</li>
                 <li>The venue, including a classroom-style room configuration, projector and screen, and internet access.</li>
                 <li>Complimentary admission to Kernelcon for the instructor.</li>
-                <li>Kernelcon will host digital media training material in a fashion readily accessible by students if said material is in Kernelcon's possession by March 1st, 2020.</li>
                 <li>Attendee registration services.</li>
                 <li>Results from attendee feedback surveys.</li>
                 <li>Snacks for instructors (and attendees).</li>
@@ -133,7 +127,7 @@ export default class OpenCalls extends Component {
             </p>
           
             <p className='tab-heading'>In Closing</p>
-            <p className='tab-paragraph'>We will communication with you throughout this process. If we think more information or clarification is needed, we will reach out to you. When a decision is made, we will promptly let you know if you are accepted or denied.</p>
+            <p className='tab-paragraph'>We will communication with you throughout this process. If we think more information or clarification is needed, we will reach out to you. When a decision is made, we will promptly let you know if you are accepted or denied. If you have any questions, please reach out to <a href='mailto:training@kernelcon.org' className='text-highlight' rel='noopener noreferrer'>training@kernelcon.org</a>.</p>
             <p className='tab-paragraph'>Good luck and we cannot wait to see what you have in store for us!</p> 
             </TabPanel>
             {/* <TabPanel tabId="competitions">

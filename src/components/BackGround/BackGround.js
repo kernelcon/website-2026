@@ -233,10 +233,10 @@ class BackGround extends Component {
 
     // Animate content section sliding up and pinning
     const isMobile = window.innerWidth <= 768;
-    const mobileOffset = isMobile ? 30 : 0; // 20vh offset on mobile
+    const mobileOffset = isMobile ? 10 : 0; // reduced from 30 to 10 for less mobile scrolling
     
     gsap.to(".content", {
-      y: `-${40 + mobileOffset}vh`, // adjust for mobile offset
+      y: `-${25 + mobileOffset}vh`, // changed to 25 for better balance
       opacity: 1,
       ease: "power2.out",
       scrollTrigger: {
@@ -292,7 +292,7 @@ class BackGround extends Component {
 
           <section className="content">
             <h2 className="content-title">Welcome to Kernelcon</h2>
-            <h4 className="content-subtitle">Unplug. Connect. Hack.</h4>
+            <h4 className="content-subtitle">Unplug. Connect. Hack. Go Off Grid.</h4>
             <p className="content-paragraph">Out here, under the endless Midwest sky, technology feels different. It's raw. It's hands-on. 
               And its free from the digital noise of daily life. <strong>Kernelcon 2026</strong> invites you 
               to step off the grid and immerse yourself in a weekend where curiosity meets community.
@@ -311,6 +311,19 @@ class BackGround extends Component {
               and come join one of the Midwest's premier security experiences.  
               Out here, it's not just about technology, it's about the people who shape it.
             </p>
+
+            <div className='order-button'>
+              <a
+                className="cybr-btn btn-bottom"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://reg.kernelcon.org/e/2138684337">
+                Register Now
+                <span aria-hidden className="cybr-btn__glitch">
+                  Register Now
+                </span>
+              </a>
+            </div>
           </section>
 
         </main>

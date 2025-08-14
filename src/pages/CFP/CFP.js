@@ -11,7 +11,7 @@ return (
       <p className="tab-paragraph">Calling all Explorers!</p>
       <p className="tab-paragraph">
         The Kernelcon Crew is soliciting presentations for the seventh annual Kernelcon,
-        held at the Hilton Downtown in Omaha, NE, April 2-3, 2026.
+        held at the Hilton Downtown in Omaha, NE, April 9-10, 2026.
       </p>
       <p className="tab-paragraph">
         Have you built an off‑grid homelab? Created stealthy, low‑power infrastructure

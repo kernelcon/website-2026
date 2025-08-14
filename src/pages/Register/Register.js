@@ -21,7 +21,7 @@ class Register extends Component {
 								class="cybr-btn btn-bottom"
 								target="_blank"
 								rel="noopener noreferrer"
-								href="https://www.eventzilla.net/e/kernelcon-2025-2138626943">
+								href="https://reg.kernelcon.org/e/2138684337">
 								Register Now
 								<span aria-hidden class="cybr-btn__glitch">
 									Register Now
