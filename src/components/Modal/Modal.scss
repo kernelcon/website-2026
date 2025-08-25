@@ -6,17 +6,24 @@
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.75);
-  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   z-index: 100;
+  padding-top: 70px;
+  overflow-y: auto;
 }
 
 .modal-container {
   background-color: #fff;
   max-width: 560px;
   min-height: 300px;
+  max-height: calc(100vh - 140px);
   margin: 0 auto;
   padding: 0px;
-  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   .modal-header {
     border-top: 6px solid $dm-highlight;
     border-bottom: 1px solid rgb(227, 227, 227);
@@ -95,5 +102,20 @@ body.dark-mode {
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+// Mobile responsive adjustments
+@media (max-width: 768px) {
+  .backdrop {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .modal-container {
+    max-width: 100%;
+    max-height: calc(100vh - 40px);
+    margin: 0;
   }
 }
