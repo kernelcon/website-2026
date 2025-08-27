@@ -9,6 +9,15 @@ return (
     <div>
       {/* Opening */}
       <p className="tab-paragraph">Calling all Explorers!</p>
+  	  <p className="tab-paragraph">TL;DR - submit via  {" "}
+			<a
+				href="https://forms.gle/EJr4EK7NjZeDyBZb8"
+				className="text-highlight"
+				rel="noopener noreferrer"
+				target="_blank">
+			this form
+			</a> (but you really should read the instructions). 
+		</p>
       <p className="tab-paragraph">
         The Kernelcon Crew is soliciting presentations for the seventh annual Kernelcon,
         held at the Hilton Downtown in Omaha, NE, April 9-10, 2026.
@@ -35,8 +44,8 @@ return (
       <p className="tab-heading">Important Dates</p>
       <p className="tab-paragraph">
         CFP dates can always be found on our{" "}
-        <a href="/dates" className="text-highlight" target="_blank" rel="noopener noreferrer">important dates page</a>.
-        Check often so you don’t miss the window to submit your talk!
+        <a href="/dates" className="text-highlight" target="_blank" rel="noopener noreferrer">important dates page</a>,
+        which will always have the most current information. Make sure to pay attention to that page so you don’t miss the window to submit your talk!
       </p>
 
       {/* Suggested Topic Areas */}
@@ -49,7 +58,7 @@ return (
       </p>
       <p className="tab-paragraph">
         Kernelcon submissions should focus on topics that interest the security and
-        hacking communities. Ideas include:
+        hacking communities. The list below is meant as a guide, not an exhaustive list:
       </p>
       <ul className="real-bullet-list">
         <li>Hacking software and hardware in remote or field conditions</li>
@@ -70,8 +79,11 @@ return (
         <li>BeyondCorp / Zero Trust for small, distributed teams</li>
       </ul>
       <p className="tab-paragraph">
-        If your talk doesn’t perfectly fit these categories but aligns with the off‑grid
-        or stealth theme, please submit! We encourage creativity and first‑time speakers.
+        If your talk doesn't fit precisely into one of these areas, 
+        the theme, but you still think is a good fit, please submit 
+        it for consideration! The suggested topics are meant only to 
+        provide some direction, not as a strict pedantic gate through 
+        which all submissions must pass. 
       </p>
 
       {/* Conference Format */}
@@ -82,15 +94,17 @@ return (
         leaving time for questions.
       </p>
       <p className="tab-paragraph">
-        Speakers will present from a standard hotel conference space with provided AV
-        equipment, including projector, microphone, and internet access.
+        Speakers presenters will be positioned at the front of a hotel conference area, 
+        and will present using typical conference equipment.
       </p>
 
       {/* Speaker Benefits */}
       <p className="tab-heading">Speaker Benefits</p>
       <p className="tab-paragraph">
-        Speakers receive complimentary admission to Kernelcon and a special “SPEAKER”
-        badge. Accepted speakers may attend the exclusive speaker party.
+        Speakers receive complimentary admission to Kernelcon and will be recognized as 
+        a speaker via a special “SPEAKER” badge. Speakers also have the option of 
+        attending an exclusive speaker party preceding the conference. Details will 
+        be sent to accepted speakers following acceptance notification.
       </p>
       <p className="tab-paragraph">FULL talk speakers may also choose one of the following:</p>
       <ul className="real-bullet-list">
@@ -107,14 +121,24 @@ return (
       {/* Review Process */}
       <p className="tab-heading">Review Process</p>
       <p className="tab-paragraph">
-        Our review process is informal but confidential. Submissions are reviewed by
-        multiple Technical Program Committee members for novelty, quality, and alignment
-        with the off‑grid theme. The TPC informs the Chairs, who finalize the program.
+      Our review process is not as formal as some academic conferences. However, 
+      submissions are considered confidential and are not shared outside of the 
+      Technical Program Committee. Every submission is reviewed by multiple committee 
+      members and weighed for inclusion in the program. TPC Committee members are 
+      selected for the ability to provide valuable reviews, handle sensitive 
+      information, and remain fair, impartial, and consistent in the review process. 
+      Ultimately the committee informs the TPC Chair(s) who set the technical portion 
+      of the program that is married with the rest of Kernelcon agenda.
       </p>
       <p className="tab-paragraph">
-        Novel, new, and on‑theme talks are highly preferred. First‑time speakers are
-        encouraged to submit. Vendor pitches or recycled talks are unlikely to be
-        accepted.
+      Novel, new, on-topic talks receive the most preference. Submissions by 
+      first-time presenters are not discounted in any way. Quite the opposite! 
+      First-timers are whole-heartedly encouraged to submit. Blatant vendor pitches, 
+      recycled talks, presentations on well-known topics that are *not* depicted as 
+      101 or intro, are unlikely to be accepted. We expect presentations that are 
+      considerate, planned, thought-out, and delivered well. All talks are 
+      considered on their merits. Everyone, including sponsors, internet legends, 
+      cultural icons, and Dave Kennedy must submit just like all other speakers.
       </p>
 
       {/* How to Submit */}
@@ -122,23 +146,34 @@ return (
       <p className="tab-paragraph">Speakers must submit directly; no PR reps permitted.</p>
       <p className="tab-paragraph">
         Information you’ll need for your submission:
-      </p>
+      
       <ul className="real-bullet-list no-bullets">
-        <li><input className="fake-checkbox" type="checkbox" /> Speaker name(s), pseudonym(s), or handle(s)</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Company or affiliation (optional)</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Speaker headshot</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Contact info (email, social, phone)</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Promotion info (optional for tagging)</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Presentation title</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Timeslot (20 or 60 min)</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Abstract (≤1200 characters)</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Speaker bio (≤500 characters)</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Technical level (1–5)</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Detailed description with demos, exploits, or releases if applicable</li>
-        <li><input className="fake-checkbox" type="checkbox" /> Honorarium choice (donate, 2 regs, cash, reinvest)</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Speaker name(s)</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Speaker Name(s), Pseudonym(s), or handle(s) </li>
+			<li><input className="fake-checkbox" type="checkbox"/>Speaker Company or affiliation </li>
+			<li><input className="fake-checkbox" type="checkbox"/>Speaker headshot </li>
+			<li><input className="fake-checkbox" type="checkbox"/>Contact information (email, twitter, phone, etc - if we need to reach you and we can't, that's on you) *</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Speaker promotion information (twitter, facebook, etc) - if we want to promote your talk specifically, and you want us to tag you</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Presentation Title</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Decide if you'd like your submission to be presented to the program committee anonymously for review</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Read "Grant of Copyright Use" and "Speaker Terms" copied and completed from below</li>
+			<li><input className="fake-checkbox" type="checkbox"/>URL for any optional supplementary files (URL because you're sharing them with us)</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Timeslot (20 or 60 minutes)</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Abstract of your presentation (1200 characters or less) **</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Speaker Bio (500 characters or less)</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Technical Level of talk: on a 1 (none) to 5 (all the way down the rabbit hole) scale</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Detailed Description: <span className="text-highlight">the most important part</span> of your submission. You need to provide detailed information that demonstrates your knowledge of your topic and how you will present it to the audience. Do not rely on your abstract to be enough for the reviewers. It isn’t. If your talk will include demos, new exploits, tool releases or audience interactions, please include details.</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Why do you feel this submission is a good fit for Kernelcon?</li>
+			<li><input className="fake-checkbox" type="checkbox"/>List of other venues or where this work has been presented, published or derived from</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Are you a potential first time conference speaker?</li>
+			<li><input className="fake-checkbox" type="checkbox"/>List of facilities requested beyond what is already provided (power, projector, podium, sound projection, and internet connectivity).</li>
+			<li><input className="fake-checkbox" type="checkbox"/>Press can contact you: yes or no</li>
+			<li><input className="fake-checkbox" type="checkbox"/>For FULL talks, honorarium choice: Donate (EFF or HFC), Registrations (2), Cash, Reinvest</li>
       </ul>
+      </p>
+      <p className="tab-paragraph">Incomplete or misformatted submissions greatly reduce the likelihood of your talk being accepted.</p>
       <p className="tab-paragraph">
-        Questions? Email{" "}
+        If you run into issues, or have questions inquire at {" "}
         <a href="mailto:cfp@kernelcon.org" className="text-highlight" target="_blank" rel="noopener noreferrer">
           cfp@kernelcon.org
         </a>.
@@ -147,15 +182,27 @@ return (
         Supplementary files like draft slides, outlines, or whitepapers may also be
         included via URL (Dropbox, Drive, etc.).
       </p>
+  		<p className="tab-paragraph">We're continuing into our 3rd year of a form-based CFP submission system rather than email.</p>
+	    <p className="tab-paragraph">Submissions are collected by {" "}
+			<a
+				href="https://forms.gle/EJr4EK7NjZeDyBZb8"
+				className="text-highlight"
+				rel="noopener noreferrer"
+				target="_blank">
+			form
+			</a>{""}. </p>
 
       {/* Grant of Copyright */}
       <p className="tab-heading">Grant of Copyright Use</p>
-      <p className="tab-paragraph">
-        I warrant that this work has not been previously published elsewhere, or that I
-        have obtained permission for Kernelcon to publish it. If selected, I grant
-        Kernelcon permission to record, duplicate, and distribute my presentation in any
-        format for educational and online purposes.
-      </p>
+		  <p className="tab-paragraph">I warrant that the above work has not been previously 
+      published elsewhere, or if it has, that I have obtained permission for its 
+      publication by Kernelcon and that I will promptly supply Kernelcon with wording 
+      for crediting the original publication and copyright owner. If I am selected for 
+      presentation, I hereby give Kernelcon permission to duplicate, record, and 
+      redistribute this presentation, which includes, but is not limited to, any 
+      conference proceedings, conference CD, video, audio, and handouts to the conference 
+      attendees for educational, on-line, and all other purposes.</p>
+
       <p className="tab-paragraph">
         By submitting your talk proposal, you agree to the Grant of Copyright Use.
       </p>
@@ -163,11 +210,11 @@ return (
       {/* Terms of Speaking */}
       <p className="tab-heading">Terms of Speaking Requirements</p>
       <ol className="real-bullet-list">
-        <li>I will provide completed slides, code, and references by the deadline.</li>
-        <li>I will submit any revisions to my title, abstract, and bio by March 3, 2026.</li>
-        <li>I will complete my talk within the allocated time.</li>
-        <li>I understand the venue provides projector, mic, and internet; I supply all else.</li>
-        <li>I am responsible for my own hotel and travel expenses.</li>
+			<li>I will submit a completed presentation, a copy of the tool(s) and/or code(s), and a reference to all of the tool(s), law(s), web sites and/or publications referenced at the end of my talk and as described in this CFP submission for publication by Kernelcon.</li>
+			<li>I will submit any revisions to the originally submitted Title, Abstract and Biography for the Kernelcon website and printed conference materials by March 3, 2025.</li>
+			<li>I will complete my presentation within the time allocated to me - not running over, or excessively under, the time allocation.</li>
+			<li>I understand that the Kernelcon venue will provide 1 projector feed, microphone(s), wired and/or wireless Internet. I understand that I am responsible for providing all other necessary equipment, including laptops and machines, to complete my presentation.</li>
+			<li>I understand that I will be responsible for my own hotel and travel expenses.</li>
       </ol>
       <p className="tab-paragraph">
         By submitting your talk proposal, you agree to these Terms of Speaking.
