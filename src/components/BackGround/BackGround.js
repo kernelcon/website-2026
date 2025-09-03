@@ -236,13 +236,13 @@ class BackGround extends Component {
     const mobileOffset = isMobile ? 13 : 0; // restore original 30vh offset on mobile
     
     gsap.to(".content", {
-      y: `-${40 + mobileOffset}vh`, // restore original 40vh for desktop
+      y: `-${50 + mobileOffset}vh`, // scroll higher - 50vh up from starting position
       opacity: 1,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".content",
         start: "top bottom",  // start when it's below viewport
-        end: `top ${60 + mobileOffset}%`, // adjust end point for mobile
+        end: "top 20%",       // end when content reaches 20% from top of viewport
         scrub: 0.5,           // smooth scroll with small delay
         pin: false,           // no pinning to prevent jumping
         pinSpacing: false     // prevent layout jumps

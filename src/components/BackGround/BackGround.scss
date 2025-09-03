@@ -27,6 +27,7 @@ section.content {
   padding: 1.5rem 2rem 1rem;
   color: #fff;
   text-align: left;      // revert to left alignment
+  top: -150px;
   
   // Black glass effect
   background: rgba(0, 0, 0, 0.75); // subtle black background
@@ -42,10 +43,9 @@ section.content {
     inset 0 1px 0 rgba(255, 255, 255, 0.1); // inner highlight
   
   opacity: 0.65;            // start invisible for animation
-  transform: translateY(40vh); // start lower to match JS animation
+  transform: translateY(20vh); // start higher - only 20vh down from top
   backface-visibility: hidden; // prevent flickering
   transform-style: preserve-3d; // smoother 3D transforms
-  background: black;
 
   h1 {
     font-family: "Jura", "Montserrat", sans-serif;
@@ -90,7 +90,8 @@ section.content {
 // Mobile-specific adjustments
 @media (max-width: 768px) {
   section.content {
-    transform: translateY(60vh); // start lower on mobile to account for offset
+    // transform: translateY(30vh); // start higher on mobile too
+     top: 100px;
   }
 }
 
