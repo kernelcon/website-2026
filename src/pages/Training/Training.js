@@ -10,9 +10,9 @@ class Training extends Component {
   render() {
     // constants, can change from year to year.  Along with config update, should generate new training content.
     const baseUrl = 'training';
-    const dayOneTraining = 'Tuesday, April 1st';
-    const dayTwoTraining = 'Wednesday, April 2nd';
-    const trainingYear = '2025';
+    const dayOneTraining = 'Tuesday, April 7th';
+    const dayTwoTraining = 'Wednesday, April 8th';
+    const trainingYear = '2026';
 
     // course descriptions may require their own html (i.e. when instructors put bullets or multiple paragraphs)
     function createMarkup(ele) {
@@ -80,7 +80,7 @@ class Training extends Component {
                   className="cybr-btn btn-bottom"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.eventzilla.net/e/kernelcon-2025-2138626943">
+                  href="https://reg.kernelcon.org/e/2138684337">
                   Register Now
                   <span aria-hidden className="cybr-btn__glitch">
                     Register Now

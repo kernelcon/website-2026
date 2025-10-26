@@ -7,14 +7,46 @@ class Dates extends Component {
   static displayName = 'Dates';
 
   render() {
+    // Helper function to check if a date has passed
+    const isDatePassed = (dateString) => {
+      if (!dateString || dateString.toLowerCase().includes('early') || dateString.toLowerCase().includes('about')) {
+        return false;
+      }
+      
+      // Parse the date - handles both single dates and ranges
+      const dateMatch = dateString.match(/([A-Z]{3})\s+(\d+)/);
+      if (!dateMatch) return false;
+      
+      const month = dateMatch[1];
+      const day = parseInt(dateMatch[2]);
+      const yearMatch = dateString.match(/(\d{4})/);
+      if (!yearMatch) return false;
+      const year = parseInt(yearMatch[1]);
+      
+      const monthMap = {
+        'JAN': 1, 'FEB': 2, 'MAR': 3, 'APR': 4, 'MAY': 5, 'JUN': 6,
+        'JUL': 7, 'AUG': 8, 'SEP': 9, 'OCT': 10, 'NOV': 11, 'DEC': 12
+      };
+      
+      if (!monthMap[month.toUpperCase()]) return false;
+      
+      const dateObj = new Date(year, monthMap[month.toUpperCase()] - 1, day);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      return dateObj <= today;
+    };
 
     const dates = config.map((ele, idx) => {
+      const isPassed = isDatePassed(ele.date);
+      
       return (
-        <div className='date-box'
+        <div className={`date-box ${isPassed ? 'past-date' : ''}`}
           key={`${ele}-${idx}`}>
           <span className='dl-title'>{ele.title}</span>
           {ele.description && <div className='dl-description'>{ele.description}</div>}
           <div className='dl-date'>{ele.date}</div>
+          {isPassed && <span className='past-badge'>Past</span>}
         </div>
       );
     });

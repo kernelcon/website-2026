@@ -210,6 +210,7 @@ $red: #ff0000;
     width: 220px;
     margin: 20px;
     border-left: 6px solid $boston-blue;
+    position: relative;
       -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
       box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
       -webkit-transition-property: color,background-color,-webkit-box-shadow,-webkit-transform;
@@ -218,6 +219,36 @@ $red: #ff0000;
       transition-property: color,background-color,box-shadow,transform,-webkit-box-shadow,-webkit-transform;
       -webkit-transition-duration: .15s;
       transition-duration: .15s;
+
+    &.past-date {
+      .dl-title {
+        opacity: 0.5;
+      }
+      
+      .dl-description {
+        opacity: 0.5;
+      }
+      
+      .dl-date {
+        opacity: 0.5;
+      }
+      
+      .past-badge {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        background-color: #999;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 3px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 1.0;
+        z-index: 10;
+      }
+    }
 
     .dl-title {
       font-weight: 500;

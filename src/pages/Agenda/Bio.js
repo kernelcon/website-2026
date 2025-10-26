@@ -17,13 +17,15 @@ export default class Bio extends Component {
   }
 
   componentDidMount() {
-  	this.setState({
-  		name: this.props.location.state.name,
-  		bio: this.props.location.state.bio,
-  		twitter: this.props.location.state.twitter,
-  		linkedin: this.props.location.state.linkedin,
-      image: this.props.location.state.image
-  	});
+  	if (this.props.location && this.props.location.state) {
+  		this.setState({
+  			name: this.props.location.state.name,
+  			bio: this.props.location.state.bio,
+  			twitter: this.props.location.state.twitter,
+  			linkedin: this.props.location.state.linkedin,
+        image: this.props.location.state.image
+  		});
+  	}
   }
 
 
@@ -46,6 +48,16 @@ export default class Bio extends Component {
 
 
   render() {
+  	if (!this.state.name) {
+  		return (
+  			<div className="container">
+  				<div className='bio-section'>
+  					<p>No bio information available.</p>
+  				</div>
+  			</div>
+  		);
+  	}
+  	
   	const twitter_mobile = this.state.twitter ? this.state.twitter.substr(1) : '';
     // const linkedin = this.state.linkedin;
     function createMarkup(ele) {

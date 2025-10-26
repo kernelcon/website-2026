@@ -60,7 +60,7 @@ function App() {
 					<Route exact path="/" component={Home} />
 					<Route path="/about/:tabId?" component={About} />
 					<Route exact path="/admin" component={Admin} />
-          			{/* <Route exact path="/bio" component={Bio} /> */}
+          			<Route path="/bio/" component={Bio} />
 					{/* <Route exact path="/conference" component={Conference} /> */}
 					{/* <Route exact path="/robo-race" component={RoboRace} /> */}
 					<Route exact path="/dates" component={Dates} />
@@ -70,7 +70,7 @@ function App() {
 					<Route path="/venue/:tabId?"  component={Venue} />
 					<Route exact path="/register" component={Register} />
 					{/* <Route exact path="/safety" component={Safety} /> */}
-					{/* <Route exact path="/training" component={Training} /> */}
+					<Route exact path="/training" component={Training} />
           			{/* <Route path="/agenda/:tabId?" component={Agenda} /> */}
 					<Route exact path='/dei' component={() => {
 		    			window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSezT5NG0_tkV3Wxd9D4t-58cU49Zd5t2Cun75ZkSx7GvD-KSg/viewform';
