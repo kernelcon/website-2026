@@ -122,6 +122,63 @@ class Training extends Component {
           </div>
           {training}
           </div>
+          
+          <div className='venue-section' style={{ marginTop: '60px' }}>
+            <h3>Workshops</h3>
+            <div>
+              <br /><p>In addition to our comprehensive training courses, Kernelcon offers specialized workshops that provide unique learning opportunities. These workshops are designed to expand your skillset beyond traditional security topics and explore exciting intersections of technology and communication.</p>
+            </div>
+            
+            <div className='training-card'
+              key='ham-radio-workshop'
+              name='ham-radio-workshop'
+              id='ham-radio-workshop'>
+              <a href={`/${baseUrl}#ham-radio-workshop`}>
+                <div className='training-title'>
+                  <span>Ham Radio Workshop</span>
+                  <span>$370*</span>
+                </div>
+              </a>
+              <div className='training-notes'>
+                <div className='training-notes-left'>
+                  <div className='training-format'>
+                    <div className='training-heading'>Format:</div>
+                    <div>1 day workshop</div>
+                  </div>
+                  <div className='training-format'>
+                    <div className='training-heading'>Date:</div>
+                    <div>Wednesday, April 8th, 2026</div>
+                  </div>
+                  <div className='training-format'>
+                    <div className='training-heading'>Pricing:</div>
+                    <div>Ham workshop included FREE with special Kernelcon registration</div>
+                  </div>
+                </div>
+                <div className='training-notes-right'>
+                  <a
+                    className="cybr-btn btn-bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://reg.kernelcon.org/e/2138684337">
+                    Register Now
+                    <span aria-hidden className="cybr-btn__glitch">
+                      Register Now
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div className='training-equipment'>
+                <div className='training-heading'>Description:</div>
+                <div className='training-text'>
+                  <p>Get ready to dive into the fascinating world of amateur radio! This hands-on Ham Radio Workshop takes place the day before Kernelcon kicks off, giving you the perfect opportunity to expand your communication skills and explore a critical technology that bridges emergency response, cybersecurity, and off-grid communication.</p>
+                  <p>Whether you're interested in emergency communications, radio frequency security, or just want to learn a new skill that connects you to a global community of operators, this workshop will get you started on your ham radio journey. You'll learn the fundamentals of radio operation, licensing requirements, equipment basics, and practical communication techniques.</p>
+                  <p><strong>Upon completion of this workshop, attendees will be qualified to test for their HAM radio license</strong> - opening doors to a world of communication possibilities and emergency preparedness skills that complement your security expertise.</p>
+                  <p style={{ marginTop: '15px', fontStyle: 'italic' }}>*$370 covers a Kernelcon conference ticket with the Ham Radio Workshop included at no additional cost. This special registration includes overhead and operating costs for both the conference and workshop.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

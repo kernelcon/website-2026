@@ -129,6 +129,16 @@
       "mastodon": "",
       "mastodon_url": "",
       "oc": true
+    },
+    {
+      "id": 17,
+      "name": "Arber",
+      "title": "Volunteer Coordinator",
+      "image": "arber.png",
+      "twitter": "sud0m4st3r",
+      "mastodon": "",
+      "mastodon_url": "",
+      "oc": true
     }
   ]
 }]
