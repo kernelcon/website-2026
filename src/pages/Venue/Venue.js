@@ -57,6 +57,27 @@ export default class Venue extends Component {
 				<TabPanel tabId="hotel">
 					<div className="text-area">
 						{/* <div className="tab-title">Book Now</div> */}
+							<div className="tab-title">Room Block</div>
+						<div className="venue-hotel">
+							<div className="venue-text">
+								Staying at the conference hotel is convenient and helps Kernelcon a lot. The more attendees staying at the hotel, the more conference space and activities we can retain. 
+	                            The 2026 rate is $205/night. Book directly with the hotel {" "}
+								<a
+									className="text-highlight"
+									href="https://book.passkey.com/event/51054175/owner/22518/landing"
+									rel="noopener noreferrer"
+									target="_blank">
+									here
+								</a>
+								{" "}. Be sure to choose "Attendee" to see the rate! If you run into any issues, please contact us or the hotel directly.  The issues are often easy for the hotel to identify and remedy.
+							</div>
+							<div className="venue-text">
+								{/* Please book by March <s>11</s> 18th (extended!) for our group rate. */}
+							</div>
+							{/* <div className="venue-text">
+								We will have a block of rooms available again this year for those wanting to stay on site.  Check back soon!
+							</div> */}
+						</div>					
 						<div className="tab-title">Hotel</div>
 						<div className="venue-hotel">
 							<div className="text-area">
@@ -82,26 +103,6 @@ export default class Venue extends Component {
 									]}
 								/>
 							</div>
-						</div>
-						<div className="tab-title">Room Block</div>
-						<div className="venue-hotel">
-							<div className="venue-text">
-								We have a room block reserved at the conference hotel starting at a rate of $205/night. Book directly with the hotel {" "}
-								<a
-									className="text-highlight"
-									href="https://book.passkey.com/event/51054175/owner/22518/landing"
-									rel="noopener noreferrer"
-									target="_blank">
-									here
-								</a>
-								{" "}. Be sure to choose "Attendee" to see the rate!
-							</div>
-							<div className="venue-text">
-								{/* Please book by March <s>11</s> 18th (extended!) for our group rate. */}
-							</div>
-							{/* <div className="venue-text">
-								We will have a block of rooms available again this year for those wanting to stay on site.  Check back soon!
-							</div> */}
 						</div>
 					</div>
 					<div className="text-area">
