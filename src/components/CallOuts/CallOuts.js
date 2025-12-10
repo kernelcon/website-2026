@@ -11,6 +11,9 @@ class CallOuts extends Component {
   }
   
   getImage(imageName) {
+    if (!imageName || imageName === '') {
+      return null;
+    }
     const imgUrl = require(`../../static/images/logos/${imageName}`);
 
     return imgUrl;
@@ -48,7 +51,7 @@ class CallOuts extends Component {
             <div className='callout-name-logo'>
               {ele.author && <div className='callout-author'>{`From ${ele.author}`}</div>}
               <div className='callout-logo'>
-                <img className={`callout-img ${ele.logo.image_class}`} src={image} alt={ele.title} />
+                {image && <img className={`callout-img ${ele.logo.image_class}`} src={image} alt={ele.title} />}
                 {darkModeImage && <img className={`callout-img ${ele.logo.dark_mode_image_class}`} src={darkModeImage} alt={ele.title} />}
               </div>
             </div>

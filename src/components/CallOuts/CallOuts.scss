@@ -33,7 +33,11 @@
         justify-content: center;
         .callout-img {
           min-width: 130px;
+          max-width: 240px;
           max-height: 120px;
+          width: auto;
+          height: auto;
+          object-fit: contain;
           margin-bottom: 30px;
         }
         .callout-comic {

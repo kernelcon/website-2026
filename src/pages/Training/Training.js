@@ -53,7 +53,7 @@ class Training extends Component {
             <a href={`/${baseUrl}#${ele.id}`}>
               <div className='training-title'>
                 <span>{ele.course.title}</span>
-                <span>{ele.course.days > 1 ? '$1,000' : '$500'}</span>
+                <span>$1,200</span>
               </div>
             </a>
             <div className='training-notes'>
