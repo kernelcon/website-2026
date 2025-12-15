@@ -18,8 +18,8 @@ import React, { Component } from "react";
 // import Protiviti from "../../static/images/sponsors/protiviti.png";
 // import ZScaler from "../../static/images/sponsors/zscaler.png";
 // import BairdHolm from "../../static/images/sponsors/bairdholm.png";
-// import GuidepointDark from "../../static/images/sponsors/guidepoint_black.png";
-// import GuidepointDark from "../../static/images/sponsors/GPS.png";
+import GuidepointDark from "../../static/images/sponsors/guidepoint_black.png";
+import GuidepointLight from "../../static/images/sponsors/guidepoint_white.png";
 // import Tanium from "../../static/images/sponsors/Tanium.png";
 // import Axonius from "../../static/images/sponsors/Axonius.png";
 // import Wiz from "../../static/images/sponsors/wiz.png";
@@ -38,8 +38,8 @@ import React, { Component } from "react";
 // import TekSystems from "../../static/images/logos/teksystems.png"
 // import ExpelDark from "../../static/images/sponsors/expel-dark-mode.png"
 // import ExpelLight from "../../static/images/sponsors/expel-light-mode.png"
-// import AmazonDark from "../../static/images/sponsors/amazon-dark-mode.png"
-// import AmazonLight from "../../static/images/sponsors/amazon-light-mode.png"
+import AmazonDark from "../../static/images/sponsors/amazon-dark-mode.png"
+import AmazonLight from "../../static/images/sponsors/amazon-light-mode.png"
 // import Turngate from "../../static/images/sponsors/turn-gate.png"
 // import Phosphorus from "../../static/images/sponsors/phosphorus.png"
 // import RecordedFuture from "../../static/images/sponsors/recorded-future.png"
@@ -56,7 +56,11 @@ import React, { Component } from "react";
 // import CyberArk_Light from '../../static/images/sponsors/cyberark-light.png'
 // import CyberArk_Dark from '../../static/images/sponsors/cyberark-dark.png' 
 // import ZScalar_Light from '../../static/images/sponsors/zscalar-light.png'
-// import ZScalar_Dark from '../../static/images/sponsors/zscalar-dark.svg' 
+// import ZScalar_Dark from '../../static/images/sponsors/zscalar-dark.svg'
+import Trace3Dark from '../../static/images/sponsors/Trace3_Logo_WhiteBlue.png'
+import Trace3Light from '../../static/images/sponsors/Trace3_Logo.png'
+import CriblDark from '../../static/images/sponsors/cribl-dark-mode.svg'
+import CriblLight from '../../static/images/sponsors/cribl-light-mode.svg' 
 
 import "./Sponsors.scss";
 
@@ -170,14 +174,14 @@ export default class Sponsors extends Component {
 
               <div className="text-block spons-groups">
                 {/* Diamond Sponsors */}
-                {/* <div className='spons-block'>
+                <div className='spons-block'>
                   <h2 className='diamond spons-title'>Diamond</h2>
                   <div className='gp-logo'>
                     <a href="https://www.guidepointsecurity.com/"
                       target="_blank"
                       rel='noopener noreferrer'
-                      className='all-bright dark-mode-logo'>
-                      <img src={GuidepointDark}
+                      className='dark-mode-logo'>
+                      <img src={GuidepointLight}
                         className='spons-img plat-spons'
                         alt="Guidepoint Security"/>
                     </a>
@@ -190,10 +194,10 @@ export default class Sponsors extends Component {
                         alt="Guidepoint Security"/>
                     </a>
                   </div>
-                </div> */}
+                </div>
 
                 {/* Gold Sponsors */}
-                {/* <div className='spons-block'>
+                <div className='spons-block'>
                   <h2 className='gold spons-title'>Gold</h2>
                   <a href="https://www.amazon.jobs/content/en/teams/amazon-security"
                     target="_blank"
@@ -211,123 +215,7 @@ export default class Sponsors extends Component {
                       className='spons-img silver-spons'
                       alt="Amazon Security"/>
                   </a>
-                  <a href="https://www.fcsamerica.com/"
-                    target="_blank"
-                    className='light-mode-logo'
-                    rel='noopener noreferrer'>
-                    <img src={FarmCreditLight}
-                      className='spons-img gold-spons'
-                      alt="Farm Credit"/>
-                  </a>
-                  <a href="https://www.fcsamerica.com/"
-                    target="_blank"
-                    className='dark-mode-logo'
-                    rel='noopener noreferrer'>
-                    <img src={FarmCreditDark}
-                      className='spons-img gold-spons'
-                      alt="Farm Credit"/>
-                  </a>
-                  <a href="https://www.wiz.io/"
-                    target="_blank"
-                    className='all-bright dark-mode-logo'
-                    rel='noopener noreferrer'>
-                    <img src={Wiz}
-                      className='spons-img gold-spons'
-                      alt="Wiz"/>
-                  </a>
-                  <a href="https://www.wiz.io/"
-                    target="_blank"
-                    className='light-mode-logo'
-                    rel='noopener noreferrer'>
-                    <img src={Wiz}
-                      className='spons-img gold-spons'
-                      alt="Wiz"/>
-                  </a>
-                  <a href="https://www.ethicalintruder.com/"
-                    target="_blank"
-                    className=''
-                    rel='noopener noreferrer'>
-                    <img src={EthicalIntruder}
-                      className='spons-img gold-spons'
-                      alt="Ethical Intruder"/>
-                  </a>
-                  <a href="https://ecstech.com/"
-                    target="_blank"
-                    className=''
-                    rel='noopener noreferrer'>
-                    <img src={ECS}
-                      className='spons-img gold-spons'
-                      alt="Ethical Intruder"/>
-                  </a>
-                  <a href="https://www.conagrabrands.com/"
-                    target="_blank"
-                    className='light-mode-logo'
-                    rel='noopener noreferrer'>
-                    <img src={ConAgraDark}
-                      className='spons-img gold-spons'
-                      alt="Conagra"/>
-                  </a>
-                  <a href="https://www.conagrabrands.com/"
-                    target="_blank"
-                    className='dark-mode-logo'
-                    rel='noopener noreferrer'>
-                    <img src={ConAgraLight}
-                      className='spons-img gold-spons'
-                      alt="Conagra"/>
-                  </a>
-                  <div className='sub-party-logos'>
-                    <span className='sub-party-logos'>
-                      <a href="https://www.sentinelone.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className='dark-mode-logo'>
-                        <img src={SentOneWhite}
-                          className='spons-img sub-party-spons'
-                          alt="Sentinel One"/>
-                      </a>
-                      <a href="https://www.sentinelone.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className='all-dark light-mode-logo'>
-                        <img src={SentOneWhite}
-                          className='spons-img sub-party-spons'
-                          alt="Sentinel One"/>
-                      </a>
-                      <a href="https://www.shi.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className='dark-mode-logo'>
-                        <img src={SHIWhite}
-                          className='spons-img sub-party-spons'
-                          alt="SHI"/>
-                      </a>
-                      <a href="https://www.shi.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className='light-mode-logo'>
-                        <img src={SHIDark}
-                          className='spons-img sub-party-spons'
-                          alt="SHI"/>
-                      </a>
-                      <a href="https://www.cyberark.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className='dark-mode-logo'>
-                        <img src={CyberArk_Light}
-                          className='spons-img sub-party-spons'
-                          alt="CyberArk"/>
-                      </a>
-                      <a href="https://www.cyberark.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className='light-mode-logo'>
-                        <img src={CyberArk_Dark}
-                          className='spons-img sub-party-spons'
-                          alt="CyberArk"/>
-                      </a>
-                    </span>
-                  </div>
-                </div> */}
+                </div>
 
                 {/* Silver Sponsors */}
                 {/* <div className='spons-block'>
@@ -532,29 +420,49 @@ export default class Sponsors extends Component {
                 </div> */}
 
                 {/* Coffee Sponsors */}
-                {/* <div className='spons-block'>
+                <div className='spons-block'>
                   <div className='foodbev-spons'>
                     <div className='single-foodbev-spons'>
                       <h6 className='text-highlight spons-title'>Coffee</h6>
-                      <a href="https://www.turngate.io/"
+                      <a href="https://cribl.io/"
                         target="_blank"
                         rel='noopener noreferrer'
-                        className='all-bright dark-mode-logo'>
-                        <img src={Turngate}
+                        className='dark-mode-logo'>
+                        <img src={CriblDark}
                           className='spons-img fdbev-spons'
-                          alt="Wiz"/>
+                          style={{maxHeight: '120px', width: 'auto'}}
+                          alt="Cribl"/>
                       </a>
-                      <a href="https://www.turngate.io/"
+                      <a href="https://cribl.io/"
                         target="_blank"
                         rel='noopener noreferrer'
                         className='light-mode-logo'>
-                        <img src={Turngate}
+                        <img src={CriblLight}
                           className='spons-img fdbev-spons'
-                          alt="Turngate"/>
+                          style={{maxHeight: '120px', width: 'auto'}}
+                          alt="Cribl"/>
+                      </a>
+                      <a href="https://www.trace3.com/"
+                        target="_blank"
+                        rel='noopener noreferrer'
+                        className='dark-mode-logo'>
+                        <img src={Trace3Dark}
+                          className='spons-img fdbev-spons'
+                          style={{maxHeight: '120px', width: 'auto'}}
+                          alt="Trace3"/>
+                      </a>
+                      <a href="https://www.trace3.com/"
+                        target="_blank"
+                        rel='noopener noreferrer'
+                        className='light-mode-logo'>
+                        <img src={Trace3Light}
+                          className='spons-img fdbev-spons'
+                          style={{maxHeight: '120px', width: 'auto'}}
+                          alt="Trace3"/>
                       </a>
                     </div>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
