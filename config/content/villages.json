@@ -21,13 +21,13 @@
   },
   {
     "title": "HAM Radio Village",
-    "author": "Kernelcon",
+    "author": "https://hamvillage.org/",
     "id": "hamradiovillage",
     "hidden": false,
     "logo": {
       "dark_mode_support": false,
-      "image_name": "",
-      "image_class": "",
+      "image_name": "ham_village.png",
+      "image_class": "logo-reverse",
       "dark_mode_image_name": "",
       "dark_mode_image_class": ""
     },
@@ -42,7 +42,7 @@
   },
   {
     "title": "Hardware Hacking Village",
-    "author": "Hackspace.io",
+    "author": "https://hackspace.io",
     "id": "hhv",
     "hidden": false,
     "logo": {
@@ -63,7 +63,7 @@
   },
   {
     "title": "Lockpicking Village",
-    "author": "TOOOL",
+    "author": "https://toool.us/",
     "id": "tooolvillage",
     "hidden": false,
     "logo": {

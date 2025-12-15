@@ -20,7 +20,81 @@ class CallOuts extends Component {
   }
 
   createMarkup(html) {
-    return {__html: html};
+    if (!html) return {__html: ''};
+    
+    // Regex to match URLs (http://, https://, and www.)
+    // This will match URLs that are not already inside HTML tags
+    const urlRegex = /(https?:\/\/[^\s<>"']+|www\.[^\s<>"']+)/gi;
+    
+    // Split HTML into parts: text nodes and HTML tags
+    // We'll only auto-link URLs in text nodes, not inside existing anchor tags
+    let processedHtml = html;
+    
+    // Find all matches and process them in reverse order to maintain indices
+    const matches = [];
+    let match;
+    
+    while ((match = urlRegex.exec(html)) !== null) {
+      // Check if this match is inside an existing anchor tag
+      const beforeText = html.substring(0, match.index);
+      const afterText = html.substring(match.index);
+      
+      // Count unclosed <a> tags before this position
+      const openTags = (beforeText.match(/<a\b[^>]*>/gi) || []).length;
+      const closeTags = (beforeText.match(/<\/a>/gi) || []).length;
+      const isInsideAnchor = openTags > closeTags;
+      
+      // Also check if we're inside an href attribute
+      const lastHrefIndex = beforeText.lastIndexOf('href=');
+      let isInHref = false;
+      if (lastHrefIndex !== -1) {
+        // Find the opening quote after href=
+        const hrefValueStart = beforeText.indexOf('"', lastHrefIndex);
+        const hrefValueStartSingle = beforeText.indexOf("'", lastHrefIndex);
+        let quoteStart = -1;
+        let quoteChar = '';
+        
+        if (hrefValueStart !== -1 && (hrefValueStartSingle === -1 || hrefValueStart < hrefValueStartSingle)) {
+          quoteStart = hrefValueStart;
+          quoteChar = '"';
+        } else if (hrefValueStartSingle !== -1) {
+          quoteStart = hrefValueStartSingle;
+          quoteChar = "'";
+        }
+        
+        // If we found an opening quote, check if we're still inside it
+        if (quoteStart !== -1) {
+          const closingQuote = beforeText.indexOf(quoteChar, quoteStart + 1);
+          isInHref = closingQuote === -1; // Still inside if no closing quote found
+        }
+      }
+      
+      if (!isInsideAnchor && !isInHref) {
+        matches.push({
+          index: match.index,
+          url: match[0],
+          length: match[0].length
+        });
+      }
+    }
+    
+    // Replace URLs with anchor tags (process in reverse to maintain indices)
+    for (let i = matches.length - 1; i >= 0; i--) {
+      const match = matches[i];
+      let url = match.url;
+      
+      // Add https:// if it starts with www.
+      if (url.toLowerCase().startsWith('www.')) {
+        url = 'https://' + url;
+      }
+      
+      const linkHtml = `<a href="${url}" target="_blank" rel="noopener noreferrer">${match.url}</a>`;
+      processedHtml = processedHtml.substring(0, match.index) + 
+                     linkHtml + 
+                     processedHtml.substring(match.index + match.length);
+    }
+    
+    return {__html: processedHtml};
   }
   
 
@@ -49,7 +123,15 @@ class CallOuts extends Component {
           <div className='callout-title'>{ele.title}</div>
           <div className='callout-section'>
             <div className='callout-name-logo'>
-              {ele.author && <div className='callout-author'>{`From ${ele.author}`}</div>}
+              {ele.author && (
+                <div className='callout-author'>
+                  From {ele.author.startsWith('http://') || ele.author.startsWith('https://') ? (
+                    <a href={ele.author} target="_blank" rel="noopener noreferrer">{ele.author}</a>
+                  ) : (
+                    ele.author
+                  )}
+                </div>
+              )}
               <div className='callout-logo'>
                 {image && <img className={`callout-img ${ele.logo.image_class}`} src={image} alt={ele.title} />}
                 {darkModeImage && <img className={`callout-img ${ele.logo.dark_mode_image_class}`} src={darkModeImage} alt={ele.title} />}
