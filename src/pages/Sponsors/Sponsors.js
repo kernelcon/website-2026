@@ -10,8 +10,8 @@ import React, { Component } from "react";
 // import AppGateDark from "../../static/images/sponsors/appgate-dark-logo.png";
 // import AppGateLight from "../../static/images/sponsors/appgate-light-logo.png";
 // import RedCanary from "../../static/images/sponsors/red_canary.png";
-// import AWSDark from "../../static/images/sponsors/AWS_black.png";
-// import AWSLight from "../../static/images/sponsors/AWS-color.png";
+import AWSDark from "../../static/images/sponsors/AWS_black.png";
+import AWSLight from "../../static/images/sponsors/AWS-color.png";
 // import Netsecuris from '../../static/images/sponsors/Netsecuris.jpg';
 // import ConAgraLight from "../../static/images/sponsors/conagra-light-logo.webp";
 // import ConAgraDark from "../../static/images/sponsors/conagra-dark-logo.png";
@@ -38,8 +38,8 @@ import GuidepointLight from "../../static/images/sponsors/guidepoint_white.png";
 // import TekSystems from "../../static/images/logos/teksystems.png"
 // import ExpelDark from "../../static/images/sponsors/expel-dark-mode.png"
 // import ExpelLight from "../../static/images/sponsors/expel-light-mode.png"
-import AmazonDark from "../../static/images/sponsors/amazon-dark-mode.png"
-import AmazonLight from "../../static/images/sponsors/amazon-light-mode.png"
+// import AmazonDark from "../../static/images/sponsors/amazon-dark-mode.png"
+// import AmazonLight from "../../static/images/sponsors/amazon-light-mode.png"
 // import Turngate from "../../static/images/sponsors/turn-gate.png"
 // import Phosphorus from "../../static/images/sponsors/phosphorus.png"
 // import RecordedFuture from "../../static/images/sponsors/recorded-future.png"
@@ -199,21 +199,21 @@ export default class Sponsors extends Component {
                 {/* Gold Sponsors */}
                 <div className='spons-block'>
                   <h2 className='gold spons-title'>Gold</h2>
-                  <a href="https://www.amazon.jobs/content/en/teams/amazon-security"
+                  <a href="https://aws.amazon.com/"
                     target="_blank"
                     className='light-mode-logo'
                     rel='noopener noreferrer'>
-                    <img src={AmazonLight}
-                      className='spons-img silver-spons'
-                      alt="Amazon Security"/>
+                    <img src={AWSLight}
+                      className='spons-img gold-spons'
+                      alt="AWS"/>
                   </a>
-                  <a href="https://www.amazon.jobs/content/en/teams/amazon-security"
+                  <a href="https://aws.amazon.com/"
                     target="_blank"
                     className='dark-mode-logo'
                     rel='noopener noreferrer'>
-                    <img src={AmazonDark}
-                      className='spons-img silver-spons'
-                      alt="Amazon Security"/>
+                    <img src={AWSDark}
+                      className='spons-img gold-spons'
+                      alt="AWS"/>
                   </a>
                 </div>
 
@@ -430,7 +430,6 @@ export default class Sponsors extends Component {
                         className='dark-mode-logo'>
                         <img src={CriblDark}
                           className='spons-img fdbev-spons'
-                          style={{maxHeight: '120px', width: 'auto'}}
                           alt="Cribl"/>
                       </a>
                       <a href="https://cribl.io/"
@@ -439,7 +438,6 @@ export default class Sponsors extends Component {
                         className='light-mode-logo'>
                         <img src={CriblLight}
                           className='spons-img fdbev-spons'
-                          style={{maxHeight: '120px', width: 'auto'}}
                           alt="Cribl"/>
                       </a>
                       <a href="https://www.trace3.com/"
@@ -448,7 +446,6 @@ export default class Sponsors extends Component {
                         className='dark-mode-logo'>
                         <img src={Trace3Dark}
                           className='spons-img fdbev-spons'
-                          style={{maxHeight: '120px', width: 'auto'}}
                           alt="Trace3"/>
                       </a>
                       <a href="https://www.trace3.com/"
@@ -457,7 +454,6 @@ export default class Sponsors extends Component {
                         className='light-mode-logo'>
                         <img src={Trace3Light}
                           className='spons-img fdbev-spons'
-                          style={{maxHeight: '120px', width: 'auto'}}
                           alt="Trace3"/>
                       </a>
                     </div>
