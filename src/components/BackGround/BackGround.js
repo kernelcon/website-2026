@@ -295,7 +295,7 @@ class BackGround extends Component {
             <h4 className="content-subtitle">Unplug. Connect. Hack. Go Off Grid.</h4>
             <p className="content-paragraph">Out here, under the endless Midwest sky, technology feels different. It's raw. It's hands-on. 
               And its free from the digital noise of daily life. <strong>Kernelcon 2026</strong> invites you 
-              to step off the grid and immerse yourself in a weekend where curiosity meets community.
+              to step off the grid and immerse yourself in a world where curiosity meets community.
             </p>
 
             <p className="content-paragraph">
