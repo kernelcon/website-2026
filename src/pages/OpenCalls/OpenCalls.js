@@ -43,7 +43,10 @@ export default class OpenCalls extends Component {
           </TabList>
           <span>
             <TabPanel tabId="papers">
-              <div className='tab-title'>Call for Papers</div>
+              <div className='tab-title-wrapper'>
+                <div className='tab-title'>Call for Papers</div>
+                <span className='closed-tag'>Closed</span>
+              </div>
               <CFP />
             </TabPanel>
             <TabPanel tabId="training">

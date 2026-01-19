@@ -62,3 +62,24 @@
     text-align: center;
     display: block;
 }
+
+.tab-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.closed-tag {
+    font-family: 'Jura', 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #FF6B6B 0%, #EE5A5A 100%);
+    padding: 6px 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
+    display: inline-block;
+}

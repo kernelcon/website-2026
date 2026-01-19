@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import ContrastDarkMode from "../../static/images/sponsors/contrast-dark-logo.png";
 // import ContrastLightMode from "../../static/images/sponsors/contrast-light-logo.png";
-// import ECS from "../../static/images/sponsors/ECS.png";
+import ECS from "../../static/images/sponsors/ECS.png";
 // import NoStarchPress from "../../static/images/sponsors/no-starch-logo.png";
 // import ToooLDarkMode from "../../static/images/sponsors/toool-light-logo.png";
 // import TooolLightMode from "../../static/images/sponsors/toool-dark-logo.png";
@@ -19,7 +19,7 @@ import AWSLight from "../../static/images/sponsors/AWS-color.png";
 // import ZScaler from "../../static/images/sponsors/zscaler.png";
 // import BairdHolm from "../../static/images/sponsors/bairdholm.png";
 import GuidepointDark from "../../static/images/sponsors/guidepoint_black.png";
-import GuidepointLight from "../../static/images/sponsors/guidepoint_white.png";
+import GuidepointLight from "../../static/images/sponsors/guidepoint_black.png";
 // import Tanium from "../../static/images/sponsors/Tanium.png";
 // import Axonius from "../../static/images/sponsors/Axonius.png";
 // import Wiz from "../../static/images/sponsors/wiz.png";
@@ -60,7 +60,9 @@ import GuidepointLight from "../../static/images/sponsors/guidepoint_white.png";
 import Trace3Dark from '../../static/images/sponsors/Trace3_Logo_WhiteBlue.png'
 import Trace3Light from '../../static/images/sponsors/Trace3_Logo.png'
 import CriblDark from '../../static/images/sponsors/cribl-dark-mode.svg'
-import CriblLight from '../../static/images/sponsors/cribl-light-mode.svg' 
+import CriblLight from '../../static/images/sponsors/cribl-light-mode.svg'
+import MoODark from '../../static/images/sponsors/MoO_dark_mode.png'
+import MoOLight from '../../static/images/sponsors/MoO_light_mode.png'
 
 import "./Sponsors.scss";
 
@@ -182,7 +184,7 @@ export default class Sponsors extends Component {
                       rel='noopener noreferrer'
                       className='dark-mode-logo'>
                       <img src={GuidepointLight}
-                        className='spons-img plat-spons'
+                        className='spons-img plat-spons all-bright'
                         alt="Guidepoint Security"/>
                     </a>
                     <a href="https://www.guidepointsecurity.com/"
@@ -214,6 +216,29 @@ export default class Sponsors extends Component {
                     <img src={AWSDark}
                       className='spons-img gold-spons'
                       alt="AWS"/>
+                  </a>
+                  <a href="https://www.ecstech.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'>
+                    <img src={ECS}
+                      className='spons-img gold-spons'
+                      alt="ECS"/>
+                  </a>
+                  <a href="https://www.mutualofomaha.com/careers/careers-at-mutual/information-technology"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={MoOLight}
+                      className='spons-img gold-spons'
+                      alt="Mutual of Omaha"/>
+                  </a>
+                  <a href="https://www.mutualofomaha.com/careers/careers-at-mutual/information-technology"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={MoODark}
+                      className='spons-img gold-spons'
+                      alt="Mutual of Omaha"/>
                   </a>
                 </div>
 
@@ -429,7 +454,7 @@ export default class Sponsors extends Component {
                         rel='noopener noreferrer'
                         className='dark-mode-logo'>
                         <img src={CriblDark}
-                          className='spons-img fdbev-spons'
+                          className='spons-img fdbev-spons cribl-logo'
                           alt="Cribl"/>
                       </a>
                       <a href="https://cribl.io/"
@@ -437,7 +462,7 @@ export default class Sponsors extends Component {
                         rel='noopener noreferrer'
                         className='light-mode-logo'>
                         <img src={CriblLight}
-                          className='spons-img fdbev-spons'
+                          className='spons-img fdbev-spons cribl-logo'
                           alt="Cribl"/>
                       </a>
                       <a href="https://www.trace3.com/"
