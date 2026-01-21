@@ -14,7 +14,7 @@ import AWSDark from "../../static/images/sponsors/AWS_black.png";
 import AWSLight from "../../static/images/sponsors/AWS-color.png";
 // import Netsecuris from '../../static/images/sponsors/Netsecuris.jpg';
 import ConAgraLight from "../../static/images/sponsors/conagra-light-logo.webp";
-import ConAgraDark from "../../static/images/sponsors/conagra-dark-logo.png";
+import ConAgraDark from "../../static/images/sponsors/conagra-logo-mobile.png";
 // import Protiviti from "../../static/images/sponsors/protiviti.png";
 // import ZScaler from "../../static/images/sponsors/zscaler.png";
 // import BairdHolm from "../../static/images/sponsors/bairdholm.png";
