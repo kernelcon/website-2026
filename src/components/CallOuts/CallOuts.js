@@ -37,7 +37,6 @@ class CallOuts extends Component {
     while ((match = urlRegex.exec(html)) !== null) {
       // Check if this match is inside an existing anchor tag
       const beforeText = html.substring(0, match.index);
-      const afterText = html.substring(match.index);
       
       // Count unclosed <a> tags before this position
       const openTags = (beforeText.match(/<a\b[^>]*>/gi) || []).length;
@@ -99,7 +98,6 @@ class CallOuts extends Component {
   
 
   render() {
-    console.log(this.props.config.order);
     // const callOutsOrdered = this.props.config.sort((a,b) => a.title.localeCompare(b.title));
     const callOutsOrdered = this.props.config.sort((a, b) => (a.order || b.order) ? (a.order - b.order) : a.title.localeCompare(b.title));
     const callOuts = callOutsOrdered.map((ele, idx) => {

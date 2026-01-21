@@ -13,8 +13,8 @@ import ECS from "../../static/images/sponsors/ECS.png";
 import AWSDark from "../../static/images/sponsors/AWS_black.png";
 import AWSLight from "../../static/images/sponsors/AWS-color.png";
 // import Netsecuris from '../../static/images/sponsors/Netsecuris.jpg';
-// import ConAgraLight from "../../static/images/sponsors/conagra-light-logo.webp";
-// import ConAgraDark from "../../static/images/sponsors/conagra-dark-logo.png";
+import ConAgraLight from "../../static/images/sponsors/conagra-light-logo.webp";
+import ConAgraDark from "../../static/images/sponsors/conagra-dark-logo.png";
 // import Protiviti from "../../static/images/sponsors/protiviti.png";
 // import ZScaler from "../../static/images/sponsors/zscaler.png";
 // import BairdHolm from "../../static/images/sponsors/bairdholm.png";
@@ -40,7 +40,7 @@ import GuidepointLight from "../../static/images/sponsors/guidepoint_black.png";
 // import ExpelLight from "../../static/images/sponsors/expel-light-mode.png"
 // import AmazonDark from "../../static/images/sponsors/amazon-dark-mode.png"
 // import AmazonLight from "../../static/images/sponsors/amazon-light-mode.png"
-// import Turngate from "../../static/images/sponsors/turn-gate.png"
+import Turngate from "../../static/images/sponsors/turn-gate.png"
 // import Phosphorus from "../../static/images/sponsors/phosphorus.png"
 // import RecordedFuture from "../../static/images/sponsors/recorded-future.png"
 // import Runza from "../../static/images/sponsors/runza-logo-tagline.png"
@@ -63,6 +63,10 @@ import CriblDark from '../../static/images/sponsors/cribl-dark-mode.svg'
 import CriblLight from '../../static/images/sponsors/cribl-light-mode.svg'
 import MoODark from '../../static/images/sponsors/MoO_dark_mode.png'
 import MoOLight from '../../static/images/sponsors/MoO_light_mode.png'
+import ZafranRegular from '../../static/images/sponsors/Zafran Logo - Regular.png'
+import ZafranWhite from '../../static/images/sponsors/Zafran Logo - White.png'
+import PromptS1Regular from '../../static/images/sponsors/Prompt-S1-Lockup-Regular.png'
+import PromptS1White from '../../static/images/sponsors/Prompt-S1-Lockup-White.svg'
 
 import "./Sponsors.scss";
 
@@ -224,6 +228,22 @@ export default class Sponsors extends Component {
                       className='spons-img gold-spons'
                       alt="ECS"/>
                   </a>
+                  <a href="https://www.conagrabrands.com/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={ConAgraDark}
+                      className='spons-img gold-spons'
+                      alt="ConAgra Brands"/>
+                  </a>
+                  <a href="https://www.conagrabrands.com/"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={ConAgraLight}
+                      className='spons-img gold-spons'
+                      alt="ConAgra Brands"/>
+                  </a>
                   <a href="https://www.mutualofomaha.com/careers/careers-at-mutual/information-technology"
                     target="_blank"
                     className='light-mode-logo'
@@ -239,6 +259,38 @@ export default class Sponsors extends Component {
                     <img src={MoODark}
                       className='spons-img gold-spons'
                       alt="Mutual of Omaha"/>
+                  </a>
+                  <a href="https://www.zafran.io/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={ZafranRegular}
+                      className='spons-img gold-spons'
+                      alt="Zafran"/>
+                  </a>
+                  <a href="https://www.zafran.io/"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={ZafranWhite}
+                      className='spons-img gold-spons'
+                      alt="Zafran"/>
+                  </a>
+                  <a href="https://prompt.security/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={PromptS1Regular}
+                      className='spons-img gold-spons'
+                      alt="Prompt-S1"/>
+                  </a>
+                  <a href="https://prompt.security/"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={PromptS1White}
+                      className='spons-img gold-spons'
+                      alt="Prompt-S1"/>
                   </a>
                 </div>
 
@@ -396,53 +448,29 @@ export default class Sponsors extends Component {
                 </div> */}
 
                 {/* Food & Beverage Sponsors */}
-                {/* <div className='spons-block'>
+                <div className='spons-block'>
                   <div className='foodbev-spons'>
                     <div className='single-foodbev-spons'>
                       <h6 className='text-highlight spons-title'>Popcorn</h6>
-                      <a href="https://cybercitycircuits.com/"
+                      <a href="https://www.turngate.io/"
                         target="_blank"
                         rel='noopener noreferrer'
                         className='all-bright dark-mode-logo'>
-                        <img src={CyberCityCircuits}
+                        <img src={Turngate}
                           className='spons-img fdbev-spons'
-                          alt="CyberCityCircuits"/>
+                          alt="Turngate"/>
                       </a>
-                      <a href="https://cybercitycircuits.com/"
+                      <a href="https://www.turngate.io/"
                         target="_blank"
                         rel='noopener noreferrer'
                         className='light-mode-logo'>
-                        <img src={CyberCityCircuits}
+                        <img src={Turngate}
                           className='spons-img fdbev-spons'
-                          alt="CyberCityCircuits"/>
-                      </a>
-                      <a href="https://securesky.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className='light-mode-logo'>
-                        <img src={SecureSkyLight}
-                          className='spons-img fdbev-spons'
-                          alt="SecureSky"/>
-                      </a>
-                      <a href="https://securesky.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className='dark-mode-logo'>
-                        <img src={SecureSkyDark}
-                          className='spons-img fdbev-spons'
-                          alt="SecureSky"/>
-                      </a>
-                      <a href="https://cybersecurityomaha.com/"
-                        target="_blank"
-                        rel='noopener noreferrer'
-                        className=''>
-                        <img src={CSO}
-                          className='spons-img fdbev-spons'
-                          alt="CyberSecurityOmaha"/>
+                          alt="Turngate"/>
                       </a>
                     </div>
                   </div>
-                </div> */}
+                </div>
 
                 {/* Coffee Sponsors */}
                 <div className='spons-block'>

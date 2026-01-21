@@ -10,14 +10,9 @@ import MediaQuery from 'react-responsive';
 // import Workshops from './Workshops';
 
 import CallOuts from '../../components/CallOuts/CallOuts';
-import JeffMan from "../../static/images/speakers/JeffMan.jpg";
-import Gabrielle from "../../static/images/speakers/GabrielleHempel.jpg";
-import JaysonStreet from "../../static/images/speakers/JaysonStreet.jpg";
 
 import villageConfig from 'villageConfig';
 import competitionConfig from 'competitionConfig';
-import entertainmentConfig from 'entertainmentConfig';
-import activityConfig from 'activityConfig';
 
 import './Agenda.scss';
 

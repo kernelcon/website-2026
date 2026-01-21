@@ -111,3 +111,14 @@ body.dark-mode {
     }
   }
 }
+
+// Make specific village logos appear white/bright in dark mode
+body.dark-mode {
+  .callout-logo {
+    .badge-invert,
+    .hhv-invert,
+    .rfv-invert {
+      filter: invert(1) grayscale(1) brightness(1000);
+    }
+  }
+}

@@ -87,9 +87,21 @@
         var classNameDark = 'dark-mode';
         var classNameLight = 'light-mode';
 
+        function setFavicon(darkMode) {
+          var link = document.querySelector('link[rel="icon"], link[rel="shortcut icon"]');
+          if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.head.appendChild(link);
+          }
+          // Use a white/bright favicon in dark mode (expects favicon-dark.ico in public/)
+          link.href = darkMode ? '/favicon-dark.ico' : '/favicon.ico';
+        }
+
         function setClassOnDocumentBody(darkMode) {
           document.body.classList.add(darkMode ? classNameDark : classNameLight);
           document.body.classList.remove(darkMode ? classNameLight : classNameDark);
+          setFavicon(darkMode);
         }
 
         var preferDarkQuery = '(prefers-color-scheme: dark)';
