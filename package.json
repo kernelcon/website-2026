@@ -72,8 +72,10 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "scripts": {
-    "start": "rm -rf ./public/cfp/ && cp -r ./src/cfp ./public/ && NODE_OPTIONS=--openssl-legacy-provider node scripts/start.js",
-    "build": "rm -rf ./build ./public/cfp/ && cp -r ./src/cfp ./public/ && NODE_OPTIONS=--openssl-legacy-provider node scripts/build.js && cp ./CNAME ./build/",
+    "start": "rm -rf ./public/cfp/ && cp -r ./src/cfp ./public/ && node scripts/start.js",
+    "build": "rm -rf ./build ./public/cfp/ && cp -r ./src/cfp ./public/ && node scripts/build.js && cp ./CNAME ./build/",
+    "start:legacy": "rm -rf ./public/cfp/ && cp -r ./src/cfp ./public/ && node --openssl-legacy-provider scripts/start.js",
+    "build:legacy": "rm -rf ./build ./public/cfp/ && cp -r ./src/cfp ./public/ && node --openssl-legacy-provider scripts/build.js && cp ./CNAME ./build/",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
