@@ -16,7 +16,8 @@ import AWSLight from "../../static/images/sponsors/AWS-color.png";
 import ConAgraLight from "../../static/images/sponsors/conagra-light-logo.webp";
 import ConAgraDark from "../../static/images/sponsors/conagra-logo-mobile.png";
 // import Protiviti from "../../static/images/sponsors/protiviti.png";
-// import ZScaler from "../../static/images/sponsors/zscaler.png";
+import ZscalerLight from "../../static/images/sponsors/zscaler.png";
+import ZscalerDark from "../../static/images/sponsors/Zscaler_BrandAssets_LogoLockup_White.png";
 // import BairdHolm from "../../static/images/sponsors/bairdholm.png";
 import GuidepointDark from "../../static/images/sponsors/guidepoint_black.png";
 import GuidepointLight from "../../static/images/sponsors/guidepoint_black.png";
@@ -291,6 +292,22 @@ export default class Sponsors extends Component {
                     <img src={PromptS1White}
                       className='spons-img gold-spons'
                       alt="Prompt-S1"/>
+                  </a>
+                  <a href="https://www.zscaler.com"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={ZscalerLight}
+                      className='spons-img gold-spons'
+                      alt="Zscaler"/>
+                  </a>
+                  <a href="https://www.zscaler.com"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={ZscalerDark}
+                      className='spons-img gold-spons'
+                      alt="Zscaler"/>
                   </a>
                 </div>
 

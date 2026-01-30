@@ -50,6 +50,11 @@
         .callout-comic {
           max-height: none !important;
         }
+        // Specific styling for CTF logo
+        img[alt="Kernelcon Capture the Flag"] {
+          transform: scale(1.5);
+          margin-top: 30px;
+        }
       }
     }
     .callout-description {

@@ -107,11 +107,16 @@ module.exports = function(webpackEnv) {
       },
     ].filter(Boolean);
     if (preProcessor) {
+      const loaderOptions = {
+        sourceMap: isEnvProduction && shouldUseSourceMap,
+      };
+      // Configure sass-loader to use sass (Dart Sass) instead of node-sass
+      if (preProcessor === 'sass-loader') {
+        loaderOptions.implementation = require('sass');
+      }
       loaders.push({
         loader: require.resolve(preProcessor),
-        options: {
-          sourceMap: isEnvProduction && shouldUseSourceMap,
-        },
+        options: loaderOptions,
       });
     }
     return loaders;
