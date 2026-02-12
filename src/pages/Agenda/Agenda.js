@@ -10,7 +10,8 @@ import MediaQuery from 'react-responsive';
 // import Workshops from './Workshops';
 
 import CallOuts from '../../components/CallOuts/CallOuts';
-import Ray from "../../static/images/speakers/RayRedacted.png";
+import Casey from "../../static/images/speakers/Casey.png";
+import Phillip from "../../static/images/speakers/Phillip.jpg";
 
 import villageConfig from 'villageConfig';
 import competitionConfig from 'competitionConfig';
@@ -68,19 +69,28 @@ export default class Agenda extends Component {
         <TabPanel tabId="keynotes">
           <div className='text-area'>
             <h3 className='title'>Keynotes</h3>
+
             <div className='keynote-section'>
               <div className='keynote-left'>
-                <h4 className='keynote-name'>Ray Redacted</h4>
+                <h4 className='keynote-name'>Casey Ellis</h4>
                 <div className='keynote-subtitle'>
+                  <div className='keynote-company'>
+                    <a href='https://www.bugcrowd.com/' target="_blank" rel="noopener noreferrer">
+                      BugCrowd
+                    </a>
+                  </div>
+                  <div className='keynote-div'>|</div>
                   <div className='keynote-handle'>
-                    <a href='https://twitter.com/RayRedacted' target="_blank" rel="noopener noreferrer">
-                      @RayRedacted
+                    <a href='https://x.com/cje' target="_blank" rel="noopener noreferrer">
+                      @cje
                     </a>
                   </div>
                 </div>
 
                 <div className='keynote-bio'>
-                  <p className='tab-paragraph'>Ray Redacted is an information security researcher, educator, executive, and proud father who has grown up in the hacker community. Renowned for his clear, human-centered approach to complex technical challenges, Ray emphasizes trust, resilience, and the tangible impact of technology. He aims to engage Kernelcon attendees in discussions about exploring failure, forgiveness, and accountability alongside exploits and defenses, and how small, thoughtful actions can lead to significant change. As a proud father and lifelong learner, Ray shares the lessons his son imparts to him, encouraging him to "lift others as you climb." </p>
+                  <p className='tab-paragraph'> Casey is a serial entrepreneur and executive, best known as the founder of Bugcrowd and co-founder of The disclose.io Project. He is a 25+ year veteran of information security who grew up inventing things, hacking things, and generally getting technology to do things it isn't supposed to do. Casey pioneered the crowdsourced security as-a-service model, launching the first bug bounty programs on the Bugcrowd platform in 2012, and he co-founded disclose.io vulnerability disclosure standardization project in 2014 prior to its launch in 2018.</p>
+                  <p className='tab-paragraph'> He’s an active member of a variety of policy and threat intelligence working groups and think tanks such as the Hacking Policy Council and the Election Security Research Forum. He has personally advised the US White House, DoD, Department of Justice, Department of Homeland Security/CISA, the Australian and UK intelligence communities, and various US House and Senate legislative cybersecurity initiatives, including preemptive cyberspace protection ahead of the 2020 and 2024 Presidential Elections, the US National Cyber Strategy, and a variety of policies and EO’s relating to security research, anti-hacking law, and artificial intelligence.</p>
+                  <p className='tab-paragraph'> Casey, a native of Sydney, Australia, is based in the San Francisco Bay Area.</p>
                 </div>
 
                 {/* <div className='keynote-talk'>
@@ -94,10 +104,48 @@ export default class Agenda extends Component {
                 </div> */}
               </div>
               <div className='keynote-right'>
-                <img src={Ray}
-                  alt="Ray Redacted"
+                <img src={Casey}
+                  alt="Casey Ellis"
                   className='keynote-image'/>
               </div>
+            </div>
+            <div className='keynote-section'>
+              <div className='keynote-left'>
+                <h4 className='keynote-name'>Phillip Wylie</h4>
+                <div className='keynote-subtitle'>
+                  <div className='keynote-company'>
+                    <a href='https://phillipwylieshow.com/' target="_blank" rel="noopener noreferrer">
+                      Phillip Wylie Show
+                    </a>
+                  </div>
+                  <div className='keynote-div'>|</div>
+                  <div className='keynote-handle'>
+                    <a href='https://x.com/PhillipWylie' target="_blank" rel="noopener noreferrer">
+                      @PhillipWylie
+                    </a>
+                  </div>
+                </div>
+
+                <div className='keynote-bio'>
+                  {/* <p className='keynote-bio-subtitle'>We all loved watching him <a className="text-highlight" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=AQpv_6Se6VM&list=PL9RA5HoG1guy7oz3m4Y0aHqsNumai2o8v&index=6">reverse engineer hardware components in Hack Live</a>. And now he's back as our 2022 Keynote Speaker... please welcome, Joe Grand!</p> */}
+                  <p className='keynote-para'>Phillip Wylie is an offensive security professional with over 22 years of cybersecurity experience. He is a former Dallas College Adjunct Instructor, where he taught pentesting and web app pentesting. Phillip’s diverse background includes network and application security, as well as pentesting. With over a decade of offensive security experience, he has conducted pentests of networks, Wi-Fi networks, and applications.  </p>
+                  <p className='keynote-para'>Phillip's contributions to the cybersecurity industry extend beyond his work as a pentester. He is the concept creator and co-author of The Pentester Blueprint: Starting a Career as an Ethical Hacker, inspired by a lecture he presented to his class at Dallas College, which later became a conference talk. Phillip is a podcaster and hosts The Phillip Wylie Show, where he interviews cybersecurity professionals. Additionally, he is a frequent conference speaker, workshop instructor, and mentor.</p>
+                   
+                </div>
+/*
+                <div className='keynote-talk'>
+                  <div className='keynote-topic'>The State of Information Security Today</div>
+                  <div className='keynote-abstract'>
+                    <p className='tab-paragraph'>The intent of this talk is to take a macro level look at the state of the information security industry today based on my 40+ years' experience in the business - including nearly 30 years as a consultant to hundreds of commercial enterprises. I began my career at the National Security Agency and was a pioneer in penetration testing and vulnerability assessment methodologies for both DoD and Civil agencies. I begin with a review of where we stand today and discuss the key reasons why so many organizations are failing. I then offer the solution to what companies need to do if they truly want to be secure and how our industry can be part of the solution.</p>
+                  </div>
+                </div>
+               </div>
+*/
+               <div className='keynote-right'>
+                <img src={Phillip}
+                  alt='Phillip Wylie'
+                  className='keynote-image'/>
+               </div>
             </div>
           </div>
         </TabPanel>
