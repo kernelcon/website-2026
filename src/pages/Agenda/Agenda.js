@@ -132,7 +132,7 @@ export default class Agenda extends Component {
                   <p className='keynote-para'>Phillip's contributions to the cybersecurity industry extend beyond his work as a pentester. He is the concept creator and co-author of The Pentester Blueprint: Starting a Career as an Ethical Hacker, inspired by a lecture he presented to his class at Dallas College, which later became a conference talk. Phillip is a podcaster and hosts The Phillip Wylie Show, where he interviews cybersecurity professionals. Additionally, he is a frequent conference speaker, workshop instructor, and mentor.</p>
                    
                 </div>
-/*
+{/*
                 <div className='keynote-talk'>
                   <div className='keynote-topic'>The State of Information Security Today</div>
                   <div className='keynote-abstract'>
@@ -140,7 +140,7 @@ export default class Agenda extends Component {
                   </div>
                 </div>
                </div>
-*/
+*/}
                <div className='keynote-right'>
                 <img src={Phillip}
                   alt='Phillip Wylie'
