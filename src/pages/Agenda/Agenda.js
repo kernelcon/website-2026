@@ -10,7 +10,7 @@ import MediaQuery from 'react-responsive';
 // import Workshops from './Workshops';
 
 import CallOuts from '../../components/CallOuts/CallOuts';
-import Ray from "../../static/images/speakers/RayRedacted.jpg";
+import Ray from "../../static/images/speakers/RayRedacted.png";
 
 import villageConfig from 'villageConfig';
 import competitionConfig from 'competitionConfig';
