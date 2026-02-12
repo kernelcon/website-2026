@@ -128,8 +128,8 @@ export default class Agenda extends Component {
 
                 <div className='keynote-bio'>
                   {/* <p className='keynote-bio-subtitle'>We all loved watching him <a className="text-highlight" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=AQpv_6Se6VM&list=PL9RA5HoG1guy7oz3m4Y0aHqsNumai2o8v&index=6">reverse engineer hardware components in Hack Live</a>. And now he's back as our 2022 Keynote Speaker... please welcome, Joe Grand!</p> */}
-                  <p className='keynote-para'>Phillip Wylie is an offensive security professional with over 22 years of cybersecurity experience. He is a former Dallas College Adjunct Instructor, where he taught pentesting and web app pentesting. Phillip’s diverse background includes network and application security, as well as pentesting. With over a decade of offensive security experience, he has conducted pentests of networks, Wi-Fi networks, and applications.  </p>
-                  <p className='keynote-para'>Phillip's contributions to the cybersecurity industry extend beyond his work as a pentester. He is the concept creator and co-author of The Pentester Blueprint: Starting a Career as an Ethical Hacker, inspired by a lecture he presented to his class at Dallas College, which later became a conference talk. Phillip is a podcaster and hosts The Phillip Wylie Show, where he interviews cybersecurity professionals. Additionally, he is a frequent conference speaker, workshop instructor, and mentor.</p>
+                  <p className='keynote-para'>Phillip Wylie is an offensive security professional with over 22 years of cybersecurity experience. He is a former Dallas College Adjunct Instructor, where he taught pentesting and web app pentesting. Phillip&apos;s diverse background includes network and application security, as well as pentesting. With over a decade of offensive security experience, he has conducted pentests of networks, Wi-Fi networks, and applications.  </p>
+                  <p className='keynote-para'>Phillip&apos;s contributions to the cybersecurity industry extend beyond his work as a pentester. He is the concept creator and co-author of The Pentester Blueprint: Starting a Career as an Ethical Hacker, inspired by a lecture he presented to his class at Dallas College, which later became a conference talk. Phillip is a podcaster and hosts The Phillip Wylie Show, where he interviews cybersecurity professionals. Additionally, he is a frequent conference speaker, workshop instructor, and mentor.</p>
                    
                 </div>
 {/*
@@ -139,8 +139,8 @@ export default class Agenda extends Component {
                     <p className='tab-paragraph'>The intent of this talk is to take a macro level look at the state of the information security industry today based on my 40+ years' experience in the business - including nearly 30 years as a consultant to hundreds of commercial enterprises. I began my career at the National Security Agency and was a pioneer in penetration testing and vulnerability assessment methodologies for both DoD and Civil agencies. I begin with a review of where we stand today and discuss the key reasons why so many organizations are failing. I then offer the solution to what companies need to do if they truly want to be secure and how our industry can be part of the solution.</p>
                   </div>
                 </div>
-               </div>
 */}
+               </div>
                <div className='keynote-right'>
                 <img src={Phillip}
                   alt='Phillip Wylie'
