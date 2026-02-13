@@ -46,7 +46,7 @@ import Turngate from "../../static/images/sponsors/turn-gate.png"
 // import RecordedFuture from "../../static/images/sponsors/recorded-future.png"
 // import Runza from "../../static/images/sponsors/runza-logo-tagline.png"
 // import CyberCityCircuits from "../../static/images/logos/cyber_city_circuits_logo.png"
-// import EthicalIntruder from '../../static/images/sponsors/ethical_intruder_logo.jpg'
+import EthicalIntruder from '../../static/images/sponsors/ethical_intruder_logo.jpg'
 // import CSO from '../../static/images/sponsors/cso.png'
 // import Shamar from '../../static/images/sponsors/shamar.png'
 // import SentOneWhite from '../../static/images/sponsors/sentone_white.png'
@@ -308,6 +308,13 @@ export default class Sponsors extends Component {
                     <img src={ZscalerDark}
                       className='spons-img gold-spons'
                       alt="Zscaler"/>
+                  </a>
+                  <a href="https://ethicalintruder.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'>
+                    <img src={EthicalIntruder}
+                      className='spons-img gold-spons'
+                      alt="Ethical Intruder"/>
                   </a>
                 </div>
 

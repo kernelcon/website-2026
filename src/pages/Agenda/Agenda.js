@@ -24,7 +24,7 @@ export default class Agenda extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultTab: 'villages' // default tab if none specified
+      defaultTab: 'keynotes' // default tab if none specified
     }
   }
 
@@ -38,7 +38,7 @@ export default class Agenda extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.match.params.tabId !== prevProps.match.params.tabId) {
       const { tabId } = this.props.match.params;
-      this.setState({ defaultTab: tabId || 'villages' });
+      this.setState({ defaultTab: tabId || 'keynotes' });
     }
   }
 
