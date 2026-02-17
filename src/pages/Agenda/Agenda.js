@@ -82,7 +82,7 @@ export default class Agenda extends Component {
                   <div className='keynote-div'>|</div>
                   <div className='keynote-handle'>
                     <a href='https://x.com/caseyjohnellis' target="_blank" rel="noopener noreferrer">
-                      @cje
+                      @caseyjohnellis
                     </a>
                   </div>
                 </div>
