@@ -75,8 +75,8 @@ export default class Agenda extends Component {
                 <h4 className='keynote-name'>Casey Ellis</h4>
                 <div className='keynote-subtitle'>
                   <div className='keynote-company'>
-                    <a href='https://www.bugcrowd.com/' target="_blank" rel="noopener noreferrer">
-                      BugCrowd
+                    <a href='https://cje.io/' target="_blank" rel="noopener noreferrer">
+                      cje.io
                     </a>
                   </div>
                   <div className='keynote-div'>|</div>
