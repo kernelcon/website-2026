@@ -4,8 +4,14 @@ export default class CFP extends Component {
 static displayName = "CFP";
 render() {
 return (
-<div className="con-page">
-  <div className="text-area">
+<div className="container">
+  <div className="con-page">
+    <div className="venue-section">
+      <div className="cfp-closed-banner" aria-label="CFP status">
+        <span className="cfp-closed-sign">CFP closed</span>
+      </div>
+    </div>
+    <div className="text-area">
     <div>
       {/* Opening */}
       <p className="tab-paragraph">Calling all Explorers!</p>
@@ -220,6 +226,7 @@ return (
         By submitting your talk proposal, you agree to these Terms of Speaking.
       </p>
     </div>
+  </div>
   </div>
 </div>
 

@@ -14,7 +14,7 @@ import Bio from './pages/Agenda/Bio';
 import Dates from "./pages/Dates/Dates";
 import OpenCalls from "./pages/OpenCalls/OpenCalls";
 // import Conference from "./pages/Conference/Conference";
-// import CFP from "./pages/CFP/CFP";
+import CFP from "./pages/CFP/CFP";
 import Home from "./pages/Home/Home";
 import Sponsors from "./pages/Sponsors/Sponsors";
 import Venue from "./pages/Venue/Venue";
@@ -65,7 +65,7 @@ function App() {
 					{/* <Route exact path="/robo-race" component={RoboRace} /> */}
 					<Route exact path="/dates" component={Dates} />
 					<Route exact path="/open-calls" component={OpenCalls} />
-					{/* <Route exact path="/cfp" component={CFP} /> */}
+					<Route exact path="/cfp" component={CFP} />
 					<Route exact path="/sponsors" component={Sponsors} />
 					<Route path="/venue/:tabId?"  component={Venue} />
 					<Route exact path="/register" component={Register} />
