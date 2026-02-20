@@ -114,8 +114,8 @@ export default class Agenda extends Component {
                 <h4 className='keynote-name'>Phillip Wylie</h4>
                 <div className='keynote-subtitle'>
                   <div className='keynote-company'>
-                    <a href='https://phillipwylieshow.com/' target="_blank" rel="noopener noreferrer">
-                      Phillip Wylie Show
+                    <a href='https://suzulabs.com/' target="_blank" rel="noopener noreferrer">
+                      Suzu Labs
                     </a>
                   </div>
                   <div className='keynote-div'>|</div>
