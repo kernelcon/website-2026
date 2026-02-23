@@ -10,6 +10,7 @@ import MastodonLogoDark from '../../../static/images/icons/mastodon-logo-white.s
 import LinkedinLogo from '../../../static/images/icons/linkedin.png';
 import GithubLogoLight from '../../../static/images/icons/github-light-mode.png';
 import GithubLogoDark from '../../../static/images/icons/github-dark-mode.png';
+import CarnageLogoSvg from '../../../static/images/logos/CARNAGE2.svg';
 
 import config from 'agendaConfig';
 import speakerConfig from 'speakerConfig';
@@ -97,6 +98,17 @@ function isSpeakerClickable(author, talkTitle) {
   if (author.name === 'Kernelcon Crew') return false;
   if (NON_CLICKABLE_TITLES.includes(talkTitle)) return false;
   return true;
+}
+
+const CARNAGE_TALK_TITLE = 'Kernelcon Carnage II Setup';
+
+function renderTalkTitle(title) {
+  if (title !== CARNAGE_TALK_TITLE) return title;
+  return (
+    <>
+      <img src={CarnageLogoSvg} alt="Carnage" className="talk-title-carnage-icon" /> Setup
+    </>
+  );
 }
 
 export default class TalksSchedule extends Component {
@@ -254,7 +266,7 @@ export default class TalksSchedule extends Component {
             <div className="box">
               <span className="talk-time">{formatTime(ele.time)}</span>
               <div className="talk-title-and-description">
-                <span className="talk-title">{ele.talkTitle}</span>
+                <span className="talk-title">{renderTalkTitle(ele.talkTitle)}</span>
               </div>
             </div>
           </div>
@@ -277,7 +289,7 @@ export default class TalksSchedule extends Component {
             <div className="talk-title-and-description">
               <div
                 className={`${ele.minutes >= 42 ? "truncate-overflow-4 truncate-overflow" : "truncate-overflow-1 truncate-overflow"}`}>
-                <span className="talk-title">{ele.talkTitle}</span>
+                <span className="talk-title">{renderTalkTitle(ele.talkTitle)}</span>
                 {hasAuthors && <><span className="talk-separator"> · </span><span className="talk-authors">{authorsString}</span></>}
               </div>
               {showDescription && <span className="talk-description">{ele.talkDescription}</span>}
@@ -297,7 +309,7 @@ export default class TalksSchedule extends Component {
     const percentTech = this.state.modal.techLevel ? (this.state.modal.techLevel / 5) * 100 : '';
     const isSpeakerView = this.state.modalView === 'speaker' && this.state.selectedSpeaker;
 
-    const modalTitle = this.state.modal.title;
+    const modalTitle = renderTalkTitle(this.state.modal.title);
     const speaker = this.state.selectedSpeaker;
     const modalContent = isSpeakerView ? (
       <div className="modal-content speaker-bio-modal">
