@@ -1120,7 +1120,7 @@
         "roomIndex": [
           2
         ],
-        "talkTitle": "Kernelcon: A Deep Dive into Cryptocurrency Forking, Mining Infrastructure",
+        "talkTitle": "Kernelcoin: A Deep Dive into Cryptocurrency Forking, Mining Infrastructure",
         "talkDescription": "In 2013, a pivotal moment in cryptocurrency history occurred when the community finally documented the steps to fork Litecoin and create custom altcoins. While the source code was always open, the technique to mine the first genesis block remained shrouded in mystery until someone broke the silence. The community's reaction was swift disapproval, but the damage was done: a flood of new cryptocurrencies emerged. This presentation chronicles a modern recreation of that journey, building Kernelcoin from the ground up using contemporary tools, and explores the technical challenges, security implications, and ecosystem complexities that define cryptocurrency development in 2026.\n\nKernelcoin exists as an educational artifact, symbolizing innovation, collaboration, and the power of the hacker community. Kernelcoin is proof that understanding these systems requires building them. Attendees will leave with practical knowledge of cryptocurrency internals, hands on familiarity with mining infrastructure, and a deeper appreciation for the complexity hiding behind seemingly simple \"magic internet money\".",
         "talkTechLevel": "",
         "talkId": "",
