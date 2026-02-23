@@ -1048,36 +1048,6 @@
         ]
       },
       {
-        "time": "1200",
-        "minutes": "60",
-        "roomIndex": [
-          0,
-          1,
-          2
-        ],
-        "talkTitle": "Lunch (on your own)",
-        "talkDescription": "Get outside and touch grass. Use this time to visit villages, try your hand at a CTF challenge or the escape room, or take a break from all-day talks.",
-        "talkTechLevel": "",
-        "talkId": "",
-        "postCon": {
-          "pdfLink": "",
-          "videoLink": ""
-        },
-        "authors": [
-          {
-            "name": "",
-            "speakerId": "",
-            "company": "",
-            "twitter": "",
-            "github": "",
-            "linkedIn": "",
-            "image": "",
-            "bio": "",
-            "hidden": true
-          }
-        ]
-      },
-      {
         "time": "1300",
         "minutes": "60",
         "roomIndex": [
@@ -1093,8 +1063,19 @@
         },
         "authors": [
           {
-            "name": "Evan Kirstein (BracdaBareBones) and Luke Canfield",
-            "speakerId": "",
+            "name": "Evan Kirstein (BracdaBareBones)",
+            "speakerId": "evankirsteinbracdabarebones",
+            "company": "",
+            "twitter": "",
+            "github": "",
+            "linkedIn": "",
+            "image": "",
+            "bio": "",
+            "hidden": false
+          },
+          {
+            "name": "Luke Canfield",
+            "speakerId": "lukecanfield",
             "company": "",
             "twitter": "",
             "github": "",

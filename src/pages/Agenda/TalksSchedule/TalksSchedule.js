@@ -115,7 +115,7 @@ export default class TalksSchedule extends Component {
       const authorsString = ele.authors
         .filter((a) => a.name)
         .map((a) => a.name)
-        .join(' - ');
+        .join(' & ');
       const hasAuthors = authorsString.length > 0;
 
       if (ele.emptySlot) {
