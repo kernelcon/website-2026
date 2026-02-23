@@ -51,6 +51,15 @@ body.dark-mode {
     .schedule-slot-setup .talk-time {
       color: #666;
     }
+    .schedule-talk-panic .box {
+      background-color: #0a1f0a;
+      background-image: repeating-linear-gradient(0deg, transparent 0, transparent 2px, rgba(0, 0, 0, 0.2) 2px, rgba(0, 0, 0, 0.2) 4px), repeating-linear-gradient(90deg, transparent 0, transparent 2px, rgba(0, 0, 0, 0.15) 2px, rgba(0, 0, 0, 0.15) 4px), linear-gradient(180deg, #163318 0%, #0f2210 35%, #0c1a0e 50%, #050a06 100%);
+      color: #d8f0d8;
+      border-left-color: #388e3c;
+      .talk-time {
+        color: #a5d6a7;
+      }
+    }
   }
 }
 .sched-btn {
@@ -247,11 +256,14 @@ body.dark-mode {
     .talk-authors {
       color: $light-highlight;
     }
-    .talk-title-carnage-icon {
+    .talk-title-logo-icon {
       height: 2em;
       width: auto;
       vertical-align: middle;
       display: inline-block;
+    }
+    .talk-title-carnage-icon {
+      filter: saturate(0.55) opacity(0.88);
     }
     .talk-description {
       font-size: 10px;
@@ -274,6 +286,21 @@ body.dark-mode {
       position: relative;
       max-height: calc(var(--lh) * var(--max-lines));
       overflow: hidden;
+    }
+  }
+
+  // Kernel Panic agenda item: darker gradient + green pixel look (panic poster style)
+  .schedule-talk-panic .box {
+    background-color: #0a1f0a;
+    background-image: repeating-linear-gradient(0deg, transparent 0, transparent 2px, rgba(0, 0, 0, 0.2) 2px, rgba(0, 0, 0, 0.2) 4px), repeating-linear-gradient(90deg, transparent 0, transparent 2px, rgba(0, 0, 0, 0.15) 2px, rgba(0, 0, 0, 0.15) 4px), linear-gradient(180deg, #163318 0%, #0f2210 35%, #0c1a0e 50%, #050a06 100%);
+    color: #d8f0d8;
+    border-left-color: #388e3c;
+    .talk-time {
+      color: #a5d6a7;
+    }
+    .talk-title,
+    .talk-description {
+      color: inherit;
     }
   }
 
@@ -373,14 +400,18 @@ body.dark-mode .speaker-bio-modal {
   }
 }
 
-.talk-title-carnage-icon {
+.talk-title-logo-icon {
   height: 2em;
   width: auto;
   vertical-align: middle;
   display: inline-block;
 }
 
-.backdrop .modal-title .talk-title-carnage-icon {
+.talk-title-carnage-icon {
+  filter: saturate(0.55) opacity(0.88);
+}
+
+.backdrop .modal-title .talk-title-logo-icon {
   height: 2.2em;
 }
 
@@ -393,6 +424,17 @@ body.dark-mode .speaker-bio-modal {
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
+}
+
+.modal-panic-poster {
+  margin-top: 1rem;
+}
+
+.modal-panic-poster-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 .backdrop .modal-author-link:hover {

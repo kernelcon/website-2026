@@ -11,6 +11,8 @@ import LinkedinLogo from '../../../static/images/icons/linkedin.png';
 import GithubLogoLight from '../../../static/images/icons/github-light-mode.png';
 import GithubLogoDark from '../../../static/images/icons/github-dark-mode.png';
 import CarnageLogoSvg from '../../../static/images/logos/CARNAGE2.svg';
+import PanicLogoSvg from '../../../static/images/logos/panic.svg';
+import PanicPosterImg from '../../../static/images/logos/panic.png';
 
 import config from 'agendaConfig';
 import speakerConfig from 'speakerConfig';
@@ -101,14 +103,22 @@ function isSpeakerClickable(author, talkTitle) {
 }
 
 const CARNAGE_TALK_TITLE = 'Kernelcon Carnage II Setup';
+const KERNEL_PANIC_TITLE = 'Kernel Panic';
 
 function renderTalkTitle(title) {
-  if (title !== CARNAGE_TALK_TITLE) return title;
-  return (
-    <>
-      <img src={CarnageLogoSvg} alt="Carnage" className="talk-title-carnage-icon" /> Setup
-    </>
-  );
+  if (title === CARNAGE_TALK_TITLE) {
+    return (
+      <>
+        <img src={CarnageLogoSvg} alt="Carnage" className="talk-title-logo-icon talk-title-carnage-icon" /> Setup
+      </>
+    );
+  }
+  if (title === KERNEL_PANIC_TITLE) {
+    return (
+      <img src={PanicLogoSvg} alt="Kernel Panic" className="talk-title-logo-icon talk-title-panic-icon" />
+    );
+  }
+  return title;
 }
 
 export default class TalksSchedule extends Component {
@@ -279,7 +289,7 @@ export default class TalksSchedule extends Component {
       return (
         <button
           type="button"
-          className="schedule-talk-trigger"
+          className={`schedule-talk-trigger${ele.talkTitle === KERNEL_PANIC_TITLE ? ' schedule-talk-panic' : ''}`}
           style={{gridColumn: gridColumn, gridRow: gridRow}}
           key={index}
           title={fullTitleAndAuthors}
@@ -404,6 +414,11 @@ export default class TalksSchedule extends Component {
           <div className='modal-description-heading'>Description:</div>
           {this.state.modal.description}
         </div>
+        {this.state.modal.title === KERNEL_PANIC_TITLE && (
+          <div className="modal-panic-poster">
+            <img src={PanicPosterImg} alt="Kernel Panic" className="modal-panic-poster-img" />
+          </div>
+        )}
       </div>
     );
 
