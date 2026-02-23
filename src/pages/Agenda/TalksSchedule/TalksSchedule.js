@@ -3,7 +3,101 @@ import Modal from '../../../components/Modal/Modal';
 import Donut from '../../../components/Charts/Donut';
 import './TalksSchedule.scss';
 
+import TwitterLogoLight from '../../../static/images/icons/x-logo-black.png';
+import TwitterLogoDark from '../../../static/images/icons/x-logo-white.png';
+import MastodonLogoLight from '../../../static/images/icons/mastodon-logo-black.svg';
+import MastodonLogoDark from '../../../static/images/icons/mastodon-logo-white.svg';
+import LinkedinLogo from '../../../static/images/icons/linkedin.png';
+import GithubLogoLight from '../../../static/images/icons/github-light-mode.png';
+import GithubLogoDark from '../../../static/images/icons/github-dark-mode.png';
+
 import config from 'agendaConfig';
+import speakerConfig from 'speakerConfig';
+
+// Normalize name for lookup: "Matt Scheurer" -> "mattscheurer", "Aaron Grothe (KCOWIH)" -> "aarongrothekcowih"
+function normalizeName(name) {
+  return (name || '').toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]/g, '');
+}
+
+// Webpack injects speakerConfig as a JSON string; parse so we can iterate
+function getParsedSpeakerConfig() {
+  const raw = speakerConfig;
+  if (Array.isArray(raw)) return raw;
+  if (typeof raw === 'string') {
+    try {
+      return JSON.parse(raw);
+    } catch (_) {}
+  }
+  return [];
+}
+
+// Build lookup by speaker_id and by normalized name; store full details for modal (bio, image, company, socials)
+const speakerBioLookup = (() => {
+  const map = {};
+  try {
+    const config = getParsedSpeakerConfig();
+    config.forEach((group) => {
+      (group.talks || []).forEach((talk) => {
+        (talk.authors || []).forEach((a) => {
+          const name = (a.name || '').trim();
+          const bio = (a.bio || '').trim();
+          if (!name && !bio) return;
+          const entry = {
+            name,
+            bio,
+            image: (a.image || '').trim() || null,
+            company: (a.company || '').trim() || null,
+            twitter: (a.twitter || '').trim() || null,
+            mastodon: (a.mastodon || '').trim() || null,
+            bluesky: (a.bluesky || '').trim() || null,
+            github: (a.github || '').trim() || null,
+            linkedin: (a.linkedin || '').trim() || null
+          };
+          const id = (a.speaker_id || '').toLowerCase().replace(/\s+/g, '');
+          if (id && !map[id]) map[id] = entry;
+          const nameKey = normalizeName(name);
+          if (nameKey && !map[nameKey]) map[nameKey] = entry;
+        });
+      });
+    });
+  } catch (_) {}
+  return map;
+})();
+
+function getSpeakerDetails(author) {
+  if (!author) return null;
+  const id = (author.speakerId || '').toLowerCase().replace(/\s+/g, '');
+  const nameKey = normalizeName(author.name);
+  const entry = (id && speakerBioLookup[id]) || (nameKey && speakerBioLookup[nameKey]);
+  if (!entry) return { name: (author.name || '').trim(), bio: (author.bio || '').trim() || null, image: null, company: null, twitter: null, mastodon: null, bluesky: null, github: null, linkedin: null };
+  return {
+    name: entry.name || (author.name || '').trim(),
+    bio: (entry.bio || (author.bio || '').trim()) || null,
+    image: entry.image || null,
+    company: entry.company || null,
+    twitter: entry.twitter || null,
+    mastodon: entry.mastodon || null,
+    bluesky: entry.bluesky || null,
+    github: entry.github || null,
+    linkedin: entry.linkedin || null
+  };
+}
+
+const NON_CLICKABLE_TITLES = [
+  'Lunch (on your own)',
+  'Registration Opens',
+  "Open Bar / Appetizers & Hors d'oeuvres",
+  'Kernel Panic',
+  'Opening Remarks',
+  'Day 2 Opening Remarks'
+];
+
+function isSpeakerClickable(author, talkTitle) {
+  if (!(author && author.name)) return false;
+  if (author.name === 'Kernelcon Crew') return false;
+  if (NON_CLICKABLE_TITLES.includes(talkTitle)) return false;
+  return true;
+}
 
 export default class TalksSchedule extends Component {
   static displayName = 'TalksSchedule';
@@ -20,9 +114,26 @@ export default class TalksSchedule extends Component {
         techLevel: '',
         authors: [],
         time: ''
-      }
+      },
+      modalView: 'talk', // 'talk' | 'speaker'
+      selectedSpeaker: null // { name, bio } when viewing a speaker
     };
   }
+
+  showSpeakerInModal = (author) => {
+    const details = getSpeakerDetails(author || {});
+    this.setState({
+      modalView: 'speaker',
+      selectedSpeaker: details
+    });
+  };
+
+  backToTalk = () => {
+    this.setState({
+      modalView: 'talk',
+      selectedSpeaker: null
+    });
+  };
 
   toggleScheduleDate = (index) => {
     this.setState({
@@ -33,23 +144,26 @@ export default class TalksSchedule extends Component {
 
   popModal = (title, description, techLevel, authors, time) => () => {
     this.setState({
-      modal:{
-        title: title,
-        description: description,
-        techLevel: techLevel,
-        authors: authors,
-        time: time
-      }
+      modal: {
+        title,
+        description,
+        techLevel,
+        authors: authors || [],
+        time
+      },
+      modalView: 'talk',
+      selectedSpeaker: null
     }, () => {
       this.toggleModal();
     });
-  }
+  };
 
   toggleModal = () => {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
+    this.setState((prev) => ({
+      isOpen: !prev.isOpen,
+      ...(prev.isOpen ? { modalView: 'talk', selectedSpeaker: null } : {})
+    }));
+  };
 
   render() {
     const currentDay = config[this.state.dayIndex];
@@ -179,42 +293,118 @@ export default class TalksSchedule extends Component {
     const gridTemplateColumnsString = `calc(${gridTemplateColumnsPercentage}% - 10px) `;
     const gridTemplateColumns = `${gridTemplateColumnsString.repeat(totalCols)}`;
     
-    const authors = this.state.modal.authors.map((ele, index) => {
-      const author = index ? ` & ${ele.name}` : ele.name;
-      return (
-        author
-      );
-    });
-
+    const authorsWithName = (this.state.modal.authors || []).filter((a) => a.name);
     const percentTech = this.state.modal.techLevel ? (this.state.modal.techLevel / 5) * 100 : '';
+    const isSpeakerView = this.state.modalView === 'speaker' && this.state.selectedSpeaker;
+
+    const modalTitle = this.state.modal.title;
+    const speaker = this.state.selectedSpeaker;
+    const modalContent = isSpeakerView ? (
+      <div className="modal-content speaker-bio-modal">
+        <div className="speaker-bio-meta">
+          {speaker.image && (
+            <div className="speaker-bio-image-wrap">
+              <img
+                src={require('../../../static/images/speakers/' + speaker.image)}
+                alt={speaker.name}
+                className="speaker-bio-image"
+              />
+            </div>
+          )}
+          <div className="speaker-bio-meta-text">
+            <div className="speaker-bio-name">{speaker.name}</div>
+            {speaker.company && <div className="speaker-bio-company">{speaker.company}</div>}
+            {(speaker.twitter || speaker.mastodon || speaker.github || speaker.linkedin) && (
+              <div className="speaker-bio-socials">
+                {speaker.twitter && (
+                  <a href={speaker.twitter.includes('x.com') || speaker.twitter.includes('twitter.com') ? speaker.twitter : 'https://x.com/' + speaker.twitter} target="_blank" rel="noopener noreferrer nofollow" aria-label="X">
+                    <img src={TwitterLogoLight} className="light-mode-logo speaker-bio-social-icon" alt="" />
+                    <img src={TwitterLogoDark} className="dark-mode-logo speaker-bio-social-icon" alt="" />
+                  </a>
+                )}
+                {speaker.mastodon && (
+                  <a href={speaker.mastodon} target="_blank" rel="noopener noreferrer nofollow" aria-label="Mastodon">
+                    <img src={MastodonLogoLight} className="light-mode-logo speaker-bio-social-icon" alt="" />
+                    <img src={MastodonLogoDark} className="dark-mode-logo speaker-bio-social-icon" alt="" />
+                  </a>
+                )}
+                {speaker.github && (
+                  <a href={speaker.github.includes('github.com') ? speaker.github : 'https://github.com/' + speaker.github} target="_blank" rel="noopener noreferrer nofollow" aria-label="GitHub">
+                    <img src={GithubLogoLight} className="light-mode-logo speaker-bio-social-icon" alt="" />
+                    <img src={GithubLogoDark} className="dark-mode-logo speaker-bio-social-icon" alt="" />
+                  </a>
+                )}
+                {speaker.linkedin && (
+                  <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer nofollow" aria-label="LinkedIn">
+                    <img src={LinkedinLogo} className="speaker-bio-social-icon" alt="" />
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+        <p className="speaker-bio-text">
+          {speaker.bio || 'No bio available.'}
+        </p>
+        <button type="button" className="modal-back-to-talk" onClick={this.backToTalk}>
+          ← Back to talk
+        </button>
+      </div>
+    ) : (
+      <div className='modal-content'>
+        {authorsWithName.length > 0 && (
+          <div className='modal-speakers'>
+            {`${authorsWithName.length > 1 ? 'Speakers' : 'Speaker'}: `}
+            <span className='modal-authors'>
+              {authorsWithName.map((author, idx) => {
+                const clickable = isSpeakerClickable(author, this.state.modal.title);
+                return (
+                  <React.Fragment key={idx}>
+                    {idx > 0 && ' & '}
+                    {clickable ? (
+                      <button
+                        type="button"
+                        className="modal-author-link"
+                        onClick={() => this.showSpeakerInModal(author)}
+                        title={`View ${author.name} bio`}
+                      >
+                        {author.name}
+                      </button>
+                    ) : (
+                      <span>{author.name}</span>
+                    )}
+                  </React.Fragment>
+                );
+              })}
+            </span>
+          </div>
+        )}
+        <div className='modal-headline'>
+          <div className='modal-headline-time'>Start: <span className='modal-time'>{formatTime(this.state.modal.time)}</span></div>
+          {percentTech && (
+            <div className='modal-headine-percentage'>
+              <Donut value={percentTech} />
+              <span className='tech-label'>% technical</span>
+            </div>
+          )}
+        </div>
+        <div className='modal-description'>
+          <div className='modal-description-heading'>Description:</div>
+          {this.state.modal.description}
+        </div>
+      </div>
+    );
 
     return (
       <div className='schedule-talks'>
 
-        <Modal show={this.state.isOpen}
+        <Modal
+          show={this.state.isOpen}
           onClose={this.toggleModal}
-          title={this.state.modal.title}
+          title={modalTitle}
         >
-
-          <div className='modal-content'>
-            {/* {this.state.modal.} */}
-            {this.state.modal.authors.length > 0 && this.state.modal.authors[0].name && <div className='modal-speakers'>
-              {`${this.state.modal.authors.length > 1 ? 'Speakers' : 'Speaker'}: `}<span className='modal-authors'>{authors}</span>
-            </div>}
-            <div className='modal-headline'>
-              <div className='modal-headline-time'>Start: <span className='modal-time'>{formatTime(this.state.modal.time)}</span></div>
-              {percentTech && <div className='modal-headine-percentage'>
-                <Donut value={percentTech} />
-		            <span className='tech-label'>% technical</span>
-              </div>}
-            </div>
-            <div className='modal-description'>
-              <div className='modal-description-heading'>Description:</div>
-              {this.state.modal.description}
-            </div>
-          </div>         
+          {modalContent}
         </Modal>
-
 
         {tabsHeader}
         <div className={`grid-wrapper`}

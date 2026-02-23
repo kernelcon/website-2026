@@ -5,6 +5,19 @@ import './Speakers.scss';
 // import config from 'agendaConfig';
 import config from 'speakerConfig';
 
+const KEYNOTE_SPEAKER_IDS = ['caseyellis', 'phillipwylie'];
+
+function getParsedSpeakerConfig() {
+  const raw = config;
+  if (Array.isArray(raw)) return raw;
+  if (typeof raw === 'string') {
+    try {
+      return JSON.parse(raw);
+    } catch (_) {}
+  }
+  return [];
+}
+
 export default class Speakers extends Component {
   static displayName = 'Speakers';
 
@@ -25,8 +38,12 @@ export default class Speakers extends Component {
   }
 
   getSpeakers() {
-    const talks = config.map(a => a.talks).flat();
-    const speakers = talks.map(a => a.authors).flat().filter((ele) => ele.name !== '').filter((ele) => !ele.hidden);
+    const parsed = getParsedSpeakerConfig();
+    const talks = parsed.map(a => a.talks).flat();
+    const speakers = talks.map(a => a.authors).flat()
+      .filter((ele) => ele.name !== '')
+      .filter((ele) => !ele.hidden)
+      .filter((ele) => !KEYNOTE_SPEAKER_IDS.includes((ele.speaker_id || '').toLowerCase()));
 
 
     // Order Alphabetically

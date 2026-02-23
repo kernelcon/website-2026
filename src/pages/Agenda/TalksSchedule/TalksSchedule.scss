@@ -278,6 +278,118 @@ body.dark-mode {
   }
 }
 
+.speaker-bio-modal {
+  .speaker-bio-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .speaker-bio-image-wrap {
+    flex-shrink: 0;
+  }
+  .speaker-bio-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .speaker-bio-meta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    min-width: 0;
+  }
+  .speaker-bio-name {
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .speaker-bio-company {
+    font-size: 14px;
+    color: #555;
+  }
+  .speaker-bio-socials {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    a {
+      display: inline-flex;
+    }
+  }
+  .speaker-bio-social-icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+  .speaker-bio-socials .dark-mode-logo {
+    display: none;
+  }
+  .speaker-bio-socials .light-mode-logo {
+    display: block;
+  }
+  .speaker-bio-text {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  .modal-back-to-talk {
+    align-self: flex-start;
+    padding: 0.4rem 0.75rem;
+    font-size: 14px;
+    border: 1px solid $dm-highlight;
+    border-radius: 4px;
+    background: transparent;
+    color: $dm-highlight;
+    cursor: pointer;
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+body.dark-mode .speaker-bio-modal {
+  .speaker-bio-company {
+    color: #aaa;
+  }
+  .speaker-bio-socials .light-mode-logo {
+    display: none;
+  }
+  .speaker-bio-socials .dark-mode-logo {
+    display: block;
+  }
+  .modal-back-to-talk {
+    border-color: $dm-highlight;
+    color: $dm-highlight;
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+  }
+}
+
+.modal-author-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: #111;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.backdrop .modal-author-link:hover {
+  color: $dm-highlight !important;
+}
+
+body.dark-mode .modal-author-link {
+  color: rgb(227, 227, 227);
+}
+
+body.dark-mode .backdrop .modal-author-link:hover {
+  color: $dm-highlight;
+}
+
 html {
   --lh: 1.4rem;
   line-height: var(--lh);
