@@ -1,4 +1,4 @@
-@import '../../static/styles/base/colors';
+@use '../../static/styles/base/colors' as *;
 .tab-bullets {
     margin-left: 30px;
     margin-bottom: 20px;

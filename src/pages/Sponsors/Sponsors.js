@@ -48,7 +48,7 @@ import Turngate from "../../static/images/sponsors/turn-gate.png"
 // import CyberCityCircuits from "../../static/images/logos/cyber_city_circuits_logo.png"
 import EthicalIntruder from '../../static/images/sponsors/ethical_intruder_logo.jpg'
 // import CSO from '../../static/images/sponsors/cso.png'
-// import Shamar from '../../static/images/sponsors/shamar.png'
+import Shamar from '../../static/images/sponsors/shamar.png'
 // import SentOneWhite from '../../static/images/sponsors/sentone_white.png'
 // import SHIWhite from '../../static/images/sponsors/shi_white.png'
 // import SHIDark from '../../static/images/sponsors/shi_dark.png'
@@ -319,41 +319,25 @@ export default class Sponsors extends Component {
                 </div>
 
                 {/* Silver Sponsors */}
-                {/* <div className='spons-block'>
+                <div className='spons-block'>
                   <h3 className='silver spons-title'>Silver</h3>
-                  <a href="https://www.contrastsecurity.com/"
-                    target="_blank"
-                    className='dark-mode-logo'
-                    rel='noopener noreferrer'>
-                    <img src={ContrastDarkMode}
-                      className='spons-img other-spons'
-                      alt="Contrast"/>
-                  </a>
-                  <a href="https://www.contrastsecurity.com/"
-                    target="_blank"
-                    className='light-mode-logo'
-                    rel='noopener noreferrer'>
-                    <img src={ContrastLightMode}
-                      className='spons-img other-spons'
-                      alt="Contrast"/>
-                  </a>
-                  <a href="https://www.cyera.io/"
+                  <a href="https://www.shamarinfosec.com/"
                     target="_blank"
                     rel='noopener noreferrer'
                     className='dark-mode-logo'>
-                    <img src={Cyera_Light}
-                      className='spons-img other-spons'
-                      alt="Cyera"/>
+                    <img src={Shamar}
+                      className='spons-img silver-spons all-bright'
+                      alt="Shamar Information Security"/>
                   </a>
-                  <a href="https://www.cyera.io/"
+                  <a href="https://www.shamarinfosec.com/"
                     target="_blank"
                     rel='noopener noreferrer'
                     className='light-mode-logo'>
-                    <img src={Cyera_Dark}
-                      className='spons-img other-spons'
-                      alt="Cyera"/>
+                    <img src={Shamar}
+                      className='spons-img silver-spons'
+                      alt="Shamar Information Security"/>
                   </a>
-                </div> */}
+                </div>
 
                 {/* Bronze Sponsors */}
                 {/* <div className='spons-block'>

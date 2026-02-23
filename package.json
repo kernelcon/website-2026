@@ -2,6 +2,9 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "8": "0.0.1",
     "@babel/core": "7.4.3",
@@ -72,10 +75,8 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "scripts": {
-    "start": "rm -rf ./public/cfp/ && cp -r ./src/cfp ./public/ && node scripts/start.js",
-    "build": "rm -rf ./build ./public/cfp/ && cp -r ./src/cfp ./public/ && node scripts/build.js && cp ./CNAME ./build/",
-    "start:legacy": "rm -rf ./public/cfp/ && cp -r ./src/cfp ./public/ && node --openssl-legacy-provider scripts/start.js",
-    "build:legacy": "rm -rf ./build ./public/cfp/ && cp -r ./src/cfp ./public/ && node --openssl-legacy-provider scripts/build.js && cp ./CNAME ./build/",
+    "start": "rm -rf ./public/cfp/ && cp -r ./src/cfp ./public/ && node --openssl-legacy-provider scripts/start.js",
+    "build": "rm -rf ./build ./public/cfp/ && cp -r ./src/cfp ./public/ && node --openssl-legacy-provider scripts/build.js && cp ./CNAME ./build/",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {

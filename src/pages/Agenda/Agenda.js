@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import MediaQuery from 'react-responsive';
-// import Speakers from './Speakers/Speakers';
+import Speakers from './Speakers/Speakers';
 // import Talks from './Talks/Talks';
 
-// import TalksSchedule from './TalksSchedule/TalksSchedule';
+import TalksSchedule from './TalksSchedule/TalksSchedule';
 // import ConSchedule from './ConSchedule'
 // import TrainingSubmissions from './TrainingSubmission';
 // import Workshops from './Workshops';
@@ -24,7 +24,7 @@ export default class Agenda extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultTab: 'keynotes' // default tab if none specified
+      defaultTab: 'schedule' // default tab if none specified
     }
   }
 
@@ -54,9 +54,9 @@ export default class Agenda extends Component {
         vertical={vert}
       >
         <TabList>
-          {/* <Tab tabFor="schedule">Schedule</Tab> */}
+          <Tab tabFor="schedule">Schedule</Tab>
           <Tab tabFor="keynotes">Keynotes</Tab>
-          {/* <Tab tabFor="speakers">Speakers</Tab> */}
+          <Tab tabFor="speakers">Speakers</Tab>
           {/* <Tab tabFor="talks">Talks</Tab> */}
           <Tab tabFor="villages">Villages</Tab>
           <Tab tabFor="competitions">Competitions</Tab>
@@ -64,7 +64,11 @@ export default class Agenda extends Component {
           {/* <Tab tabFor="entertainment">Entertainment</Tab> */}
           {/* <Tab tabFor="careers">Careers</Tab> */}
         </TabList>
-        {/* TabPanels for schedule, keynotes, speakers, talks, entertainment, and careers are commented out for now */}
+        <TabPanel tabId="schedule">
+          <div className='text-area'>
+            <TalksSchedule />
+          </div>
+        </TabPanel>
 
         <TabPanel tabId="keynotes">
           <div className='text-area'>
@@ -150,6 +154,12 @@ export default class Agenda extends Component {
           </div>
         </TabPanel>
 
+        <TabPanel tabId="speakers">
+          <div className='text-area'>
+            <h3 className='title'>Speakers</h3>
+            <Speakers />
+          </div>
+        </TabPanel>
 
         <TabPanel tabId="villages">
           <div className='text-area'>

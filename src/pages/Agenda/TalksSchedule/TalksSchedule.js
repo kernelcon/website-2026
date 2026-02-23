@@ -31,7 +31,7 @@ export default class TalksSchedule extends Component {
     });
   };
 
-  popModal = (title, description, techLevel, authors, time) => e => {
+  popModal = (title, description, techLevel, authors, time) => () => {
     this.setState({
       modal:{
         title: title,
@@ -54,6 +54,15 @@ export default class TalksSchedule extends Component {
   render() {
     const currentDay = config[this.state.dayIndex];
     const dayOfWeek = currentDay.dayOfWeek;
+
+    const formatTime = (timeStr) => {
+      if (!timeStr || timeStr.length < 4) return timeStr;
+      const h = parseInt(timeStr.slice(0, 2), 10);
+      const m = timeStr.slice(2);
+      const hour = h > 12 ? h - 12 : h === 0 ? 12 : h;
+      const ampm = h >= 12 ? 'PM' : 'AM';
+      return `${hour}:${m} ${ampm}`;
+    };
 
     const scheduleTabs = config.map((ele, index) => {
       return (
@@ -92,29 +101,75 @@ export default class TalksSchedule extends Component {
       const gridColumnEnd = ele.roomIndex[ele.roomIndex.length - 1] + 2;
       const gridColumn = `${gridColumnStart} / ${gridColumnEnd}`;
 
-      const gridRow = ele.minutes >= 42 ? `${rows} / ${rows + 2}` : `${rows}`; 
+      const rowSpan = ele.minutes >= 42
+        ? (ele.minutes > 90 ? 2 * Math.floor(ele.minutes / 30) : 2)
+        : 1;
+      const gridRow = rowSpan > 1 ? `${rows} / ${rows + rowSpan}` : `${rows}`;
 
-      if (gridColumnEnd - 1 >= totalCols && ele.minutes < 42) {
-        rows++;
-      } else if (gridColumnEnd - 1 >= totalCols && ele.minutes >= 42) {
-        rows+= 2;
+      const isLastSlotForThisTime = index + 1 >= currentDay.talks.length || currentDay.talks[index + 1].time !== ele.time;
+      const rowComplete = gridColumnEnd - 1 >= totalCols || isLastSlotForThisTime;
+      if (rowComplete) {
+        rows += ele.minutes >= 42 ? 2 : 1;
       }
       
-      const authors = ele.authors.map((author, index) => {
-        const hyphen = index === 0 && author.name ? ' - ' : '';
+      const authorsString = ele.authors
+        .filter((a) => a.name)
+        .map((a) => a.name)
+        .join(' - ');
+      const hasAuthors = authorsString.length > 0;
+
+      if (ele.emptySlot) {
         return (
-          `${hyphen}${author.name}`
-        )
-      });
+          <div
+            className="schedule-slot-empty"
+            style={{gridColumn: gridColumn, gridRow: gridRow}}
+            key={index}
+            aria-hidden="true"
+          />
+        );
+      }
+
+      if (ele.setupSlot) {
+        return (
+          <div
+            className="schedule-slot-setup"
+            style={{ gridArea: '15 / 3 / 23 / 4' }}
+            key={index}
+            aria-hidden="false"
+            title="Room setup — not a session">
+            <div className="box">
+              <span className="talk-time">{formatTime(ele.time)}</span>
+              <div className="talk-title-and-description">
+                <span className="talk-title">{ele.talkTitle}</span>
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      const showDescription = ['Registration Opens', 'Lunch (on your own)', "Open Bar / Appetizers & Hors d'oeuvres", 'Kernel Panic'].includes(ele.talkTitle) && ele.talkDescription;
+      const fullTitleAndAuthors = hasAuthors ? `${ele.talkTitle} · ${authorsString}` : ele.talkTitle;
 
       return (
-        <a style={{gridColumn: gridColumn, gridRow: gridRow}}
-          key={index} onClick={this.popModal(ele.talkTitle, ele.talkDescription, ele.talkTechLevel, ele.authors, ele.time)}>
+        <button
+          type="button"
+          className="schedule-talk-trigger"
+          style={{gridColumn: gridColumn, gridRow: gridRow}}
+          key={index}
+          title={fullTitleAndAuthors}
+          onClick={this.popModal(ele.talkTitle, ele.talkDescription, ele.talkTechLevel, ele.authors, ele.time)}>
           <div className='box'>
-            <span className='talk-time'>{ele.time}</span>
-            <span className={`${ele.minutes >= 42 ? "truncate-overflow-4 truncate-overflow" : "truncate-overflow-1 truncate-overflow"}`}>{`${ele.talkTitle}${authors}`}</span>
+            <span className='talk-time'>{formatTime(ele.time)}</span>
+            <div className="talk-title-and-description">
+              <div
+                className={`${ele.minutes >= 42 ? "truncate-overflow-4 truncate-overflow" : "truncate-overflow-1 truncate-overflow"}`}>
+                <span className="talk-title">{ele.talkTitle}</span>
+                {hasAuthors && <><span className="talk-separator"> · </span><span className="talk-authors">{authorsString}</span></>}
+              </div>
+              {showDescription && <span className="talk-description">{ele.talkDescription}</span>}
+            </div>
           </div>
-        </a>
+        </button>
       );
     });
 
@@ -147,7 +202,7 @@ export default class TalksSchedule extends Component {
               {`${this.state.modal.authors.length > 1 ? 'Speakers' : 'Speaker'}: `}<span className='modal-authors'>{authors}</span>
             </div>}
             <div className='modal-headline'>
-              <div className='modal-headline-time'>Start: <span className='modal-time'>{this.state.modal.time}</span></div>
+              <div className='modal-headline-time'>Start: <span className='modal-time'>{formatTime(this.state.modal.time)}</span></div>
               {percentTech && <div className='modal-headine-percentage'>
                 <Donut value={percentTech} />
 		            <span className='tech-label'>% technical</span>

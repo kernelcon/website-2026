@@ -1,5 +1,5 @@
-@import '../../static/styles/base/colors';
-@import '../../static/styles/base/variables';
+@use '../../static/styles/base/colors' as *;
+@use '../../static/styles/base/variables' as *;
 
 /* Global Button Styles */
 a.animated-button:link, a.animated-button:visited {

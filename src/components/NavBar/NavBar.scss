@@ -1,4 +1,4 @@
-@import "../../static/styles/base/base";
+@use "../../static/styles/base/base" as *;
 .navbar {
   position: fixed;
   top: 0;

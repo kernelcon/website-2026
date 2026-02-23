@@ -1,6 +1,6 @@
 services:
   node:
-    image: "node:16"
+    image: "node:18"
     container_name: "kernelcon"
     user: "node"
     working_dir: /home/app/

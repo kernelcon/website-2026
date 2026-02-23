@@ -1,5 +1,5 @@
-@import '../../static/styles/base/colors';
-@import '../../static/styles/base/variables';
+@use '../../static/styles/base/colors' as *;
+@use '../../static/styles/base/variables' as *;
 .about-sub-text {
   color: #000;
   font-weight: 300;

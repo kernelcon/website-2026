@@ -1,4 +1,4 @@
-@import "static/styles/base/base";
+@use "static/styles/base/base" as *;
 body.light-mode {
   background-color: #000;
   color: #333;

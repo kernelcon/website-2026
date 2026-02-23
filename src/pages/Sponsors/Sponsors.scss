@@ -1,4 +1,5 @@
-@import '../../static/styles/base/variables';
+@use '../../static/styles/base/colors' as *;
+@use '../../static/styles/base/variables' as *;
 .sponsors {
   div {
     margin-bottom: 30px;

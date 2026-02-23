@@ -1,4 +1,4 @@
-@import "../../static/styles/base/base";
+@use "../../static/styles/base/base" as *;
 body.dark-mode {
   div.highlight-boxes {
     background-color: rgb(16, 23, 29);

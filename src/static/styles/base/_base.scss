@@ -1,6 +1,6 @@
-@import './buttons';
-@import './colors';
-@import './variables';
-@import './page';
-@import './tabs';
-@import './typography';
+@forward './colors';
+@forward './variables';
+@forward './buttons' hide $mobile, $tablet, $desktop;
+@forward './page';
+@forward './tabs';
+@forward './typography';

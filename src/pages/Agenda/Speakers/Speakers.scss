@@ -1,4 +1,4 @@
-@import '../../../static/styles/base/base';
+@use '../../../static/styles/base/base' as *;
 .speakers {
   .title {
     margin-top: 0px;

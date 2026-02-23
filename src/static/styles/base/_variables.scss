@@ -1,4 +1,4 @@
-@import "./colors";
+@use "./colors" as *;
 $light-highlight: $seagull;
 $text-highlight-lite: $boston-blue;
 $text-highlight: $madder-lake;

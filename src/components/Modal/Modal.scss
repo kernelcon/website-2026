@@ -1,4 +1,4 @@
-@import '../../static/styles/base/base';
+@use '../../static/styles/base/base' as *;
 .backdrop {
   position: fixed;
   top: 0;
@@ -50,7 +50,8 @@
   .modal-title {
     color: #111;
     font-family: Montserrat, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
+    margin-right: 10px;
   }
   .modal-close {
     color: $dm-highlight;
