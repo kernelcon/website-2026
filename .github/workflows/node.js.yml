@@ -15,8 +15,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [18.x]
+        # Node 18+ required for --openssl-legacy-provider (package.json engines)
 
     steps:
     - uses: actions/checkout@v3
