@@ -366,8 +366,8 @@
         "roomIndex": [
           1
         ],
-        "talkTitle": "DIY Satellite Tracking for Ham Radio",
-        "talkDescription": "Ever wonder what it takes to talk to the International Space Station? Satellite communication for ham radio is a challenging endeavor, and the presenter shares the struggle of juggling all the tasks to get it done! Discover how to conquer these difficulties with open-source firmware, 3d prints, and custom hardware solutions. This talk is for curious people and tinkerers interested in the ultimate DIY radio project. could their be a live demo perhaps?!",
+        "talkTitle": "Never a Better Time to Be a HAM: Time to get your Amateur Radio License",
+        "talkDescription": "An Amateur Radio License is a key to a whole world of experimenting and communication.  Amateur Radio operators are critical to support communications during natural disasters: such as tornadoes, fires, and others when Cellular networks might be unavailable.  Amateur Radio launched their first satellite Oscar 1 in 1961.  \n\nThere has never been a better time to get your Amateur Radio license.  Radios are cheaper, better, and more hackable than ever before.  This talk will help people learn about the process to get their amateur radio license (technician class).  It will talk about some of the amazing radios available nowadays:  Quansheng, Bao Feng and others are making very nice, very inexpensive radios. We'll introduce DMR (Digital Mode Radio) radios.  \n\nWe'll discuss some of the great open source software that exists to support amateur radio.\n\nAttendees will leave with the resources to make a start towards joining the Amateur Radio community.",
         "talkTechLevel": "",
         "talkId": "",
         "postCon": {
@@ -376,14 +376,14 @@
         },
         "authors": [
           {
-            "name": "Tyler Rosonke",
+            "name": "Aaron Grothe (KCOWIH)",
             "speakerId": "",
-            "company": "Contrast Security",
+            "company": "",
             "twitter": "",
             "github": "",
             "linkedIn": "",
             "image": "",
-            "bio": "Tyler Rosonke is the Manager of Security Research at Contrast Security. His career began within a Fortune 500 company's internal security team, providing a robust foundation in enterprise security. Tyler then transitioned into AppSec consulting and penetration testing, gaining extensive experience \"hacking the planet\" across various industry sectors. This hands-on expertise ultimately led him to Contrast Security, captivated by their IAST, RASP, & ADR technologies.",
+            "bio": "",
             "hidden": false
           }
         ]
@@ -575,8 +575,8 @@
         "roomIndex": [
           1
         ],
-        "talkTitle": "Never a Better Time to Be a HAM: Time to get your Amateur Radio License",
-        "talkDescription": "An Amateur Radio License is a key to a whole world of experimenting and communication.  Amateur Radio operators are critical to support communications during natural disasters: such as tornadoes, fires, and others when Cellular networks might be unavailable.  Amateur Radio launched their first satellite Oscar 1 in 1961.  \n\nThere has never been a better time to get your Amateur Radio license.  Radios are cheaper, better, and more hackable than ever before.  This talk will help people learn about the process to get their amateur radio license (technician class).  It will talk about some of the amazing radios available nowadays:  Quansheng, Bao Feng and others are making very nice, very inexpensive radios. We'll introduce DMR (Digital Mode Radio) radios.  \n\nWe'll discuss some of the great open source software that exists to support amateur radio.\n\nAttendees will leave with the resources to make a start towards joining the Amateur Radio community.",
+        "talkTitle": "DIY Satellite Tracking for Ham Radio",
+        "talkDescription": "Ever wonder what it takes to talk to the International Space Station? Satellite communication for ham radio is a challenging endeavor, and the presenter shares the struggle of juggling all the tasks to get it done! Discover how to conquer these difficulties with open-source firmware, 3d prints, and custom hardware solutions. This talk is for curious people and tinkerers interested in the ultimate DIY radio project. could their be a live demo perhaps?!",
         "talkTechLevel": "",
         "talkId": "",
         "postCon": {
@@ -585,14 +585,14 @@
         },
         "authors": [
           {
-            "name": "Aaron Grothe (KCOWIH)",
+            "name": "Tyler Rosonke",
             "speakerId": "",
-            "company": "",
+            "company": "Contrast Security",
             "twitter": "",
             "github": "",
             "linkedIn": "",
             "image": "",
-            "bio": "",
+            "bio": "Tyler Rosonke is the Manager of Security Research at Contrast Security. His career began within a Fortune 500 company's internal security team, providing a robust foundation in enterprise security. Tyler then transitioned into AppSec consulting and penetration testing, gaining extensive experience \"hacking the planet\" across various industry sectors. This hands-on expertise ultimately led him to Contrast Security, captivated by their IAST, RASP, & ADR technologies.",
             "hidden": false
           }
         ]
