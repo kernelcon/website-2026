@@ -4,13 +4,13 @@
     "date": "9",
     "roomsInfo": [
       {
-        "roomName": "Grand AB"
+        "roomName": "Mountain"
       },
       {
-        "roomName": "Grand C"
+        "roomName": "Beach"
       },
       {
-        "roomName": "Grand ED"
+        "roomName": "Forest"
       }
     ],
     "talks": [
@@ -719,13 +719,13 @@
     "date": "10",
     "roomsInfo": [
       {
-        "roomName": "Grand AB"
+        "roomName": "Mountain"
       },
       {
-        "roomName": "Grand C"
+        "roomName": "Beach"
       },
       {
-        "roomName": "Grand ED"
+        "roomName": "Forest"
       }
     ],
     "talks": [

@@ -210,9 +210,9 @@ body.dark-mode {
     min-height: 100%;
     pointer-events: none;
     .box {
-      background-color: #d8d8d8;
+      background-color: #9b9b9b;
       color: #777;
-      border-left: solid 8px #999;
+      border-left: solid 8px #636363;
       font-style: italic;
     }
     .talk-time {
@@ -235,7 +235,7 @@ body.dark-mode {
     -moz-box-shadow: 0px 1px 2px 0px rgba(199, 199, 199, 1);
     box-shadow: 0px 1px 2px 0px rgba(199, 199, 199, 1);
     .talk-time {
-      color: $light-highlight;
+      color: $dm-theme-highlight;
       font-size: 10px;
       width: 45px !important;
       min-width: 45px;
@@ -254,7 +254,7 @@ body.dark-mode {
       font-weight: 900;
     }
     .talk-authors {
-      color: $light-highlight;
+      color: $dm-theme-highlight;
     }
     .talk-title-logo-icon {
       height: 2em;

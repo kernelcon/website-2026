@@ -25,8 +25,8 @@ import GuidepointLight from "../../static/images/sponsors/guidepoint_black.png";
 // import Axonius from "../../static/images/sponsors/Axonius.png";
 // import Wiz from "../../static/images/sponsors/wiz.png";
 // import Code42 from "../../static/images/sponsors/code42.png";
-// import FarmCreditDark from "../../static/images/sponsors/farm-credit-dark-mode.png";
-// import FarmCreditLight from "../../static/images/sponsors/farm-credit-light-mode.png";
+import FarmCreditDark from "../../static/images/sponsors/farm-credit-dark-mode.png";
+import FarmCreditLight from "../../static/images/sponsors/farm-credit-light-mode.png";
 // import MentalHealthHackersDark from "../../static/images/logos/MHH-white.png"
 // import MentalHealthHackersLight from "../../static/images/logos/MHH.png"
 // import SecureSkyDark from "../../static/images/sponsors/securesky-dark.png"
@@ -293,6 +293,22 @@ export default class Sponsors extends Component {
                       className='spons-img gold-spons'
                       alt="Prompt-S1"/>
                   </a>
+                  <a href="https://www.fcsamerica.com/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={FarmCreditLight}
+                      className='spons-img gold-spons'
+                      alt="Farm Credit Services of America"/>
+                  </a>
+                  <a href="https://www.fcsamerica.com/"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={FarmCreditDark}
+                      className='spons-img gold-spons'
+                      alt="Farm Credit Services of America"/>
+                  </a>
                   <a href="https://www.zscaler.com"
                     target="_blank"
                     className='light-mode-logo'
@@ -340,7 +356,7 @@ export default class Sponsors extends Component {
                 </div>
 
                 {/* Bronze Sponsors */}
-                {/* <div className='spons-block'>
+                <div className='spons-block'>
                   <h4 className='bronze spons-title'>Bronze</h4>
                   <a href="https://www.turngate.io/"
                     target="_blank"
@@ -348,7 +364,7 @@ export default class Sponsors extends Component {
                     className='all-bright dark-mode-logo'>
                     <img src={Turngate}
                       className='spons-img other-spons'
-                      alt="Wiz"/>
+                      alt="Turngate"/>
                   </a>
                   <a href="https://www.turngate.io/"
                     target="_blank"
@@ -358,23 +374,7 @@ export default class Sponsors extends Component {
                       className='spons-img other-spons'
                       alt="Turngate"/>
                   </a>
-                  <a href="https://www.zscaler.com/"
-                    target="_blank"
-                    rel='noopener noreferrer'
-                    className='dark-mode-logo'>
-                    <img src={ZScalar_Light}
-                      className='spons-img other-spons'
-                      alt="ZScalar"/>
-                  </a>
-                  <a href="https://www.zscaler.com/"
-                    target="_blank"
-                    rel='noopener noreferrer'
-                    className='light-mode-logo'>
-                    <img src={ZScalar_Dark}
-                      className='spons-img other-spons'
-                      alt="ZScalar"/>
-                  </a>
-                </div> */}
+                </div>
 
                 {/* CTF Sponsors */}
                 {/* <div className='spons-block'>

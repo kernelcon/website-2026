@@ -42,12 +42,17 @@ class Register extends Component {
 						</p>
 					</div>
 					<div className="venue-section">
-						{/* <h3 className='title'>The Student Scholarship Submissions for 2025 has closed!</h3> */}
-
-
 						<h3 className="title">Students</h3>
-						
-
+						<p className="tab-paragraph text-highlight">
+							<a href="/dates">
+								Student scholarships for Kernelcon 2026 are now closed.
+							</a>
+						</p>
+						<p className="tab-paragraph">
+							Please check back next year for updated information on student registration opportunities.
+						</p>
+						{/*
+						Previous open-call content preserved for reference:
 						<p className="text-highlight">
 							Are you interested in attending Kernelcon, but cannot
 							afford the con?
@@ -87,6 +92,7 @@ class Register extends Component {
 							conference, a hotel room (for traveling students), and
 							this year's "hacker education kit".
 						</p>
+						*/}
 					</div>
 				</div>
 			</div>
