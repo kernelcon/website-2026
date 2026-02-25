@@ -203,14 +203,14 @@
           {
             "name": "Casey Smith",
             "speaker_id": "caseysmith",
-            "company": "Independent Research",
+            "company": "Huntress",
             "twitter": "",
             "mastodon": "",
             "bluesky": "",
             "github": "",
             "linkedin": "",
             "image": "CaseySmith.jpg",
-            "bio": "Casey Smith is an independent Security Researcher. He enjoys continually working to understand and evaluate the limits of defensive systems. He led the development of Atomic Red Team, an open-source testing platform that security teams can use to assess detection coverage. His background includes security analysis, threat research, penetration testing, and incident response. Casey has spoken at several security conferences.",
+            "bio": "Casey Smith is a Threat Intelligence analyst for Huntress. He enjoys continually working to understand and evaluate the limits of defensive systems. He co-led the development of Atomic Red Team, an open-source testing platform that security teams can use to assess detection coverage. His background includes security analysis, threat research, penetration testing, and incident response.",
             "talk_id": "windowsprojectedfilesystemtherealitystone"
           }
         ],
