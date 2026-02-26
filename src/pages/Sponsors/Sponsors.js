@@ -47,6 +47,7 @@ import Turngate from "../../static/images/sponsors/turn-gate.png"
 // import Runza from "../../static/images/sponsors/runza-logo-tagline.png"
 // import CyberCityCircuits from "../../static/images/logos/cyber_city_circuits_logo.png"
 import EthicalIntruder from '../../static/images/sponsors/ethical_intruder_logo.jpg'
+import ExtraHop from '../../static/images/sponsors/ExtraHop2024-Logo_color_medium.png'
 // import CSO from '../../static/images/sponsors/cso.png'
 import Shamar from '../../static/images/sponsors/shamar.png'
 // import SentOneWhite from '../../static/images/sponsors/sentone_white.png'
@@ -331,6 +332,22 @@ export default class Sponsors extends Component {
                     <img src={EthicalIntruder}
                       className='spons-img gold-spons'
                       alt="Ethical Intruder"/>
+                  </a>
+                  <a href="https://www.extrahop.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'
+                    className='light-mode-logo'>
+                    <img src={ExtraHop}
+                      className='spons-img gold-spons'
+                      alt="ExtraHop"/>
+                  </a>
+                  <a href="https://www.extrahop.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'
+                    className='all-bright dark-mode-logo'>
+                    <img src={ExtraHop}
+                      className='spons-img gold-spons'
+                      alt="ExtraHop"/>
                   </a>
                 </div>
 
