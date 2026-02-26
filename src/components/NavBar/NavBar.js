@@ -8,8 +8,8 @@ const NavBar = ({ location }) => {
 	
 	return (
 		<div className={`navbar ${isHomeRoute ? 'navbar-transparent' : 'navbar-dark'}`}>
-			<div className="container">
-				<a href="/">
+			<div className="container navbar-inner">
+				<a href="/" className="navbar-brand">
 					<img
 						src={KillerLogo}
 						className="navbar-logo-k25"
@@ -19,6 +19,9 @@ const NavBar = ({ location }) => {
 					
 					<p className="nav-dates">Training: Apr 7-8</p>
 					<p className="second-nav-dates">Conference: Apr 9-10</p>
+				</a>
+				<a href="/register" className="navbar-register">
+					Register
 				</a>
 			</div>
 		</div>
