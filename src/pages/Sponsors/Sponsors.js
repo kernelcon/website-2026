@@ -27,6 +27,8 @@ import GuidepointLight from "../../static/images/sponsors/guidepoint_black.png";
 // import Code42 from "../../static/images/sponsors/code42.png";
 import FarmCreditDark from "../../static/images/sponsors/farm-credit-dark-mode.png";
 import FarmCreditLight from "../../static/images/sponsors/farm-credit-light-mode.png";
+import HalcyonDark from "../../static/images/sponsors/Halcyon_dark_mode.png";
+import HalcyonLight from "../../static/images/sponsors/Halcyon_light_mode.png";
 // import MentalHealthHackersDark from "../../static/images/logos/MHH-white.png"
 // import MentalHealthHackersLight from "../../static/images/logos/MHH.png"
 // import SecureSkyDark from "../../static/images/sponsors/securesky-dark.png"
@@ -309,6 +311,22 @@ export default class Sponsors extends Component {
                     <img src={FarmCreditDark}
                       className='spons-img gold-spons'
                       alt="Farm Credit Services of America"/>
+                  </a>
+                  <a href="https://www.halcyon.ai/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={HalcyonLight}
+                      className='spons-img gold-spons'
+                      alt="Halcyon"/>
+                  </a>
+                  <a href="https://www.halcyon.ai/"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={HalcyonDark}
+                      className='spons-img gold-spons'
+                      alt="Halcyon"/>
                   </a>
                   <a href="https://www.zscaler.com"
                     target="_blank"
