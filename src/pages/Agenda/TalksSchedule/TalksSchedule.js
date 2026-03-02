@@ -225,8 +225,22 @@ export default class TalksSchedule extends Component {
 
 
     const trackHeaders = currentDay.roomsInfo.map((ele, index) => {
+      let label = ele.roomName;
+      if (ele.roomName === 'Mountain') {
+        label = '🏔️ Mountain';
+      } else if (ele.roomName === 'Beach') {
+        label = '🏖️ Beach';
+      } else if (ele.roomName === 'Forest') {
+        label = '🌲 Forest';
+      }
       return (
-        <div key={index} className='track' style={{gridColumn: index+1, gridRow: 1}}>{ele.roomName}</div>
+        <div
+          key={index}
+          className='track'
+          style={{ gridColumn: index + 1, gridRow: 1 }}
+        >
+          <span className='track-label'>{label}</span>
+        </div>
       );
     });
 

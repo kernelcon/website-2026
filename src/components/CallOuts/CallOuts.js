@@ -115,6 +115,20 @@ class CallOuts extends Component {
         );
       });
 
+      const hasSocials = !!(
+        ele.socials &&
+        (
+          ele.socials.instagram ||
+          ele.socials.twitter ||
+          ele.socials.music ||
+          ele.socials.website ||
+          ele.socials.patreon ||
+          ele.socials.tiktok ||
+          ele.socials.youtube ||
+          ele.socials.facebook
+        )
+      );
+
       return (
         <div className='callout-area'
           key={ele.id}>
@@ -136,7 +150,7 @@ class CallOuts extends Component {
               </div>
             </div>
             <div className='callout-description'>
-              {ele.socials &&
+              {hasSocials &&
                 <span className='speaker-titles'>
                   {ele.socials.instagram && <span><a href={`https://www.instagram.com/${ele.socials.instagram}`} target="_blank" rel="noopener noreferrer">Instagram</a></span>}
                   {ele.socials.twitter && <span><a href={`https://www.x.com/${ele.socials.twitter}`} target="_blank" rel="noopener noreferrer">Twitter</a></span>}
@@ -148,11 +162,17 @@ class CallOuts extends Component {
                   {ele.socials.facebook && <span><a href={ele.socials.facebook} target="_blank" rel="noopener noreferrer">Facebook</a></span>}
                 </span>
               }
-              {ele.music && 
-                <iframe className='band-camp'
+              {ele.music && ele.music.iframe && ele.music.href && 
+                <iframe
+                  className='band-camp'
                   title={ele.music.desc}
-                  src={ele.music.iframe} seamless>
-                  <a href={ele.music.href} style={{backgroundImage: `${ele.img}`}}>
+                  src={ele.music.iframe}
+                  seamless
+                >
+                  <a
+                    href={ele.music.href}
+                    style={ele.music.img ? { backgroundImage: ele.music.img } : {}}
+                  >
                     {ele.music.desc}
                   </a>
                 </iframe>

@@ -191,14 +191,20 @@ body.dark-mode {
     }
   }
   .track {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
     text-transform: uppercase;
     font-family: $font-science;
-    font-size: calc(.8vw + .8vh);
+    font-size: calc(.6vw + .6vh);
     color: #fff;
     background: $dm-highlight;
+    .track-label {
+      letter-spacing: 0.06em;
+    }
   }
   .schedule-slot-empty {
     background: transparent;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import MediaQuery from 'react-responsive';
 import Speakers from './Speakers/Speakers';
-// import Talks from './Talks/Talks';
+import Talks from './Talks/Talks';
 
 import TalksSchedule from './TalksSchedule/TalksSchedule';
 // import ConSchedule from './ConSchedule'
@@ -15,6 +15,7 @@ import Phillip from "../../static/images/speakers/Phillip.jpg";
 
 import villageConfig from 'villageConfig';
 import competitionConfig from 'competitionConfig';
+import entertainmentConfig from 'entertainmentConfig';
 
 import './Agenda.scss';
 
@@ -57,11 +58,11 @@ export default class Agenda extends Component {
           <Tab tabFor="schedule">Schedule</Tab>
           <Tab tabFor="keynotes">Keynotes</Tab>
           <Tab tabFor="speakers">Speakers</Tab>
-          {/* <Tab tabFor="talks">Talks</Tab> */}
+          <Tab tabFor="talks">Talks</Tab>
           <Tab tabFor="villages">Villages</Tab>
           <Tab tabFor="competitions">Competitions</Tab>
           {/* <Tab tabFor="activities">Activities</Tab> */}
-          {/* <Tab tabFor="entertainment">Entertainment</Tab> */}
+          <Tab tabFor="entertainment">Entertainment</Tab>
           {/* <Tab tabFor="careers">Careers</Tab> */}
         </TabList>
         <TabPanel tabId="schedule">
@@ -161,6 +162,13 @@ export default class Agenda extends Component {
           </div>
         </TabPanel>
 
+        <TabPanel tabId="talks">
+          <div className='text-area'>
+            <h3 className='title'>Talks</h3>
+            <Talks />
+          </div>
+        </TabPanel>
+
         <TabPanel tabId="villages">
           <div className='text-area'>
             
@@ -171,21 +179,15 @@ export default class Agenda extends Component {
 
         <TabPanel tabId="competitions">
           <div className='text-area'>
-
             <CallOuts title='Competitions' config={competitionConfig} />
-
           </div>
         </TabPanel>
 
-
-        {/* <TabPanel tabId="entertainment">
+        <TabPanel tabId="entertainment">
           <div className='text-area'>
-
             <CallOuts title='Entertainment' config={entertainmentConfig} />
-
           </div>
-        </TabPanel> */}
-
+        </TabPanel>
 
         {/* <TabPanel tabId="activities">
           <div className='text-area'>
