@@ -171,44 +171,6 @@
     "equipment": "Laptop with at least 8 GB RAM (16 GB recommended), modern multi-core CPU. VMware Workstation (Windows/Linux) or VMware Fusion (macOS) installed. Minimum 85 GB free disk space for virtual machines. Local admin rights to install and run software. Reliable Internet connection.",
     "whoshouldattend": "Security professionals who want to move beyond default tool usage and learn how to customize, chain, and operationalize offensive security tools in modern engagements."
   }
-}, {
-  "id": "mobilehackery",
-  "hide": false,
-  "instructors": [{
-    "name": "Chris Patten",
-    "title": "",
-    "twitter_handle": "@PacketAssailant",
-    "github_handle": "",
-    "linkedin_handle": "",
-    "workplace": "STACKTITAN",
-    "image_name": "",
-    "bio": "Chris Patten is a U.S. Air Force veteran and is the Co-Founder at STACKTITAN with 20+ years of performing adversarial assessments and security research for a set of diverse industries. Chris has extensive experience in reverse engineering and performing dynamic memory instrumentation, most notably with mobile applications. Chris has identified vulnerabilities with commercial anti-tampering libraries and worked with vendors to strengthen the resiliency of their mobile security solutions."
-  }, {
-    "name": "Alex Sanders",
-    "title": "",
-    "twitter_handle": "@AlexUgX3",
-    "github_handle": "",
-    "linkedin_handle": "alex-sanders-x3",
-    "workplace": "STACKTITAN",
-    "image_name": "",
-    "bio": "Alex Sanders is a security consultant with STACKTITAN, a Marine Corps veteran, and musician. Alex is a true technologist with an interest in hardware, wireless protocols, and physical security techniques. He can often be found on the Arkansas hackers Discord discussing various security topics and is constantly sharing his InfoSec experience at regional gatherings."
-  }],
-  "course": {
-    "title": "Red Team Mobile Hackery and Mastery",
-    "days": 2,
-    "scheduled": {
-      "day_one": true,
-      "day_two": true
-    },
-    "time": "8:00 AM - 5:00 PM, with one hour lunch break",
-    "description": {
-      "long_form": "<p>Many mobile application penetration testing courses stop at the fundamentals and leave you out to dry. Join STACKTITAN's two-day hacking workshop to tear apart an intentionally vulnerable app and build a malicious app of your own to demonstrate high-impact vulnerabilities.</p><p>This comprehensive course covers techniques, tools, and tactics for performing effective mobile security assessments on both Android and iOS platforms. Participants will gain hands-on experience with dynamic analysis, reverse engineering, and exploitation techniques specific to mobile applications.</p><p>Upon completing this course, students will be capable of identifying and executing actionable attack paths within mobile applications through adjacent applications loaded onto the device. The training emphasizes practical skills and real-world scenarios to build confidence in mobile security assessments.</p><p>Participants of this course will receive a discount and preferred selection for the beta launch of our two-week advanced mobile hacking course.</p>",
-      "short_form": "<p>Many mobile application penetration testing courses stop at the fundamentals and leave you out to dry. Join STACKTITAN's two-day hacking workshop to tear apart an intentionally vulnerable app and build a malicious app of your own to demonstrate high-impact vulnerabilities. Participants of this course will receive a discount and preferred selection for the beta launch of our two-week advanced mobile hacking course.</p>"
-    },
-    "prerequisites": "Participants should be familiar with Android and iOS security models, their associated application packages, and components such as the Android Manifest, plists, and contents within. Participants should be familiar with OWASP MASVS and MASTG. Participants should be familiar with jailbreaking and rooting.",
-    "equipment": "Participants should bring at minimum: A jailbroken iPhone 8 or later running a minimum of iOS 14.0; A rooted Android device running a minimum of Android 12; Laptop with Burp Suite, Frida, and other common mobile testing utilities. All devices should be pre-configured with Frida and the Burp Suite CA certificate added to the system trust store. Participants may use an equivalent emulator configured with an ARM processor in place of actual hardware.",
-    "whoshouldattend": "Security professionals, penetration testers, and red team operators seeking to expand their mobile security assessment capabilities through hands-on exploitation techniques."
-  }
 }]
 
 
