@@ -71,6 +71,8 @@ import ZafranRegular from '../../static/images/sponsors/Zafran Logo - Regular.pn
 import ZafranWhite from '../../static/images/sponsors/Zafran Logo - White.png'
 import PromptS1Regular from '../../static/images/sponsors/Prompt-S1-Lockup-Regular.png'
 import PromptS1White from '../../static/images/sponsors/Prompt-S1-Lockup-White.svg'
+import Rapid7Dark from '../../static/images/sponsors/rapid_7_dark_mode.png'
+import Rapid7Light from '../../static/images/sponsors/rapid_7_light_mode.png'
 
 import "./Sponsors.scss";
 
@@ -366,6 +368,22 @@ export default class Sponsors extends Component {
                     <img src={ExtraHop}
                       className='spons-img gold-spons'
                       alt="ExtraHop"/>
+                  </a>
+                  <a href="https://www.rapid7.com/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={Rapid7Light}
+                      className='spons-img gold-spons'
+                      alt="Rapid7"/>
+                  </a>
+                  <a href="https://www.rapid7.com/"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={Rapid7Dark}
+                      className='spons-img gold-spons'
+                      alt="Rapid7"/>
                   </a>
                 </div>
 

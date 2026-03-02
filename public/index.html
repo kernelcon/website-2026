@@ -47,7 +47,7 @@
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v=2026-01-22" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <!--
@@ -87,15 +87,28 @@
         var classNameDark = 'dark-mode';
         var classNameLight = 'light-mode';
 
-        function setFavicon(darkMode) {
+      function setFavicon(darkMode) {
           var link = document.querySelector('link[rel="icon"], link[rel="shortcut icon"]');
           if (!link) {
             link = document.createElement('link');
             link.rel = 'icon';
             document.head.appendChild(link);
           }
-          // Use a white/bright favicon in dark mode (expects favicon-dark.ico in public/)
-          link.href = darkMode ? '/favicon-dark.ico' : '/favicon.ico';
+
+          var lightHref = '/favicon.ico?v=2026-01-22';
+          var darkHref = '/favicon-dark.ico?v=2026-01-22';
+
+          if (darkMode) {
+            // Try dark favicon first; if it fails (file missing), fall back to light one
+            link.href = darkHref;
+            var testImg = new Image();
+            testImg.onerror = function () {
+              link.href = lightHref;
+            };
+            testImg.src = darkHref;
+          } else {
+            link.href = lightHref;
+          }
         }
 
         function setClassOnDocumentBody(darkMode) {
