@@ -73,6 +73,8 @@ import PromptS1Regular from '../../static/images/sponsors/Prompt-S1-Lockup-Regul
 import PromptS1White from '../../static/images/sponsors/Prompt-S1-Lockup-White.svg'
 import Rapid7Dark from '../../static/images/sponsors/rapid_7_dark_mode.png'
 import Rapid7Light from '../../static/images/sponsors/rapid_7_light_mode.png'
+import SurfAIDark from '../../static/images/logos/SurfAI Type Dark Cherry.png'
+import SurfAIWhite from '../../static/images/logos/SurfAI Type White.png'
 
 import "./Sponsors.scss";
 
@@ -384,6 +386,22 @@ export default class Sponsors extends Component {
                     <img src={Rapid7Dark}
                       className='spons-img gold-spons'
                       alt="Rapid7"/>
+                  </a>
+                  <a href="https://www.surf.ai/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={SurfAIDark}
+                      className='spons-img gold-spons'
+                      alt="Surf AI"/>
+                  </a>
+                  <a href="https://www.surf.ai/"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={SurfAIWhite}
+                      className='spons-img gold-spons'
+                      alt="Surf AI"/>
                   </a>
                 </div>
 
