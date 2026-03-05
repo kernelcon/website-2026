@@ -410,7 +410,7 @@ export default class Sponsors extends Component {
                     className='light-mode-logo'
                     rel='noopener noreferrer'>
                     <img src={CrowdStrikeLight}
-                      className='spons-img gold-spons'
+                      className='spons-img gold-spons crowdstrike-logo'
                       alt="CrowdStrike"/>
                   </a>
                   <a href="https://www.crowdstrike.com/"
@@ -418,7 +418,7 @@ export default class Sponsors extends Component {
                     className='dark-mode-logo'
                     rel='noopener noreferrer'>
                     <img src={CrowdStrikeDark}
-                      className='spons-img gold-spons'
+                      className='spons-img gold-spons crowdstrike-logo'
                       alt="CrowdStrike"/>
                   </a>
                 </div>
