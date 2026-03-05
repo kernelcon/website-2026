@@ -75,6 +75,8 @@ import Rapid7Dark from '../../static/images/sponsors/rapid_7_dark_mode.png'
 import Rapid7Light from '../../static/images/sponsors/rapid_7_light_mode.png'
 import SurfAIDark from '../../static/images/logos/SurfAI Type Dark Cherry.png'
 import SurfAIWhite from '../../static/images/logos/SurfAI Type White.png'
+import CrowdStrikeLight from '../../static/images/logos/CrowdStrike_light_mode.png'
+import CrowdStrikeDark from '../../static/images/logos/CrowdStrike_Logo_dark_mode.png'
 
 import "./Sponsors.scss";
 
@@ -402,6 +404,22 @@ export default class Sponsors extends Component {
                     <img src={SurfAIWhite}
                       className='spons-img gold-spons'
                       alt="Surf AI"/>
+                  </a>
+                  <a href="https://www.crowdstrike.com/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={CrowdStrikeLight}
+                      className='spons-img gold-spons'
+                      alt="CrowdStrike"/>
+                  </a>
+                  <a href="https://www.crowdstrike.com/"
+                    target="_blank"
+                    className='dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={CrowdStrikeDark}
+                      className='spons-img gold-spons'
+                      alt="CrowdStrike"/>
                   </a>
                 </div>
 
