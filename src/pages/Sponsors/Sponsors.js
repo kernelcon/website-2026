@@ -77,6 +77,8 @@ import SurfAIDark from '../../static/images/logos/SurfAI Type Dark Cherry.png'
 import SurfAIWhite from '../../static/images/logos/SurfAI Type White.png'
 import CrowdStrikeLight from '../../static/images/logos/CrowdStrike_light_mode.png'
 import CrowdStrikeDark from '../../static/images/logos/CrowdStrike_Logo_dark_mode.png'
+import OptivLogo from '../../static/images/logos/OPTIV_rgb.jpg'
+import RubrikLogo from '../../static/images/logos/Rubrik-Logo-1C-Brandmark-Linear-100 (1).jpg'
 
 import "./Sponsors.scss";
 
@@ -441,6 +443,38 @@ export default class Sponsors extends Component {
                     <img src={Shamar}
                       className='spons-img silver-spons'
                       alt="Shamar Information Security"/>
+                  </a>
+                  <a href="https://www.optiv.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'
+                    className='all-bright dark-mode-logo'>
+                    <img src={OptivLogo}
+                      className='spons-img silver-spons'
+                      alt="Optiv"/>
+                  </a>
+                  <a href="https://www.optiv.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'
+                    className='light-mode-logo'>
+                    <img src={OptivLogo}
+                      className='spons-img silver-spons'
+                      alt="Optiv"/>
+                  </a>
+                  <a href="https://www.rubrik.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'
+                    className='all-bright dark-mode-logo'>
+                    <img src={RubrikLogo}
+                      className='spons-img silver-spons'
+                      alt="Rubrik"/>
+                  </a>
+                  <a href="https://www.rubrik.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'
+                    className='light-mode-logo'>
+                    <img src={RubrikLogo}
+                      className='spons-img silver-spons'
+                      alt="Rubrik"/>
                   </a>
                 </div>
 
