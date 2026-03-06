@@ -77,8 +77,8 @@ import SurfAIDark from '../../static/images/logos/SurfAI Type Dark Cherry.png'
 import SurfAIWhite from '../../static/images/logos/SurfAI Type White.png'
 import CrowdStrikeLight from '../../static/images/logos/CrowdStrike_light_mode.png'
 import CrowdStrikeDark from '../../static/images/logos/CrowdStrike_Logo_dark_mode.png'
-import OptivLogo from '../../static/images/logos/OPTIV_rgb.jpg'
-import RubrikLogo from '../../static/images/logos/Rubrik-Logo-1C-Brandmark-Linear-100 (1).jpg'
+import OptivLogo from '../../static/images/logos/OPTIV_rgb.svg'
+import RubrikLogo from '../../static/images/logos/Rubrik-Logo-1C-Brandmark-Linear-100 (1).webp'
 
 import "./Sponsors.scss";
 
