@@ -139,6 +139,14 @@
   color: $dm-highlight;
 }
 
+.ctf-spons-logo {
+  max-width: 640px;
+  max-height: 360px;
+  width: auto;
+  height: auto;
+  transform: scale(1.5);
+}
+
 .all-dark {
   filter: brightness(0);
 }
@@ -241,6 +249,12 @@
           width: auto;
           height: auto;
         }
+        .ctf-spons-logo {
+          max-width: 80vw;
+          max-height: 32vh;
+          width: auto;
+          height: auto;
+        }
         .foodbev-spons {
           .single-foodbev-spons {
             width: 100%;
@@ -278,6 +292,10 @@
         .other-spons {
           max-width: 35vw;
           max-height: 18vh;
+        }
+        .ctf-spons-logo {
+          max-width: 70vw;
+          max-height: 36vh;
         }
         .foodbev-spons {
           .single-foodbev-spons {

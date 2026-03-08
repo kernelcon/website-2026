@@ -79,6 +79,7 @@ import CrowdStrikeLight from '../../static/images/logos/CrowdStrike_light_mode.p
 import CrowdStrikeDark from '../../static/images/logos/CrowdStrike_Logo_dark_mode.png'
 import OptivLogo from '../../static/images/logos/OPTIV_rgb.svg'
 import RubrikLogo from '../../static/images/logos/Rubrik-Logo-1C-Brandmark-Linear-100 (1).webp'
+import FireCompassLight from '../../static/images/logos/Firecompass logo Transparant.png'
 
 import "./Sponsors.scss";
 
@@ -500,23 +501,25 @@ export default class Sponsors extends Component {
                 </div>
 
                 {/* CTF Sponsors */}
-                {/* <div className='spons-block'>
+                <div className='spons-block'>
                   <h4 className='ctf-spons spons-title'>CTF Sponsors</h4>
-                  <a href="https://www.shamarinfosec.com/"
+                  <a href="https://firecompass.com/"
                     target="_blank"
-                    rel='noopener noreferrer'>
-                    <img src={Shamar}
-                      className='all-bright dark-mode-logo spons-img other-spons'
-                      alt="Shamar"/>
+                    rel='noopener noreferrer'
+                    className='all-bright dark-mode-logo'>
+                    <img src={FireCompassLight}
+                      className='spons-img silver-spons ctf-spons-logo'
+                      alt="FireCompass"/>
                   </a>
-                  <a href="https://www.shamarinfosec.com/"
+                  <a href="https://firecompass.com/"
                     target="_blank"
-                    rel='noopener noreferrer'>
-                    <img src={Shamar}
-                      className='light-mode-logo spons-img other-spons'
-                      alt="Shamar"/>
+                    rel='noopener noreferrer'
+                    className='light-mode-logo'>
+                    <img src={FireCompassLight}
+                      className='spons-img silver-spons ctf-spons-logo'
+                      alt="FireCompass"/>
                   </a>
-                </div> */}
+                </div>
 
                 {/* Other Sponsors */}
                 {/* <div className='spons-block'>
@@ -526,7 +529,7 @@ export default class Sponsors extends Component {
                     className='dark-mode-logo'
                     rel='noopener noreferrer'>
                     <img src={ToooLDarkMode}
-                      className='spons-img other-spons'
+                      className='spons-img silver-spons'
                       alt="TOOOL"/>
                   </a>
                   <a href="https://toool.us/"
@@ -534,7 +537,7 @@ export default class Sponsors extends Component {
                     className='light-mode-logo'
                     rel='noopener noreferrer'>
                     <img src={TooolLightMode}
-                      className='spons-img other-spons'
+                      className='spons-img silver-spons'
                       alt="TOOOL"/>
                   </a>
                   <a href="https://www.falkorsecurity.com/"
@@ -542,7 +545,7 @@ export default class Sponsors extends Component {
                     className=''
                     rel='noopener noreferrer'>
                     <img src={Falkor}
-                      className='spons-img other-spons'
+                      className='spons-img silver-spons'
                       alt="Falkor Security"/>
                   </a>
                   <a href="https://www.mentalhealthhackers.org/"
@@ -550,7 +553,7 @@ export default class Sponsors extends Component {
                     className='dark-mode-logo'
                     rel='noopener noreferrer'>
                     <img src={MentalHealthHackersDark}
-                      className='spons-img other-spons'
+                      className='spons-img silver-spons'
                       alt="Mental Health Hackers"/>
                   </a>
                   <a href="https://www.mentalhealthhackers.org/"
@@ -558,21 +561,21 @@ export default class Sponsors extends Component {
                     className='light-mode-logo'
                     rel='noopener noreferrer'>
                     <img src={MentalHealthHackersLight}
-                      className='spons-img other-spons'
+                      className='spons-img silver-spons'
                       alt="Mental Health Hackers"/>
                   </a>
                   <a href="https://www.teksystems.com/en/"
                     target="_blank"
                     rel='noopener noreferrer'>
                     <img src={TekSystems}
-                      className='spons-img other-spons'
+                      className='spons-img silver-spons'
                       alt="TEKsystems"/>
                   </a>
                   <a href="https://www.runza.com/"
                     target="_blank"
                     rel='noopener noreferrer'>
                     <img src={Runza}
-                      className='spons-img other-spons'
+                      className='spons-img silver-spons'
                       alt="Runza"/>
                   </a>
                   <br />
