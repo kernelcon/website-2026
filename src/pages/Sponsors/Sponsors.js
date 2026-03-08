@@ -498,6 +498,22 @@ export default class Sponsors extends Component {
                       className='spons-img other-spons'
                       alt="Turngate"/>
                   </a>
+                  <a href="https://firecompass.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'
+                    className='all-bright dark-mode-logo'>
+                    <img src={FireCompassLight}
+                      className='spons-img silver-spons ctf-spons-logo'
+                      alt="FireCompass"/>
+                  </a>
+                  <a href="https://firecompass.com/"
+                    target="_blank"
+                    rel='noopener noreferrer'
+                    className='light-mode-logo'>
+                    <img src={FireCompassLight}
+                      className='spons-img silver-spons ctf-spons-logo'
+                      alt="FireCompass"/>
+                  </a>
                 </div>
 
                 {/* CTF Sponsors */}
