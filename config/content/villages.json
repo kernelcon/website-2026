@@ -148,5 +148,58 @@
     }
   ],
     "description": "The Mental Health and Wellness Village offers a common place to allow like-minded individuals to share and grow as a community, to better our mental health and the health of those around us. Check out the village for fidget tables, crafts, adult coloring books, and more! Visit https://www.mentalhealthhackers.org/ for more information."
+  },
+  {
+    "title": "Hack/Craft Village",
+    "author": "ArtHax",
+    "id": "hackcraftvillage",
+    "hidden": false,
+    "logo": {
+      "dark_mode_support": false,
+      "image_name": "hackcraft.png",
+      "image_class": "",
+      "dark_mode_image_name": "",
+      "dark_mode_image_class": ""
+    },
+    "dates": [
+      {
+        "day": "Thursday, April 3rd"
+      },
+      {
+        "day": "Friday, April 4th"
+      }
+    ],
+    "details": [
+      {
+        "detail_name": "Print Shop: Screen Printing",
+        "detail_desc": "Screen printing is behind most Kernelcon shirts and hoodies and now it’s your turn at the squeegee. This is DIY printing you can replicate at home. You’ll pull a single-color print using pre-made screens onto paper, your own clothing, or a patch for your bag. More approachable than it looks, and more satisfying than you’d expect. Short demos cover how digital art becomes a screen using Cricut cutters and home printers. Same tools, same process, no print shop required."
+      },
+      {
+        "detail_name": "Texture Lab: Gel Plate Printing",
+        "detail_desc": "Gel plate printing is a monotype process, layered, tactile, and impossible to reproduce exactly. That’s a feature. Use stencils, textures, and pigments to build your own design. Follow along for a guided off-grid scene or use your favorite nature photo and turn it into a colorful textured print. Happy accidents are encouraged."
+      },
+      {
+        "detail_name": "Shirt Station: Direct-To-Film (DTF) Transfers",
+        "detail_desc": "DTF is the modern magic behind much full-color merch. Learn how it works, then press a design of your own onto fabric using a professional heat press. Fast, satisfying, and immediately wearable. Small designs are available for customizing your own garments, like your con shirt. Blank shirts and full-size DTF transfers, some inspired by past Kernelcon art, are available for purchase."
+      },
+      {
+        "detail_name": "Block Printing",
+        "detail_desc": "Try traditional linocut block printing using pre-carved designs from guest artists. Choose your ink color, roll it onto the block, and press it onto paper. Simple, tactile, and surprisingly addictive."
+      },
+      {
+        "detail_name": "Sticker Printing",
+        "detail_desc": "Print hacker stickers on demand. Previous Kernelcon favorites, new off-grid designs, and other classics. Slap them on your laptop or save them for just the right time."
+      },
+      {
+        "detail_name": "Cast Figures",
+        "detail_desc": "Using 3D-printed molds, cast a small Kernelcon collectable in Hydrocal plaster. Casts take up to 30 minutes to cure; explore other stations while you wait. Once hardened, paint it and take it home."
+      },
+      {
+        "detail_name": "Button Press",
+        "detail_desc": "Turn your prints, sketches, or on-the-spot doodles into classic pin-back buttons. Make one for yourself, your CTF team, or the person you just met in the hallway. The options are endless… if they fit in a button."
+      }
+    ],
+    "description": "<div><p><b>Hack/Craft Village</b></p><p>The Hack/Craft Village is where digital art goes physical. A pop-up print studio and maker space where Kernelcon artwork, hacker motifs, and your own ideas become shirts, prints, buttons, and more.</p><p>Roll ink, pull prints, press transfers, cast figures. Try a new technique, remix a design, or just show up and see what happens.</p><p>No art background required, just curiosity and a willingness to get a little ink on your hands.</p></div>",
+    "final_details": "<br/><p>All activities in the Hack/Craft Village are free to try. Some may have limited quantities. Blank shirts for printing, and large-size DTF transfers will have an additional fee.</p>"
   }
 ]
