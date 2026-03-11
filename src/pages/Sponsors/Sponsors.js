@@ -436,7 +436,7 @@ export default class Sponsors extends Component {
                   </a>
                   <a href="https://www.threatlocker.com/"
                     target="_blank"
-                    className='all-bright dark-mode-logo'
+                    className='dark-mode-logo'
                     rel='noopener noreferrer'>
                     <img src={ThreatLockerWhite}
                       className='spons-img gold-spons'
