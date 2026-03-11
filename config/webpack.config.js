@@ -632,6 +632,7 @@ module.exports = function(webpackEnv) {
       dateConfig: JSON.stringify(require('./content/dates.json')), //eslint-disable-line
       entertainmentConfig: JSON.stringify(require('./content/entertainment.json')), //eslint-disable-line
       activityConfig: JSON.stringify(require('./content/activity.json')), //eslint-disable-line
+      careersConfig: JSON.stringify(require('./content/careers.json')), //eslint-disable-line
       faqConfig: JSON.stringify(require('./content/faq.json')), //eslint-disable-line
       ocConfig: JSON.stringify(require('./content/oc.json')), //eslint-disable-line
       trainingConfig: JSON.stringify(require('./content/training.json')), //eslint-disable-line

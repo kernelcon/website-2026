@@ -16,6 +16,7 @@ import Phillip from "../../static/images/speakers/Phillip.jpg";
 import villageConfig from 'villageConfig';
 import competitionConfig from 'competitionConfig';
 import entertainmentConfig from 'entertainmentConfig';
+import careersConfig from 'careersConfig';
 
 import './Agenda.scss';
 
@@ -63,7 +64,7 @@ export default class Agenda extends Component {
           <Tab tabFor="competitions">Competitions</Tab>
           {/* <Tab tabFor="activities">Activities</Tab> */}
           <Tab tabFor="entertainment">Entertainment</Tab>
-          {/* <Tab tabFor="careers">Careers</Tab> */}
+          <Tab tabFor="careers">Careers</Tab>
         </TabList>
         <TabPanel tabId="schedule">
           <div className='text-area'>
@@ -189,27 +190,11 @@ export default class Agenda extends Component {
           </div>
         </TabPanel>
 
-        {/* <TabPanel tabId="activities">
+        <TabPanel tabId="careers">
           <div className='text-area'>
-
-            <CallOuts title='Activities' config={activityConfig} />
-
+            <CallOuts title='Careers' config={careersConfig} />
           </div>
-        </TabPanel> */}
-
-        {/* <TabPanel tabId="careers">
-          <div className='text-area'>
-            <h3 className='title'>Careers</h3>            
-            <div className='competition-area'>
-              <div className='competition-section'>
-                <div className='competition-description'>
-                  Did you know your should update your resume every six months, even if you’re not looking for a new job?  Have a recruiting expert take a look at your resume and assist with advice on making it the best it can be.
-                  <p style={{marginTop: '18px'}}>TEKsystems volunteers will be here on Thursday and Friday at the Kernelcon Resume Review table within the village area to provide professional resume review assistance. Attendees are welcome to walk up to the table at any point throughout the day and should expect to spend 15-20 minutes discussing resume updates.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </TabPanel> */}
+        </TabPanel>
       </Tabs>
     );
   }
