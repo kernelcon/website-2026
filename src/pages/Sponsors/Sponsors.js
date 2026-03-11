@@ -77,6 +77,8 @@ import SurfAIDark from '../../static/images/logos/SurfAI Type Dark Cherry.png'
 import SurfAIWhite from '../../static/images/logos/SurfAI Type White.png'
 import CrowdStrikeLight from '../../static/images/logos/CrowdStrike_light_mode.png'
 import CrowdStrikeDark from '../../static/images/logos/CrowdStrike_Logo_dark_mode.png'
+import ThreatLockerColor from '../../static/images/logos/ThreatLocker_logo wordmark_color_PNG 1200.png'
+import ThreatLockerWhite from '../../static/images/logos/ThreatLocker_logo wordmark_white_PNG 1200.png'
 import OptivLogo from '../../static/images/logos/OPTIV_rgb.svg'
 import RubrikLogo from '../../static/images/logos/Rubrik-Logo-1C-Brandmark-Linear-100 (1).webp'
 import FireCompassLight from '../../static/images/logos/Firecompass logo Transparant.png'
@@ -423,6 +425,22 @@ export default class Sponsors extends Component {
                     <img src={CrowdStrikeDark}
                       className='spons-img gold-spons crowdstrike-logo'
                       alt="CrowdStrike"/>
+                  </a>
+                  <a href="https://www.threatlocker.com/"
+                    target="_blank"
+                    className='light-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={ThreatLockerColor}
+                      className='spons-img gold-spons'
+                      alt="ThreatLocker"/>
+                  </a>
+                  <a href="https://www.threatlocker.com/"
+                    target="_blank"
+                    className='all-bright dark-mode-logo'
+                    rel='noopener noreferrer'>
+                    <img src={ThreatLockerWhite}
+                      className='spons-img gold-spons'
+                      alt="ThreatLocker"/>
                   </a>
                 </div>
 
