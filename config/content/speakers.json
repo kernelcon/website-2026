@@ -246,28 +246,41 @@
         "abstract": "Ever wonder what it takes to talk to the International Space Station? Satellite communication for ham radio is a challenging endeavor, and the presenter shares the struggle of juggling all the tasks to get it done! Discover how to conquer these difficulties with open-source firmware, 3d prints, and custom hardware solutions. This talk is for curious people and tinkerers interested in the ultimate DIY radio project. could their be a live demo perhaps?!"
       },
       {
-        "title": "Advanced Personal Privacy",
+        "title": "A Persona-Driven Approach to Secure AI Adoption",
         "authors": [
           {
-            "name": "Speaker Name Withheld",
-            "speaker_id": "speakernamewithheld",
-            "company": "Company Name Withheld",
+            "name": "Rob LaMagna-Reiter",
+            "speaker_id": "roblamagnareiter",
+            "company": "WoodmenLife",
             "twitter": "",
             "mastodon": "",
             "bluesky": "",
             "github": "",
-            "linkedin": "",
-            "image": "",
-            "bio": "The presenter has been practicing privacy/OPSEC actively for 6 years now. Some of their privacy practices include leveraging GrapheneOS, Linux, private DNS, and removing personal data from the internet, among other solutions.",
-            "talk_id": "advancedpersonalprivacy"
+            "linkedin": "https://www.linkedin.com/in/robertlamagnareiter",
+            "image": "Robert_LaMagaReiter.jpg",
+            "bio": "Robert LaMagna-Reiter, CISO of WoodmenLife, leads enterprise security strategy, risk management, architecture, and operations. With 20+ years in security leadership across transportation, government communications, retail, SaaS, and insurance, he aligns strategy to zero-trust principles to drive business value. He also serves as a Team8 Villager, President of the SOFTwarfare Advisory Board, Zero Trust Initiative Leader for CyberTheory, and CSA expert committee member.",
+            "talk_id": "apersonadrivenapproachtosecureaiadoption"
+          },
+          {
+            "name": "Chris Vermilya",
+            "speaker_id": "chrisvermilya",
+            "company": "Loom Security",
+            "twitter": "",
+            "mastodon": "",
+            "bluesky": "",
+            "github": "",
+            "linkedin": "https://www.linkedin.com/in/chrisvermilya/",
+            "image": "Chris_Vermilya.jpg",
+            "bio": "Chris Vermilya is an accomplished cybersecurity executive specializing in IAM, GRC, and security program strategy. As VP of Services at Loom Security, he shapes and leads the company’s professional and managed services, driving innovation and identity-focused solutions. Chris excels at helping organizations tackle complex challenges and building high-impact teams. He is also a commercial pilot and flight instructor, bringing precision and focus to his leadership.",
+            "talk_id": "apersonadrivenapproachtosecureaiadoption"
           }
         ],
-        "talk_id": "advancedpersonalprivacy",
+        "talk_id": "apersonadrivenapproachtosecureaiadoption",
         "pdf": "",
         "video": "",
         "length": "60",
         "technical": "",
-        "abstract": "As surveillance from governments, private entities, and criminals has created a wild west of exploitation, I believe there is a need to discuss the solutions to prevent and mitigate surveillance. This talk is geared towards an audience that has some prior knowledge of personal privacy. However, I will touch base on the foundational aspects of privacy at the beginning of the talk, thus accounting for newcomers to privacy as well. I will end the talk by giving practical workflows of how I leverage privacy in my day-to-day life without sacrificing convenience. Some topics covered in this talk will be the definition of modern privacy, examples of surveillance, how to opt out of surveillance at an advanced level, and getting more control over your digital and physical footprint. Some specific topics we will discuss include the following: Flock surveillance, Linux hardening, social media privacy, surveillance capitalism, GrapheneOS usage, etc."
+        "abstract": "As AI adoption accelerates, organizations face the dual challenge of enabling innovation while maintaining security and compliance. This session introduces a persona-driven framework that helps security and business leaders speak the same language, aligning AI initiatives with business value, risk management, and Zero Trust principles. By understanding the motivations and pain points of different personas, as well as recognizing how biases can distort risk perception and decision-making, we can design guardrails that enable responsible AI use instead of restricting it.\n\nJoin us to explore how a persona-based approach transforms security from a gatekeeper into a strategic enabler, helping your organization move confidently from risk to reward in the age of AI."
       },
       {
         "title": "Security CTF to Challenge Series - Bringing Hands-On Hacking to Developer Conferences",
