@@ -112,7 +112,7 @@
             "mastodon": "",
             "bluesky": "",
             "github": "",
-            "linkedin": "https://LinkedIn or Github",
+            "linkedin": "",
             "image": "",
             "bio": "Hey, I'm Lora. I build tools that live in other people’s memory space. I’m a Linux security researcher and the developer of Aether, a framework for process injection on 32-bit and 64-bit systems. My recent work involves weaponizing Rust’s safety features to create more stable and undetectable C++ hybrids. I’m here to show you how process injection is evolving on Linux and why the future of offensive tooling is polyglot.",
             "talk_id": "amultiarchitecturetoolforpersistentplthookingandruntimeprocessmonitoringinlinuxaether"
@@ -136,7 +136,7 @@
             "mastodon": "",
             "bluesky": "",
             "github": "",
-            "linkedin": "https://IG: @mattmiller.ai",
+            "linkedin": "",
             "image": "MattMiller.JPG",
             "bio": "kn0ck0ut is a Virginia-born, California-bred hacker and data science graduate student who loves CTF competitions - both the traditional kind and the \"real-world\" variety. With a background in offensive security and senior software architecture, he combines practical exploitation skills with statistical analysis to expose wireless infrastructure vulnerabilities and privacy risks in everyday devices. He's presented at JawnCon and PhreakNIC.",
             "talk_id": "bluetoothwarwalkinghackingtheairwaveswithyourphoneandapairofsneakers"
@@ -156,11 +156,11 @@
             "name": "Ryan Bonner",
             "speaker_id": "ryanbonner",
             "company": "ProCircular",
-            "twitter": "",
+            "twitter": "https://x.com/BadAt_Computers",
             "mastodon": "",
             "bluesky": "",
             "github": "",
-            "linkedin": "https://x.com/BadAt_Computers  https://www.linkedin.com/feed/",
+            "linkedin": "",
             "image": "RyanBonner.jpeg",
             "bio": "Ryan 'Roll4Combat' Bonner is a penetration tester and educator who loves breaking things and sharing what he learns. By day, he's a Senior Cybersecurity Consultant, poking holes in web apps and internal networks. By night, he dives into AI and bug bounty hunting. A firm believer that we all get better by sharing, Ryan speaks at BSides, GRR CON, and DEF CON paying forward the mentorship that launched his career by helping others get their start.",
             "talk_id": "aseriesofunfortunateeventlisteners"
