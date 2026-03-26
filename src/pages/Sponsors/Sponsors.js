@@ -21,6 +21,7 @@ import ZscalerDark from "../../static/images/sponsors/Zscaler_BrandAssets_LogoLo
 // import BairdHolm from "../../static/images/sponsors/bairdholm.png";
 import GuidepointDark from "../../static/images/sponsors/guidepoint_black.png";
 import GuidepointLight from "../../static/images/sponsors/guidepoint_black.png";
+import KernelConCombinedLogos4 from "../../static/images/sponsors/KernelCon Combined Logos_4.png";
 // import Tanium from "../../static/images/sponsors/Tanium.png";
 // import Axonius from "../../static/images/sponsors/Axonius.png";
 // import Wiz from "../../static/images/sponsors/wiz.png";
@@ -214,6 +215,16 @@ export default class Sponsors extends Component {
                         className='spons-img plat-spons'
                         alt="Guidepoint Security"/>
                     </a>
+                    <div className='dark-mode-logo diamond-combined-logos'>
+                      <img src={KernelConCombinedLogos4}
+                        className='spons-img plat-spons diamond-combined-logos-img all-bright'
+                        alt="Diamond program sponsors"/>
+                    </div>
+                    <div className='light-mode-logo diamond-combined-logos'>
+                      <img src={KernelConCombinedLogos4}
+                        className='spons-img plat-spons diamond-combined-logos-img'
+                        alt="Diamond program sponsors"/>
+                    </div>
                   </div>
                 </div>
 

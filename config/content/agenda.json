@@ -433,35 +433,24 @@
         "roomIndex": [
           0
         ],
-        "talkTitle": "Security CTF to Challenge Series - Bringing Hands-On Hacking to Developer Conferences",
-        "talkDescription": "In 2023, the organizers of GopherCon began exploring ways to add more engaging, hands-on experiences to the conference. Benji was serving as a programming chair at the time, had spoken the prior year on application security, and had been active in the Go community for several years. When Benji joined the content committee, he proposed a practical experiment: run a CTF –style event that could deliver security training directly to working developers. Although Neil and I are application-security practitioners, we have long been skeptical of traditional CTFs. Many reward niche knowledge, rely on contrived puzzles or obscure “gotchas,” or require time-consuming reverse-engineering detours and is similar to the engineering interview process. That model does not align with how working engineers learn—or how developer conferences operate. Instead, we designed and delivered a developer-first, progressive security challenge optimized for realistic problems, fast initial wins, and practical takeaways. What began as a one-off conference experiment evolved into a multi-day event and, ultimately, a repeatable Challenge Series that now serves as a sustained learning platform for the community.",
+        "talkTitle": "Building a Practical AI Toolkit to Automate Offensive Tradecraft",
+        "talkDescription": "Let’s be real: AI-driven automation in penetration testing isn’t coming - it’s already here. If you’re still doing external recon and service enumeration manually, you’re burning hours on tasks that machines can do faster, cheaper, and with fewer typos. In this talk, I’ll walk through how I built an AI MCP (Model Context Protocol) server to automate most of the external network pentest workflow.\n\nThis isn’t a perfect framework, it's a real-world, working setup designed by a pentester for pentesters. This talk is ideal for individual testers, small consultancies, or overloaded teams looking to scale external recon and triage without building a full offensive pipeline.\n\nWhat I will show you:\n\n- My way of setting this up (not necessarily the “best”/most “efficient”)\n- The tools required\n- How to customize based on your own needs\n- Live demo of the tooling\n- How to secure the setup\n- Other ways of setting it up if time allows\n\nWhat I do not claim to know/will not show you:\n\n- Cutting edge AI security research\n- Everything there is to know about AI/LLMs\n- Penetration testing \"how-to\" in general\n- Silver bullet “one-size-fits-all” solution",
         "talkTechLevel": "",
-        "talkId": "",
+        "talkId": "buildingapracticalaitoolkittoautomateoffensivetradecraft",
         "postCon": {
           "pdfLink": "",
           "videoLink": ""
         },
         "authors": [
           {
-            "name": "Benji Vesterby",
-            "speakerId": "",
-            "company": "",
-            "twitter": "",
+            "name": "Joe Sarkisian (GonzoSec)",
+            "speakerId": "joesarkisiangonzosec",
+            "company": "DenSecure by Wolf & Co.",
+            "twitter": "jsark983",
             "github": "",
             "linkedIn": "",
-            "image": "",
-            "bio": "",
-            "hidden": false
-          },
-          {
-            "name": "Neil Primmer",
-            "speakerId": "neilprimmer",
-            "company": "CodePros",
-            "twitter": "",
-            "github": "",
-            "linkedIn": "https://www.linkedin.com/in/neilprimmer/",
-            "image": "",
-            "bio": "Neil is an experienced software, security, and platform engineer, with a history spanning numerous industries from mobile gaming and web hosting to film & television and agricultural technology. While his most recent focus has been on the safe implementation of LLMs and LLM-derived tooling into engineering workflows, he has spent time in both large enterprises in the financial services space, as well as small startups in numerous fields.  Neil's professional software experience includes Go, Python, Node, Ruby, Groovy, Java, and Perl; while he's also spent time building and managing cloud-native infrastructure and CI/CD pipelines of varying sizes.  Neil currently lives in Southwest Florida, with his wife, three children, one dog, and three cats.",
+            "image": "joesarkisiangonzosec.png",
+            "bio": "Joe serves as a Lead Penetration Tester and Senior Manager on Wolf & Co.’s DenSecure team. Joe is responsible for coordinating and conducting testing services for clients in a variety of industries including financial, healthcare, and software. His expertise consists of network testing, social engineering, physical security, and general information security and controls.\n\nCerts:\n\n- OSCP\n- CRTO\n- GCPN\n- GWAPT",
             "hidden": false
           }
         ]
@@ -1103,24 +1092,35 @@
         "roomIndex": [
           1
         ],
-        "talkTitle": "MCP-PT: Building a Practical AI MCP Toolkit to Automate Offensive Tradecraft",
-        "talkDescription": "Let’s be real: AI-driven automation in penetration testing isn’t coming - it’s already here. If you’re still doing external recon and service enumeration manually, you’re burning hours on tasks that machines can do faster, cheaper, and with fewer typos. In this talk, I’ll walk through how I built an AI MCP (Model Context Protocol) server to automate most of the external network pentest workflow.\n\nThis isn’t a perfect framework, it's a real-world, working setup designed by a pentester for pentesters. This talk is ideal for individual testers, small consultancies, or overloaded teams looking to scale external recon and triage without building a full offensive pipeline.\n\nWhat I will show you:\n\n- My way of setting this up (not necessarily the “best”/most “efficient”)\n- The tools required\n- How to customize based on your own needs\n- Live demo of the tooling\n- How to secure the setup\n- Other ways of setting it up if time allows\n\nWhat I do not claim to know/will not show you:\n\n- Cutting edge AI security research\n- Everything there is to know about AI/LLMs\n- Penetration testing \"how-to\" in general\n- Silver bullet “one-size-fits-all” solution",
+        "talkTitle": "Why you got hacked in 2025",
+        "talkDescription": "Attackers in 2025 didn't reinvent the wheel, they leveraged the same weaknesses penetration testers see every week, chaining misconfigurations, poor credential hygiene, and overlooked basics into full domain compromise. Analyzing a Penetration Testing firm's real 2025 testing and report data, this discussion highlights tradecraft and concepts that lead adversarial testing to organizational compromise and why defenses failed. More importantly, we'll carry those insights forward into 2026, showing which attack paths will continue to dominate and what defenders can do now to break the cycle before next year's headlines repeat themselves.",
         "talkTechLevel": "",
-        "talkId": "",
+        "talkId": "whyyougothackedin2025",
         "postCon": {
           "pdfLink": "",
           "videoLink": ""
         },
         "authors": [
           {
-            "name": "Joe Sarkisian (GonzoSec)",
-            "speakerId": "",
-            "company": "",
+            "name": "Kent Ickler",
+            "speakerId": "kentickler",
+            "company": "Black Hills Information Security",
+            "twitter": "Krelkci",
+            "github": "",
+            "linkedIn": "",
+            "image": "",
+            "bio": "Kent Ickler began his IT career at a Midwest ISP during the early 2000s broadband expansion. He later supported Fortune 500 firms by providing data to guide technology initiatives. With a postgraduate degree in Business Management and expertise in IT, administration, and business law, Kent helps organizations balance technology and risk. He has spent the past eight years with Black Hills Information Security as a pentester and systems administrator.",
+            "hidden": false
+          },
+          {
+            "name": "Jordan Drysdale",
+            "speakerId": "jordandrysdale",
+            "company": "Black Hills Information Security",
             "twitter": "",
             "github": "",
             "linkedIn": "",
             "image": "",
-            "bio": "",
+            "bio": "Jordan was around for the inception of Napster and the explosion of P2P networks. This drove his fascination with network systems and led him toward a career in IT. Jordan's first gig in the industry included supporting Latin American networking customers for Hewlett Packard's network support division. After five years of support, engineering, training, and stress, Jordan became a wireless escalations team lead and multi-vendor certified problem solver. With kids in tow, Jordan headed back toward the Dakotas to be nearer extended family and friends where he learned Citrix, VMware, VDI, supported Cisco gear, implemented profile management solutions, deployed remote networks at scale, and ensured performance across infrastructure. Before becoming a penetration tester, Jordan supported multiple (50+) domains as part of an MSSP's rock star team. Solutions included HP Networking, FortiGate/FortiManager/FortiWeb/FortiAnalyzer et al., Cisco ASA, HP DL/GL/ML, Dell, VMware, NetApp, and the list goes on. Since 2015, Jordan has been a penetration tester with the Black Hills InfoSec team.",
             "hidden": false
           }
         ]

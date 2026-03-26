@@ -173,6 +173,37 @@
 
 .gp-logo {
   margin-bottom: 0px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > a .plat-spons {
+    margin-bottom: 16px;
+  }
+}
+
+.diamond-combined-logos {
+  margin-bottom: 0 !important;
+}
+
+.diamond-combined-logos-img {
+  max-width: 92%;
+  width: calc(26vh + 26vw);
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .diamond-combined-logos-img {
+    max-width: 90vw;
+    width: calc(22vh + 22vw);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .diamond-combined-logos-img {
+    max-width: 88vw;
+    width: calc(24vh + 24vw);
+  }
 }
 
 .cribl-logo {
