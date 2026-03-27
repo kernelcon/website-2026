@@ -187,6 +187,17 @@
             "image": "",
             "bio": "",
             "hidden": false
+          },
+          {
+            "name": "Andrew Hughes",
+            "speakerId": "andrewhughes",
+            "company": "Narf Industries",
+            "twitter": "",
+            "github": "",
+            "linkedIn": "",
+            "image": "",
+            "bio": "Andrew Hughes is a security researcher at Narf Industries who searches for weird machines that enable exploits in software, along with novel solutions for them. Before joining Narf, he conducted computer architecture research, focusing on enhancing performance and mitigating vulnerabilities in emerging computing systems.",
+            "hidden": false
           }
         ]
       },

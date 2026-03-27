@@ -92,6 +92,19 @@
             "image": "",
             "bio": "Sean Carrick possesses over 15 years of experience in reverse engineering, is a recovering academic, habitual CTF player, and occasionally remembers that you can actually run computer programs instead of just staring at them in a disassembler.  His research interests focus on embedded systems and unexpected execution environments at the border between hardware and software.",
             "talk_id": "beescoutenablingperipheralintrospectiononandroid"
+          },
+          {
+            "name": "Andrew Hughes",
+            "speaker_id": "andrewhughes",
+            "company": "Narf Industries",
+            "twitter": "",
+            "mastodon": "",
+            "bluesky": "",
+            "github": "",
+            "linkedin": "",
+            "image": "",
+            "bio": "Andrew Hughes is a security researcher at Narf Industries who searches for weird machines that enable exploits in software, along with novel solutions for them. Before joining Narf, he conducted computer architecture research, focusing on enhancing performance and mitigating vulnerabilities in emerging computing systems.",
+            "talk_id": "beescoutenablingperipheralintrospectiononandroid"
           }
         ],
         "talk_id": "beescoutenablingperipheralintrospectiononandroid",
