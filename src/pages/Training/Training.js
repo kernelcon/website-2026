@@ -173,6 +173,14 @@ class Training extends Component {
                 <div className='training-text'>
                   <p>Get ready to dive into the fascinating world of amateur radio! This hands-on Ham Radio Workshop takes place the day before Kernelcon kicks off, giving you the perfect opportunity to expand your communication skills and explore a critical technology that bridges emergency response, cybersecurity, and off-grid communication.</p>
                   <p>Whether you're interested in emergency communications, radio frequency security, or just want to learn a new skill that connects you to a global community of operators, this workshop will get you started on your ham radio journey. You'll learn the fundamentals of radio operation, licensing requirements, equipment basics, and practical communication techniques.</p>
+                  <p>
+                    This workshop uses Dan Romanchik, KB6NU&apos;s <em>No Nonsense Technician Class License Study Guide</em>.
+                    {' '}A PDF version is available for free at{' '}
+                    <a href="https://kb6nu.com/study-guides" target="_blank" rel="noopener noreferrer">
+                      kb6nu.com/study-guides
+                    </a>
+                    . Dan suggests downloading the study guide and reviewing the material before attending the workshop.
+                  </p>
                   <p><strong>Upon completion of this workshop, attendees will be qualified to test for their HAM radio license</strong> - opening doors to a world of communication possibilities and emergency preparedness skills that complement your security expertise.</p>
                   <p style={{ marginTop: '15px', fontStyle: 'italic' }}>*$370 covers a Kernelcon conference ticket with the Ham Radio Workshop included at no additional cost. This special registration includes overhead and operating costs for both the conference and workshop.</p>
                 </div>
