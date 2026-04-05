@@ -426,7 +426,17 @@ export default class TalksSchedule extends Component {
         </div>
         <div className='modal-description'>
           <div className='modal-description-heading'>Description:</div>
-          {this.state.modal.description}
+          {typeof this.state.modal.description === 'string' &&
+          (this.state.modal.description.includes('<p>') || this.state.modal.description.includes('<a ')) ? (
+            <div
+              className="modal-description-html"
+              dangerouslySetInnerHTML={{ __html: this.state.modal.description }}
+            />
+          ) : (
+            <div className="modal-description-plain" style={{ whiteSpace: 'pre-wrap' }}>
+              {this.state.modal.description}
+            </div>
+          )}
         </div>
         {this.state.modal.title === KERNEL_PANIC_TITLE && (
           <div className="modal-panic-poster">

@@ -21,7 +21,6 @@ SPEAKERS_IMG_DIR = Path(__file__).resolve().parent.parent / "src/static/images/s
 # Skip these talk titles (not regular session speakers)
 SKIP_TITLES = {
     "", "Registration Opens", "Opening Remarks", "Keynote: Casey Ellis", "Keynote: Phillip Wylie",
-    "Keynote: Phillip Wylie", "Break (30 min room switch) · Book signing: TBA",
     "Break (snacks)", "Lunch (on your own)", "Open Bar / Appetizers & Hors d'oeuvres",
     "Kernel Panic", "PWP Setup", "TBA", "Supernovas",
 }
