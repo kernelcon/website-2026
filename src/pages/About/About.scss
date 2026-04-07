@@ -85,7 +85,7 @@
       display: flex;
       font-size: 16px;
       font-weight: 300;
-      align-items: center;
+      align-items: flex-start;
     }
     .faq-q,
     .faq-a {
@@ -99,14 +99,25 @@
       padding-left: 10px;
       min-height: 30px;
       border-left: 3px solid $boston-blue;
-      align-items: center;
-      display: flex;
       ul {
         padding-left: 20px;
       }
     }
     .question {
       display: flex;
+      align-items: center;
+    }
+    .answer {
+      display: block;
+      flex: 1;
+      min-width: 0;
+      a[href^='mailto:'] {
+        color: $light-highlight;
+        text-decoration: underline;
+      }
+      p {
+        margin: 0;
+      }
     }
   }
 }

@@ -40,7 +40,7 @@ class FAQ extends Component {
       const answer = (
         <div className='faq-answer'>
           <span className='faq-a'>A</span>
-          <span className='answer' dangerouslySetInnerHTML={{ __html: ele.answer }} />
+          <div className='answer' dangerouslySetInnerHTML={{ __html: ele.answer }} />
         </div>
       );
 
