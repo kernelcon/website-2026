@@ -150,6 +150,10 @@ class Training extends Component {
                     <div>Wednesday, April 8th, 2026</div>
                   </div>
                   <div className='training-format'>
+                    <div className='training-heading'>Time:</div>
+                    <div>8:00 AM</div>
+                  </div>
+                  <div className='training-format'>
                     <div className='training-heading'>Pricing:</div>
                     <div>Ham workshop included FREE with special Kernelcon registration</div>
                   </div>
