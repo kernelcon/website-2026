@@ -77,7 +77,7 @@ function App() {
 						return null;
 		  			}}/>
 					<Route exact path='/survey' component={() => {
-		    			window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfU0wBk6uNAv7pgtTTnuX2B0Sde0OW0PnP_f8ekR-r42SiKHg/viewform';
+		    			window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdhux_uMYHv15HRb_P27VzGGeB6OWrXJfe7y-OnndI9Mbbk7A/viewform?usp=header';
 						return null;
 		  			}}/>
 				{/* </div> */}
